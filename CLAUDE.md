@@ -36,6 +36,9 @@ file's flair.
 - Pillar folders are **numbered by dependency order**: `NN-pillar-name/`.
 - Roadmap files are **kebab-case**, no number prefix: `dsa.md`, `distributed-systems.md`.
 - Frontend and AI/ML are **parallel tracks** — numbered for placement, but can start after Foundations.
+- **Companion question banks** live in a `<topic>-practice/` folder beside the roadmap
+  (e.g. `dsa-practice/linear-ds-tier2-3.md`). They are curated question lists with tags +
+  example `input → output` — **never solutions**. Name as `<scope>-<tier>.md`.
 
 ## Status markers (put in each file's header)
 
