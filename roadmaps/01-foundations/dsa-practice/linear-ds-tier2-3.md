@@ -7,7 +7,7 @@
 | **Status** | ✅ Complete |
 | **Scope** | Arrays · Strings · Hashing (maps/sets) · Linked List · Stack/Queue |
 | **Targets** | Tier-2 / Tier-3 companies · startups · service-based & mid MNCs |
-| **Questions** | 99 &nbsp;→&nbsp; arrays × 30 · strings × 30 · hashing × 15 · linked list × 12 · stack/queue × 12 |
+| **Questions** | 111 &nbsp;→&nbsp; arrays × 30 · strings × 30 · hashing × 15 · linked list × 12 · stack × 12 · queue × 12 |
 | **Related** | [Interview Prep](../../00-meta/interview-preparation.md) |
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 easy-medium &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
@@ -147,22 +147,39 @@ Master these and you can attack ~90% of these questions:
 | 11 | Nth node from beginning | Traversal | 🟢 | `1→2→3→4, n=2 → 2` | ⭐ |
 | 12 | Count nodes / length | Traversal | 🟢 | `1→2→3 → 3` | ⭐ |
 
-## 🥞 Stacks & Queues (12)
+## 🥞 Stacks (12)
 
 | # | Question | Pattern | Diff | Example `input → output` | Freq |
 |:--|:--|:--|:--:|:--|:--:|
 | 1 | Valid parentheses | Stack | 🟢 | `"({[]})" → true · "(]" → false` | ⭐⭐⭐ |
 | 2 | Min stack — getMin in O(1) | Stack + aux stack | 🟡 | `push 5,2,1 → getMin → 1` | ⭐⭐⭐ |
-| 3 | Queue using two stacks | Stack / queue | 🟡 | `enqueue 1,2 → dequeue → 1` | ⭐⭐⭐ |
-| 4 | Next greater element | Monotonic stack | 🟡 | `[4,5,2,25] → [5,25,25,-1]` | ⭐⭐⭐ |
-| 5 | Stack using two queues | Stack / queue | 🟡 | `push 1,2 → pop → 2` | ⭐⭐ |
-| 6 | Implement stack using array | Array | 🟢 | `push/pop/peek → LIFO order` | ⭐⭐ |
-| 7 | Evaluate postfix expression | Stack | 🟡 | `"231*+9-" → -4` | ⭐⭐ |
+| 3 | Next greater element | Monotonic stack | 🟡 | `[4,5,2,25] → [5,25,25,-1]` | ⭐⭐⭐ |
+| 4 | Implement stack using array | Array | 🟢 | `push/pop/peek → LIFO order` | ⭐⭐⭐ |
+| 5 | Stack using two queues | Two queues | 🟡 | `push 1,2 → pop → 2` | ⭐⭐ |
+| 6 | Evaluate postfix expression | Stack | 🟡 | `"231*+9-" → -4` | ⭐⭐ |
+| 7 | Infix to postfix conversion | Stack | 🟡 | `"a+b*c" → "abc*+"` | ⭐⭐ |
 | 8 | Reverse a stack (recursion) | Stack + recursion | 🟡 | `[1,2,3] → [3,2,1]` | ⭐⭐ |
 | 9 | Redundant / balanced brackets | Stack | 🟢 | `"(a+b)" → true · "((a))" → redundant` | ⭐⭐ |
 | 10 | Stock span problem | Monotonic stack | 🟡 | `[100,80,60,70,60,75,85] → [1,1,1,2,1,4,6]` | ⭐⭐ |
-| 11 | Circular queue implementation | Array wrap-around | 🟡 | `enqueue/dequeue wrapping → correct order` | ⭐⭐ |
+| 11 | Nearest smaller element to left | Monotonic stack | 🟢 | `[1,6,2] → [-1,1,1]` | ⭐⭐ |
 | 12 | Sort a stack | Stack | 🟡 | `[3,1,2] → [1,2,3]` | ⭐ |
+
+## 🚚 Queues (12)
+
+| # | Question | Pattern | Diff | Example `input → output` | Freq |
+|:--|:--|:--|:--:|:--|:--:|
+| 1 | Implement queue using two stacks | Two stacks | 🟡 | `enqueue 1,2 → dequeue → 1` | ⭐⭐⭐ |
+| 2 | Implement queue using array | Array | 🟢 | `enqueue/dequeue → FIFO order` | ⭐⭐⭐ |
+| 3 | Circular queue implementation | Array wrap-around | 🟡 | `enqueue/dequeue wrapping → correct order` | ⭐⭐⭐ |
+| 4 | First non-repeating char in a stream | Queue + freq map | 🟡 | `"aabc" → 'b'` | ⭐⭐⭐ |
+| 5 | Reverse a queue | Queue + stack/recursion | 🟢 | `[1,2,3] → [3,2,1]` | ⭐⭐ |
+| 6 | Reverse first k elements of a queue | Queue + stack | 🟡 | `[1,2,3,4,5], k=3 → [3,2,1,4,5]` | ⭐⭐ |
+| 7 | Generate binary numbers 1..n | Queue (BFS) | 🟢 | `n=3 → ["1","10","11"]` | ⭐⭐ |
+| 8 | Implement a deque | Array / doubly linked | 🟢 | `pushFront/pushBack/popFront/popBack → correct ends` | ⭐⭐ |
+| 9 | Sliding window maximum | Deque (monotonic) | 🟡 | `[1,3,-1,-3,5,3,6,7], k=3 → [3,3,5,5,6,7]` | ⭐⭐ |
+| 10 | Priority queue basics (insert / extract-min) | Heap / PQ | 🟢 | `insert 5,1,3 → extractMin → 1` | ⭐⭐ |
+| 11 | Interleave first & second half of a queue | Queue + stack | 🟡 | `[1,2,3,4] → [1,3,2,4]` | ⭐ |
+| 12 | LRU cache (deque + hashmap) | Deque + map | 🟡 | `cap=2, get/put ops → evicts LRU` | ⭐⭐ |
 
 ---
 
