@@ -102,10 +102,10 @@ Master these and you can attack ~90% of these questions:
 | 21 | Count words in a string | Scan | 🟢 | `"the sky is blue" → 4` | ⭐⭐ |
 | 22 | First repeating character | Set | 🟢 | `"abca" → 'a'` | ⭐⭐ |
 | 23 | Longest palindromic substring | Expand around center | 🟡 | `"babad" → "bab"` | ⭐⭐ |
-| 24 | Capitalize first letter of each word | Scan | 🟢 | `"hello world" → "Hello World"` | ⭐ |
-| 25 | Remove all whitespace | Scan | 🟢 | `"a b c" → "abc"` | ⭐ |
-| 26 | Longest word in a sentence | Scan | 🟢 | `"I love programming" → "programming"` | ⭐ |
-| 27 | String to integer (atoi, basic) | Parsing | 🟡 | `"  -42" → -42` | ⭐⭐ |
+| 24 | String to integer (atoi, basic) | Parsing | 🟡 | `"  -42" → -42` | ⭐⭐ |
+| 25 | Capitalize first letter of each word | Scan | 🟢 | `"hello world" → "Hello World"` | ⭐ |
+| 26 | Remove all whitespace | Scan | 🟢 | `"a b c" → "abc"` | ⭐ |
+| 27 | Longest word in a sentence | Scan | 🟢 | `"I love programming" → "programming"` | ⭐ |
 | 28 | Reverse only the vowels | Two pointers | 🟢 | `"hello" → "holle"` | ⭐ |
 | 29 | Check two strings equal ignoring case | Scan | 🟢 | `"Hello","hello" → true` | ⭐ |
 | 30 | Sort characters of a string | Sorting / count | 🟢 | `"dcba" → "abcd"` | ⭐ |
@@ -178,8 +178,8 @@ Master these and you can attack ~90% of these questions:
 | 8 | Implement a deque | Array / doubly linked | 🟢 | `pushFront/pushBack/popFront/popBack → correct ends` | ⭐⭐ |
 | 9 | Sliding window maximum | Deque (monotonic) | 🟡 | `[1,3,-1,-3,5,3,6,7], k=3 → [3,3,5,5,6,7]` | ⭐⭐ |
 | 10 | Priority queue basics (insert / extract-min) | Heap / PQ | 🟢 | `insert 5,1,3 → extractMin → 1` | ⭐⭐ |
-| 11 | Interleave first & second half of a queue | Queue + stack | 🟡 | `[1,2,3,4] → [1,3,2,4]` | ⭐ |
-| 12 | LRU cache (deque + hashmap) | Deque + map | 🟡 | `cap=2, get/put ops → evicts LRU` | ⭐⭐ |
+| 11 | LRU cache (deque + hashmap) | Deque + map | 🟡 | `cap=2, get/put ops → evicts LRU` | ⭐⭐ |
+| 12 | Interleave first & second half of a queue | Queue + stack | 🟡 | `[1,2,3,4] → [1,3,2,4]` | ⭐ |
 
 ---
 
