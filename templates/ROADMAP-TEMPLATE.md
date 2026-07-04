@@ -2,63 +2,93 @@
 ROADMAP TEMPLATE — copy this file to start a new roadmap.
 Rules: see ../CLAUDE.md. This is a SKELETON — checklists, exercise prompts, project ideas,
 interview pointers only. No tutorials, no solutions.
+Readability conventions (match dsa.md, the reference exemplar):
+  • Metadata table at top (not a blockquote run-on)
+  • Legend line for the level + section icons
+  • Level Map as a table · Module Index as a table with jump links (<a id="mN"></a>)
+  • Each module: divider, level badge, one-line Focus blockquote, then the four icon sections
+  • Section icons: 📚 Topics · 🧩 Exercises · 🛠️ Project · 🎯 Interview
 -->
 
-# <Topic> Roadmap
+# <emoji> <Topic>
 
-> **Pillar:** <NN-pillar> · **Status:** 🚧 Stub · **Track:** Core | Parallel
-> **Prerequisites:** [<roadmap>](path) , [<roadmap>](path)
-> **Feeds into:** [<roadmap>](path)
+|  |  |
+|---|---|
+| **Pillar** | `NN · <Pillar>` |
+| **Status** | 🚧 Stub |
+| **Track** | Core \| Parallel |
+| **Prerequisites** | [<roadmap>](path) · [<roadmap>](path) |
+| **Feeds into** | [<roadmap>](path) |
+| **Modules** | N &nbsp;→&nbsp; 🟢 × _ · 🟡 × _ · 🔴 × _ |
 
-## Overview
-1–3 sentences: what this roadmap covers and why it matters for interviews & real work.
+> **Legend** — Levels: 🟢 Fresher (0–1y) · 🟡 Mid (2–5y) · 🔴 Senior (5+y) &nbsp;•&nbsp; In each module: 📚 Topics · 🧩 Exercises · 🛠️ Project · 🎯 Interview
 
-## Level Map (Definition of Done)
-What "done" looks like at each level for this topic.
+---
 
-- **🟢 Fresher** — <one-paragraph bar + the modules to complete>
-- **🟡 Mid** — <bar + modules>
-- **🔴 Senior** — <bar + modules>
+## 🗺️ Overview
+
+> 1–3 sentences: what this roadmap covers and why it matters for interviews & real work.
+
+## 🎚️ Level Map — Definition of Done
+
+| Level | The bar | Modules |
+|:---:|---|---|
+| 🟢 **Fresher** | <one-line bar> | M_ – M_ |
+| 🟡 **Mid** | <bar> | + M_ – M_ |
+| 🔴 **Senior** | <bar> | + M_ – M_ |
+
+## 📇 Module Index
+
+| # | Module | Lvl | Focus |
+|:--|:--|:--:|:--|
+| [M1](#m1) | <name> | 🟢 | <one-line focus> |
+| [M2](#m2) | <name> | 🟡 | <one-line focus> |
+| [M3](#m3) | <name> | 🔴 | <one-line focus> |
 
 ---
 
 ## Modules
 
-Each module = a checklist + exercises + a mini-project (assignment) + interview pointers.
+<a id="m1"></a>
+### M1 · <Module name> &nbsp;`🟢`
+> **Focus:** <one line>.
 
-### M1 · <Module name>  `🟢`
-**Topics**
+**📚 Topics**
 - [ ] topic
 - [ ] topic
 
-**Exercises (prompts, not solutions)**
-- Exercise prompt 1
-- Exercise prompt 2
+**🧩 Exercises**
+- Exercise prompt (no solution)
 
-**Mini-project (assignment)**
+**🛠️ Mini-project — assignment**
 - One buildable deliverable that forces the module's concepts.
 
-**Interview pointers**
+**🎯 Interview pointers**
 - Question themes / patterns to be ready for (not answers).
-
-### M2 · <Module name>  `🟡`
-...(same shape)
-
-### M3 · <Module name>  `🔴`
-...(same shape)
 
 ---
 
-## Capstone Project(s)
-1–2 larger, integrative builds. Framed as an assignment with acceptance criteria (not a solution).
+<a id="m2"></a>
+### M2 · <Module name> &nbsp;`🟡`
+> **Focus:** <one line>.
 
-- **Capstone A** `🟡` — <what to build + what it proves + acceptance criteria bullets>
+...(same four sections)
 
-## Self-Assessment Checkpoints
+---
+
+## 🏆 Capstone Projects
+
+> **Capstone A — "<name>"** &nbsp;`🟡`
+> <what to build + what it proves>
+> - **Acceptance:** <criteria> · <criteria>
+
+## ✅ Self-Assessment Checkpoints
+
 - [ ] 🟢 I can … (concrete, testable claim)
 - [ ] 🟡 I can …
 - [ ] 🔴 I can …
 
-## Interview Question Bank (pointers)
+## 🎤 Interview Question Bank — *pointers*
+
 Categorized *themes / patterns* to drill — not questions with answers.
-- **<Category>:** theme, theme, theme
+- **<Category>** — theme · theme · theme
