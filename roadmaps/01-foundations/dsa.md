@@ -11,7 +11,7 @@
 
 > **Legend** — Levels: 🟢 Fresher (0–1y) · 🟡 Mid (2–5y) · 🔴 Senior (5+y) &nbsp;•&nbsp; In each module: 📚 Topics · 🧩 Exercises · 🛠️ Project · 🎯 Interview
 
-> 📌 **Targeting Tier-2/3 companies or startups?** Start with the focused [Linear DS — Tier 2/3 Question Bank](dsa-practice/linear-ds-tier2-3.md) — the 24 highest-probability array/string/linked-list questions those rounds actually ask.
+> 📌 **Targeting Tier-2/3 companies or startups?** Start with the focused [Tier-2/3 Question Bank](dsa-practice/linear-ds-tier2-3.md) — 99 highest-probability questions (arrays, strings, hashing & linear DS) those rounds actually ask.
 
 ---
 
