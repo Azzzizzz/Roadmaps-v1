@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+*.swp
+*.swo
+
+# Misc
+*.log
+.tmp/
+node_modules/
+
+# macOS AppleDouble sidecars (non-HFS volumes)
+._*
