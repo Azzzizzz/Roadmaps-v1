@@ -7,7 +7,7 @@
 | **Status** | ✅ Complete — Strings (2nd in the Tier-1 pattern series) |
 | **Scope** | Strings — organized by **algorithmic pattern**, Tier-1 / MAANG difficulty |
 | **Targets** | Tier-1 product companies · MAANG / FAANG |
-| **Coverage** | 10 patterns · 90 questions |
+| **Coverage** | 9 in-file patterns · 80 questions (String DP → [DP bank](dp-patterns-tier1.md#p6)) |
 | **Related** | Next in series → `trees-patterns-tier1.md`, `graphs-patterns-tier1.md`, … |
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 medium · 🔴 hard &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
@@ -30,7 +30,7 @@ Internalize the *trigger*, not the solution.
 | 1 | [Sliding Window](#p1) | 12 | longest/shortest substring with a constraint · anagrams/permutations · at-most-K distinct |
 | 2 | [Two Pointers](#p2) | 10 | palindrome checks · reverse in place · compare/merge from both ends |
 | 3 | [Hashing / Frequency Map](#p3) | 10 | anagrams · char counts · group by signature · char-to-char mapping |
-| 4 | [DP on Strings](#p4) | 10 | transform/match two strings · subsequence · regex / wildcard |
+| 4 | [DP on Strings → DP bank](dp-patterns-tier1.md#p6) | — | *moved* — DP is a paradigm; String DP lives in the DP bank |
 | 5 | [Palindrome Techniques](#p5) | 10 | longest/count palindromic substrings · partition into palindromes · make a palindrome |
 | 6 | [Stack-Based](#p6) | 8 | nested/matching brackets · decode · remove adjacent · evaluate expressions |
 | 7 | [Backtracking](#p7) | 8 | generate all combinations / permutations / partitions of a string |
@@ -100,23 +100,15 @@ Internalize the *trigger*, not the solution.
 | 10 | Determine if Two Strings Are Close | 🟡 | `"abc","bca" → true` | ⭐⭐ |
 
 <a id="p4"></a>
-## 4 · Dynamic Programming on Strings (10)
+## 4 · Dynamic Programming on Strings → moved to the DP bank
 
-> 🔍 **Recognize it when…** you transform or match *two* strings, count subsequences, or match against
-> a wildcard/regex pattern — think 2D DP over indices `(i, j)`.
-
-| # | Question | Diff | Example `input → output` | Freq |
-|:--|:--|:--:|:--|:--:|
-| 1 | Longest Common Subsequence | 🟡 | `"abcde","ace" → 3` | ⭐⭐⭐ |
-| 2 | Delete Operation for Two Strings | 🟡 | `"sea","eat" → 2` | ⭐⭐ |
-| 3 | Minimum ASCII Delete Sum for Two Strings | 🟡 | `"sea","eat" → 231` | ⭐⭐ |
-| 4 | Word Break | 🟡 | `"leetcode", ["leet","code"] → true` | ⭐⭐⭐ |
-| 5 | Uncrossed Lines | 🟡 | `[1,4,2],[1,2,4] → 2` | ⭐⭐ |
-| 6 | Edit Distance | 🔴 | `"horse","ros" → 3` | ⭐⭐⭐ |
-| 7 | Distinct Subsequences | 🔴 | `s="rabbbit", t="rabbit" → 3` | ⭐⭐ |
-| 8 | Interleaving String | 🔴 | `s1="aabcc", s2="dbbca", s3="aadbbcbcac" → true` | ⭐⭐ |
-| 9 | Regular Expression Matching | 🔴 | `s="aa", p="a*" → true` | ⭐⭐⭐ |
-| 10 | Wildcard Matching | 🔴 | `s="adceb", p="*a*b" → true` | ⭐⭐ |
+> 🧭 **String DP now lives in its canonical home:** [Dynamic Programming bank → String DP](dp-patterns-tier1.md#p6).
+> That's where the full easy→hard ramp is — Longest Common Subsequence, Edit Distance, Distinct
+> Subsequences, Interleaving String, Regular Expression & Wildcard Matching, and more.
+>
+> **Why moved:** DP is a *paradigm*, not a string technique. Keeping every DP pattern in one file
+> (one home per problem, per [CLAUDE.md](../../../CLAUDE.md)) lets you study String DP alongside Grid DP,
+> Knapsack, and LIS instead of in isolation.
 
 <a id="p5"></a>
 ## 5 · Palindrome Techniques (10)
