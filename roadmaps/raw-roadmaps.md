@@ -17,37 +17,38 @@
 
 8. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
 9. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
+10. [Distributed Systems Roadmap](#distributed-systems-roadmap)
 
 **Infrastructure**
 
-10. [Cloud Computing Roadmap](#cloud-computing-roadmap)
-11. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
-12. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
-13. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
+11. [Cloud Computing Roadmap](#cloud-computing-roadmap)
+12. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
+13. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
+14. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
 
 **Frontend**
 
-14. [Frontend Engineering Roadmap](#frontend-engineering-roadmap)
+15. [Frontend Engineering Roadmap](#frontend-engineering-roadmap)
 
 **Quality**
 
-15. [Security Engineering Roadmap](#security-engineering-roadmap)
-16. [Performance Engineering Roadmap](#performance-engineering-roadmap)
+16. [Security Engineering Roadmap](#security-engineering-roadmap)
+17. [Performance Engineering Roadmap](#performance-engineering-roadmap)
 
 **AI / ML**
 
-17. [AI Engineering Roadmap](#ai-engineering-roadmap)
-18. [LLM Engineering Roadmap](#llm-engineering-roadmap)
-19. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
-20. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
-21. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+18. [AI Engineering Roadmap](#ai-engineering-roadmap)
+19. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+20. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+21. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+22. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
 
 **Career & Interview Skills**
 
-22. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
-23. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
-24. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
-25. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
+23. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+24. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+25. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+26. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
 
@@ -394,6 +395,42 @@
 | 35     | System Design Case Studies       | URL Shortener, Instagram, WhatsApp, Uber, YouTube, Netflix, Dropbox, Google Drive, Twitter/X, Payment Gateway, Food Delivery, Ride Sharing                             | Advanced     | ⭐⭐⭐⭐⭐      |
 | 36     | Interview Framework              | Requirement Gathering, Assumption Validation, Capacity Estimation, Component Design, Trade-offs, Bottleneck Analysis, Whiteboarding                                    | Advanced     | ⭐⭐⭐⭐⭐      |
 | 37     | System Design Interview Mastery  | Design Templates, Communication Strategy, Common Pitfalls, Time Management, Mock Interviews, Company-Specific Patterns                                                 | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Distributed Systems Roadmap
+
+| Module | High-Level Topic                      | Key Subtopics                                                                                                   | Level        | Importance |
+| ------ | ------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Distributed Systems Fundamentals      | What is a Distributed System, Why Distribute, Fallacies of Distributed Computing, Node Roles, System Boundaries | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Time & Ordering                       | Physical Clocks, Logical Clocks, Lamport Timestamps, Vector Clocks, Happens-Before Relation                     | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Communication Models                  | Message Passing, RPC, Synchronous vs Asynchronous Communication, Reliable vs Unreliable Channels                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Failure Models                        | Crash Failures, Omission Failures, Byzantine Failures, Fail-Stop vs Fail-Recover, Partial Failures              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | CAP Theorem                           | Consistency, Availability, Partition Tolerance, Trade-off Space, Practical Implications                         | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 6      | PACELC & Extended Trade-offs          | Latency vs Consistency, Beyond CAP, Real-World System Positioning                                               | Intermediate | ⭐⭐⭐⭐☆      |
+| 7      | Consistency Models                    | Strong Consistency, Eventual Consistency, Causal Consistency, Read-Your-Writes, Monotonic Reads                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Replication Strategies                | Leader-Follower, Multi-Leader, Leaderless Replication, Synchronous vs Asynchronous Replication                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Quorum Systems                        | Read/Write Quorums, Sloppy Quorums, Hinted Handoff, Quorum Trade-offs                                           | Intermediate | ⭐⭐⭐⭐☆      |
+| 10     | Conflict Resolution                   | Last-Write-Wins, Version Vectors, CRDTs, Merkle Trees, Application-Level Reconciliation                         | Advanced     | ⭐⭐⭐⭐☆      |
+| 11     | Consensus Algorithms                  | Paxos, Multi-Paxos, Raft, Leader Election, Log Replication, Safety vs Liveness                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 12     | Byzantine Fault Tolerance             | BFT Algorithms, PBFT, Blockchain Consensus (Overview), Trust Assumptions                                        | Advanced     | ⭐⭐⭐☆☆      |
+| 13     | Distributed Coordination              | ZooKeeper, etcd, Distributed Locks, Leader Election Services, Configuration Management                          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 14     | Gossip Protocols & Membership         | Epidemic Protocols, Failure Detection, SWIM Protocol, Cluster Membership                                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 15     | Distributed Hashing                   | Consistent Hashing, Rendezvous Hashing, Virtual Nodes, Rebalancing Strategies                                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | Sharding & Partitioning               | Range Partitioning, Hash Partitioning, Partition Rebalancing, Hot Partitions                                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 17     | Distributed Transactions              | Two-Phase Commit, Three-Phase Commit, Distributed Deadlocks, XA Transactions                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Saga Pattern & Compensation           | Choreography Saga, Orchestration Saga, Compensating Transactions, Long-Running Workflows                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Distributed Caching                   | Cache Coherence, Invalidation Across Nodes, Distributed Cache Topologies                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 20     | Load Balancing in Distributed Systems | Client-Side vs Server-Side, Consistent Hashing for LB, Health-Aware Routing                                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 21     | Distributed Logging & Tracing         | Correlation IDs, Distributed Tracing, Clock Skew in Logs, Causal Tracing                                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Idempotency & Exactly-Once Semantics  | At-Most-Once, At-Least-Once, Exactly-Once, Deduplication Strategies                                             | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Distributed File & Storage Systems    | GFS/HDFS Concepts, Replication, Chunking, Metadata Servers                                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Scalability Patterns                  | Horizontal Scaling, Statelessness, Partition-Tolerant Design, Elastic Scaling                                   | Advanced     | ⭐⭐⭐⭐⭐      |
+| 25     | Fault Tolerance & Self-Healing        | Redundancy, Replication for Recovery, Failure Detection, Automatic Failover                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+| 26     | Distributed System Testing            | Chaos Engineering, Fault Injection, Jepsen-Style Testing, Simulation Testing                                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 27     | Geo-Distributed Systems               | Multi-Region Replication, Data Locality, Latency-Aware Routing, Conflict-Free Geo-Replication                   | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Architecture Patterns                 | Event Sourcing, CQRS, Lambda/Kappa Architecture, Actor Model                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Production Case Studies               | Distributed Databases, Distributed Caches, Distributed Queues, Global-Scale Consensus Systems                   | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Distributed Systems Interview Mastery | Consensus Questions, CAP Trade-off Scenarios, Design Discussions, Mock Interviews                               | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Cloud Computing Roadmap
