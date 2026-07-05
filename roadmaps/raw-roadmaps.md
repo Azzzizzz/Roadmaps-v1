@@ -645,7 +645,7 @@
 | 21     | Web Performance                            | Critical Rendering Path, Core Web Vitals, Lazy Loading, Code Splitting, Image Optimization, Bundle Analysis      | Advanced     | ⭐⭐⭐⭐⭐      |
 | 22     | Accessibility (a11y)                       | WCAG, ARIA, Semantic Markup, Keyboard Navigation, Screen Readers, Color Contrast, Accessibility Testing Tools    | Advanced     | ⭐⭐⭐⭐⭐      |
 | 23     | Browser Rendering & Internals              | Parsing, Reflow, Repaint, Compositing, GPU Rendering, requestAnimationFrame, Layout Thrashing                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Frontend Security                          | XSS, CSRF, Content Security Policy, Same-Origin Policy, CORS, Secure Token Storage, Dependency Vulnerabilities   | Advanced     | ⭐⭐⭐⭐⭐      |
+| 24     | Frontend Security                          | Secure Token Storage, Dependency Vulnerabilities (frontend-specific); XSS/CSRF/CSP/CORS depth — see Security Engineering Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
 | 25     | Progressive Web Apps & Offline             | Service Workers, Web App Manifest, Caching Strategies, Push Notifications, Offline-First Design                  | Advanced     | ⭐⭐⭐☆☆      |
 | 26     | Micro-Frontends & Large-Scale Architecture | Module Federation, Micro-Frontend Patterns, Shared Dependencies, Monorepos, Team Ownership Boundaries            | Advanced     | ⭐⭐⭐⭐☆      |
 | 27     | Internationalization & Localization        | i18n Libraries, Locale Formatting, RTL Support, Translation Management, Pluralization                            | Advanced     | ⭐⭐⭐☆☆      |
@@ -704,7 +704,7 @@
 | 8      | Database Performance                      | Query Optimization, Execution Plans, Indexing, Connection Pooling, Transactions, Replication, Partitioning             | Intermediate | ⭐⭐⭐⭐⭐      |
 | 9      | Caching Strategies                        | Redis, Memcached, Browser Cache, CDN, Cache Patterns, Cache Invalidation, Eviction Policies                            | Intermediate | ⭐⭐⭐⭐⭐      |
 | 10     | Backend Performance                       | API Optimization, Serialization, Pagination, Batch Processing, Async Processing, Streaming, Lazy Loading               | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | Frontend Performance                      | Critical Rendering Path, Code Splitting, Lazy Loading, Virtualization, Image Optimization, Web Vitals                  | Intermediate | ⭐⭐⭐⭐☆      |
+| 11     | Frontend Performance                      | Frontend performance in the context of overall system tuning; full depth — see Frontend Engineering Roadmap           | Intermediate | ⭐⭐⭐⭐☆      |
 | 12     | Concurrent & Parallel Programming         | Multithreading, Async Programming, Thread Pools, Worker Pools, Synchronization, Lock-Free Programming                  | Advanced     | ⭐⭐⭐⭐⭐      |
 | 13     | Load Balancing & Scalability              | Horizontal Scaling, Vertical Scaling, Auto Scaling, Load Balancers, Reverse Proxies, Stateless Services                | Advanced     | ⭐⭐⭐⭐⭐      |
 | 14     | Distributed System Performance            | Replication, Sharding, Partitioning, Consistent Hashing, Distributed Caching, Event-Driven Performance                 | Advanced     | ⭐⭐⭐⭐⭐      |
