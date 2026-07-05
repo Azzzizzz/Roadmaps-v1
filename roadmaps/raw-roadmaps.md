@@ -119,7 +119,7 @@
 | 21     | Virtualization                     | Hypervisors, Virtual Machines, Hardware Virtualization, Full vs Para Virtualization                                             | Advanced     | ⭐⭐⭐⭐☆      |
 | 22     | Containers                         | Linux Namespaces, cgroups, Container Isolation, Docker Runtime Basics, OCI Concepts                                             | Advanced     | ⭐⭐⭐⭐☆      |
 | 23     | Performance & Monitoring           | CPU Utilization, Memory Usage, I/O Bottlenecks, Load Average, Profiling, Performance Tuning                                     | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Reliability & Fault Tolerance      | Crash Recovery, Checkpointing, Watchdogs, Failover Concepts, System Reliability                                                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Reliability & Fault Tolerance      | Crash recovery, checkpointing, watchdogs (OS-level); cross-cutting resilience patterns — see Observability, Reliability & SRE Roadmap | Advanced     | ⭐⭐⭐⭐☆      |
 | 25     | Distributed OS Concepts            | Distributed Systems Basics, Clock Synchronization, Distributed Scheduling, Resource Sharing                                     | Advanced     | ⭐⭐⭐☆☆      |
 | 26     | Operating System Design            | Monolithic Kernel, Microkernel, Hybrid Kernel, Exokernel, Modular Kernel Architecture                                           | Advanced     | ⭐⭐⭐⭐☆      |
 | 27     | Real-Time Operating Systems (RTOS) | Hard vs Soft RTOS, Scheduling, Interrupt Handling, Embedded OS Concepts                                                         | Advanced     | ⭐⭐⭐☆☆      |
@@ -148,7 +148,7 @@
 | 13     | WebSockets & Realtime Communication | WebSockets, SSE, Long Polling, WebRTC Basics, Persistent Connections                                       | Intermediate | ⭐⭐⭐⭐☆      |
 | 14     | Proxies & Gateways                  | Forward Proxy, Reverse Proxy, API Gateway, Load Balancer Basics, BFF Pattern                               | Intermediate | ⭐⭐⭐⭐☆      |
 | 15     | Load Balancing                      | L4 vs L7 Load Balancing, Round Robin, Least Connections, Sticky Sessions, Health Checks                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 16     | Caching & CDN                       | Browser Cache, Proxy Cache, HTTP Cache Headers, CDN, Edge Locations, Cache-Control, ETag                   | Intermediate | ⭐⭐⭐⭐☆      |
+| 16     | Caching & CDN                       | Network-layer cache headers overview; full depth — see Caching & Storage Systems Roadmap                   | Intermediate | ⭐⭐⭐⭐☆      |
 | 17     | Authentication over Networks        | Basic Auth, API Keys, Bearer Tokens, JWT, OAuth2, OpenID Connect, Session Authentication                   | Intermediate | ⭐⭐⭐⭐⭐      |
 | 18     | Network Security                    | Firewalls, VPN, IDS, IPS, DDoS Protection, Rate Limiting, WAF, Zero Trust Basics                           | Intermediate | ⭐⭐⭐⭐☆      |
 | 19     | Network Performance                 | Latency, Throughput, Bandwidth, Jitter, Packet Loss, MTU, Keep-Alive, Compression                          | Intermediate | ⭐⭐⭐⭐⭐      |
@@ -159,7 +159,7 @@
 | 24     | Distributed Networking              | Multi-Region Networking, Global Load Balancing, Geo Routing, Anycast, Failover Strategies                  | Advanced     | ⭐⭐⭐⭐☆      |
 | 25     | Messaging Protocols                 | SMTP, IMAP, POP3, MQTT, AMQP, Kafka Protocol Basics, gRPC Streaming                                        | Advanced     | ⭐⭐⭐☆☆      |
 | 26     | Network Observability               | Network Monitoring, Logs, Metrics, Tracing, Packet Capture, Traffic Analysis                               | Advanced     | ⭐⭐⭐⭐☆      |
-| 27     | High Availability & Reliability     | Redundancy, Failover, Active-Active, Active-Passive, Health Checks, Circuit Breakers                       | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | High Availability & Reliability     | Network-level redundancy overview; full depth — see Observability, Reliability & SRE Roadmap               | Advanced     | ⭐⭐⭐⭐⭐      |
 | 28     | Networking Design Patterns          | Client-Server, Reverse Proxy, API Gateway, CDN Architecture, Edge Computing, Zero Trust Network            | Advanced     | ⭐⭐⭐⭐⭐      |
 | 29     | Production Networking Case Studies  | Web Applications, Microservices Networking, Chat Systems, Video Streaming, CDN, Global Applications        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Networking Interview Mastery        | Common Networking Questions, Protocol Selection, Trade-offs, Debugging Scenarios, Mock Interviews          | Advanced     | ⭐⭐⭐⭐⭐      |
@@ -220,7 +220,7 @@
 | 9      | Database Integration            | ORM, Query Builders, Transactions, Connection Pooling, Repository Pattern, Migrations                                         | Intermediate | ⭐⭐⭐⭐⭐      |
 | 10     | SQL Databases                   | PostgreSQL, MySQL, Schema Design, Indexing, Query Optimization, Transactions                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
 | 11     | NoSQL Databases                 | MongoDB, Document Modeling, Aggregation, Indexing, Replication, Sharding                                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Caching                         | Redis, Cache Patterns, TTL, Cache Invalidation, Distributed Cache, Session Store                                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Caching                         | Session Store usage in a backend service; full depth — see Caching & Storage Systems Roadmap                                  | Intermediate | ⭐⭐⭐⭐⭐      |
 | 13     | File & Object Storage           | Local Storage, S3, GCS, Azure Blob, Presigned URLs, Multipart Uploads, CDN Integration                                        | Intermediate | ⭐⭐⭐⭐☆      |
 | 14     | Background Jobs                 | Cron Jobs, Queues, Workers, Scheduling, Retry, Dead Letter Queue                                                              | Intermediate | ⭐⭐⭐⭐☆      |
 | 15     | Message Brokers                 | Kafka, RabbitMQ, BullMQ, Pub/Sub, Event Streaming, Ordering, Retry Strategies                                                 | Advanced     | ⭐⭐⭐⭐⭐      |
@@ -230,7 +230,7 @@
 | 19     | Real-Time Communication         | WebSockets, SSE, Long Polling, Socket Scaling, Presence Systems, Notifications                                                | Advanced     | ⭐⭐⭐⭐☆      |
 | 20     | Security                        | OWASP Top 10, XSS, CSRF, SQL Injection, Secrets Management, Encryption, Rate Limiting                                         | Intermediate | ⭐⭐⭐⭐⭐      |
 | 21     | Logging & Observability         | Structured Logging, Correlation IDs, Metrics, Distributed Tracing, Health Checks, OpenTelemetry                               | Intermediate | ⭐⭐⭐⭐☆      |
-| 22     | Error Handling & Resilience     | Exception Handling, Retry, Timeout, Circuit Breaker, Bulkhead, Graceful Degradation                                           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 22     | Error Handling & Resilience     | Exception handling in application code; resilience patterns — see Observability, Reliability & SRE Roadmap                    | Intermediate | ⭐⭐⭐⭐⭐      |
 | 23     | Performance Optimization        | Connection Pooling, Query Optimization, Compression, Streaming, Lazy Loading, Profiling                                       | Advanced     | ⭐⭐⭐⭐☆      |
 | 24     | Scalability                     | Horizontal Scaling, Stateless Services, Sticky Sessions, Load Balancing, Auto Scaling                                         | Advanced     | ⭐⭐⭐⭐⭐      |
 | 25     | Testing                         | Unit Testing, Integration Testing, API Testing, Contract Testing, Mocking, Test Containers                                    | Intermediate | ⭐⭐⭐⭐⭐      |
@@ -270,7 +270,7 @@
 | 19     | API Documentation                  | OpenAPI/Swagger, API Blueprint, Documentation-as-Code, Interactive Docs, SDK Generation                                   | Intermediate | ⭐⭐⭐⭐⭐      |
 | 20     | Contract-First Design              | Schema-Driven Development, Contract Testing, Consumer-Driven Contracts, Mock Servers                                      | Advanced     | ⭐⭐⭐⭐☆      |
 | 21     | API Security                       | OWASP API Security Top 10, Injection, Broken Object-Level Authorization (BOLA), Mass Assignment, Input Validation         | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | Caching for APIs                   | HTTP Caching Headers, ETag, Conditional Requests, Cache Invalidation, CDN-Fronted APIs                                    | Intermediate | ⭐⭐⭐⭐☆      |
+| 22     | Caching for APIs                   | API-specific caching concerns (conditional requests, CDN-fronted APIs); full depth — see Caching & Storage Systems Roadmap | Intermediate | ⭐⭐⭐⭐☆      |
 | 23     | API Performance                    | Response Compression, Batching, Payload Size Optimization, Connection Reuse, N+1 Avoidance                                | Advanced     | ⭐⭐⭐⭐☆      |
 | 24     | Public & Partner APIs              | Developer Portals, API Keys & Quotas, SLAs, Monetization Models, Third-Party Onboarding                                   | Advanced     | ⭐⭐⭐⭐☆      |
 | 25     | API Observability                  | Request Logging, Tracing, Usage Analytics, Latency Monitoring, Error Rate Dashboards                                      | Advanced     | ⭐⭐⭐⭐☆      |
@@ -370,8 +370,8 @@
 | 5      | API Design                       | REST APIs, GraphQL, gRPC, API Gateway, Versioning, Pagination, Filtering, Sorting, Idempotency, Rate Limiting                                                          | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 6      | Load Balancing                   | Reverse Proxy, L4 vs L7 Load Balancer, Round Robin, Least Connections, Sticky Sessions, Health Checks, Global Load Balancing                                           | Intermediate | ⭐⭐⭐⭐⭐      |
 | 7      | Proxy & Gateway                  | Forward Proxy, Reverse Proxy, API Gateway, Service Gateway, BFF Pattern, Edge Routing                                                                                  | Intermediate | ⭐⭐⭐⭐☆      |
-| 8      | Caching                          | Client Cache, Server Cache, Redis, Memcached, CDN Cache, Cache Aside, Write Through, Write Back, Cache Invalidation, Eviction Policies                                 | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Content Delivery Network (CDN)   | Edge Locations, Cache Distribution, Static Assets, Dynamic Content, Signed URLs, Geo Routing                                                                           | Intermediate | ⭐⭐⭐⭐☆      |
+| 8      | Caching                          | Caching as a system-design building block (placement, trade-offs); full depth — see Caching & Storage Systems Roadmap                                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Content Delivery Network (CDN)   | CDN's role in system design; full depth — see Caching & Storage Systems Roadmap                                                                           | Intermediate | ⭐⭐⭐⭐☆      |
 | 10     | Database Fundamentals            | SQL, NoSQL, CAP Theorem, ACID, BASE, Indexing, Query Optimization, Transactions                                                                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 11     | Database Scaling                 | Replication, Sharding, Partitioning, Read Replicas, Write Scaling, Multi-Master, Consistency Trade-offs                                                                | Intermediate | ⭐⭐⭐⭐⭐      |
 | 12     | Data Storage Systems             | Object Storage, Blob Storage, Block Storage, File Storage, Distributed File Systems, Storage Tiers                                                                     | Intermediate | ⭐⭐⭐⭐☆      |
@@ -383,8 +383,8 @@
 | 18     | Distributed Coordination         | ZooKeeper, etcd, Distributed Locks, Leader Election, Coordination Services, Heartbeats                                                                                 | Advanced     | ⭐⭐⭐⭐☆      |
 | 19     | Consistency & Transactions       | Strong Consistency, Eventual Consistency, Read/Write Consistency, Optimistic Locking, Pessimistic Locking, Two-Phase Commit, Saga Pattern                              | Advanced     | ⭐⭐⭐⭐⭐      |
 | 20     | Scalability Patterns             | Horizontal Scaling, Vertical Scaling, Stateless Services, Stateful Services, Auto Scaling, Elasticity                                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 21     | Reliability & Fault Tolerance    | Retry, Timeout, Circuit Breaker, Bulkhead, Fallback, Graceful Degradation, Disaster Recovery                                                                           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | High Availability                | Failover, Active-Active, Active-Passive, Redundancy, Multi-AZ, Multi-Region Deployments                                                                                | Advanced     | ⭐⭐⭐⭐⭐      |
+| 21     | Reliability & Fault Tolerance    | Reliability as a system-design requirement; full depth — see Observability, Reliability & SRE Roadmap                                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | High Availability                | HA as a system-design requirement; full depth — see Observability, Reliability & SRE Roadmap                                                                           | Advanced     | ⭐⭐⭐⭐⭐      |
 | 23     | Security in Distributed Systems  | Authentication, Authorization, OAuth2, JWT, API Keys, mTLS, Secrets Management, Encryption, Rate Limiting                                                              | Intermediate | ⭐⭐⭐⭐⭐      |
 | 24     | Observability                    | Logging, Metrics, Distributed Tracing, Correlation IDs, Prometheus, Grafana, OpenTelemetry, Alerting                                                                   | Intermediate | ⭐⭐⭐⭐☆      |
 | 25     | Cloud Architecture               | Compute, Networking, IAM, Managed Databases, Object Storage, Serverless, Multi-Cloud Basics                                                                            | Intermediate | ⭐⭐⭐⭐☆      |
@@ -424,13 +424,13 @@
 | 16     | Sharding & Partitioning               | Range Partitioning, Hash Partitioning, Partition Rebalancing, Hot Partitions                                    | Intermediate | ⭐⭐⭐⭐⭐      |
 | 17     | Distributed Transactions              | Two-Phase Commit, Three-Phase Commit, Distributed Deadlocks, XA Transactions                                    | Advanced     | ⭐⭐⭐⭐⭐      |
 | 18     | Saga Pattern & Compensation           | Long-Running Workflows overview; full depth — see Message Queues & Event-Driven Systems Roadmap (Saga Pattern)                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Distributed Caching                   | Cache Coherence, Invalidation Across Nodes, Distributed Cache Topologies                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 19     | Distributed Caching                   | Cache coherence across nodes (distributed-systems angle); pattern depth — see Caching & Storage Systems Roadmap | Intermediate | ⭐⭐⭐⭐☆      |
 | 20     | Load Balancing in Distributed Systems | Client-Side vs Server-Side, Consistent Hashing for LB, Health-Aware Routing                                     | Intermediate | ⭐⭐⭐⭐☆      |
 | 21     | Distributed Logging & Tracing         | Correlation IDs, Distributed Tracing, Clock Skew in Logs, Causal Tracing                                        | Advanced     | ⭐⭐⭐⭐☆      |
 | 22     | Idempotency & Exactly-Once Semantics  | At-Most-Once, At-Least-Once, Exactly-Once, Deduplication Strategies                                             | Advanced     | ⭐⭐⭐⭐⭐      |
 | 23     | Distributed File & Storage Systems    | GFS/HDFS Concepts, Replication, Chunking, Metadata Servers                                                      | Advanced     | ⭐⭐⭐⭐☆      |
 | 24     | Scalability Patterns                  | Horizontal Scaling, Statelessness, Partition-Tolerant Design, Elastic Scaling                                   | Advanced     | ⭐⭐⭐⭐⭐      |
-| 25     | Fault Tolerance & Self-Healing        | Redundancy, Replication for Recovery, Failure Detection, Automatic Failover                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+| 25     | Fault Tolerance & Self-Healing        | Failure detection algorithms (distributed-systems angle); operational patterns — see Observability, Reliability & SRE Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
 | 26     | Distributed System Testing            | Chaos Engineering, Fault Injection, Jepsen-Style Testing, Simulation Testing                                    | Advanced     | ⭐⭐⭐⭐☆      |
 | 27     | Geo-Distributed Systems               | Multi-Region Replication, Data Locality, Latency-Aware Routing, Conflict-Free Geo-Replication                   | Advanced     | ⭐⭐⭐⭐☆      |
 | 28     | Architecture Patterns                 | Lambda/Kappa Architecture, Actor Model; CQRS & Event Sourcing — see Message Queues & Event-Driven Systems Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
@@ -455,14 +455,14 @@
 | 11     | Managed Databases                     | RDS, Cloud SQL, Azure SQL, MongoDB Atlas, DynamoDB, Firestore, Cosmos DB, Managed Redis                                    | Intermediate | ⭐⭐⭐⭐⭐      |
 | 12     | Messaging & Event Services            | SQS, SNS, EventBridge, Pub/Sub, Event Grid, Service Bus, Managed Kafka                                                     | Intermediate | ⭐⭐⭐⭐☆      |
 | 13     | Load Balancing & Traffic Management   | Application Load Balancer, Network Load Balancer, Global Load Balancer, Traffic Routing, Health Checks                     | Intermediate | ⭐⭐⭐⭐⭐      |
-| 14     | CDN & Edge Computing                  | CloudFront, Cloud CDN, Azure CDN, Edge Locations, Edge Caching, Signed URLs, Edge Functions                                | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | CDN & Edge Computing                  | Provider CDN services (CloudFront, Cloud CDN, Azure CDN), Edge Functions; caching mechanics — see Caching & Storage Systems Roadmap | Intermediate | ⭐⭐⭐⭐☆      |
 | 15     | Security in the Cloud                 | Security Groups, Network ACLs, KMS, Secret Managers, WAF, Shield, Encryption, Zero Trust                                   | Intermediate | ⭐⭐⭐⭐⭐      |
 | 16     | Monitoring & Logging                  | CloudWatch, Azure Monitor, Cloud Monitoring, Logging, Metrics, Alerting, Dashboards                                        | Intermediate | ⭐⭐⭐⭐☆      |
 | 17     | Infrastructure as Code (IaC)          | Terraform, CloudFormation, ARM/Bicep, Pulumi, Infrastructure Automation, State Management                                  | Advanced     | ⭐⭐⭐⭐⭐      |
 | 18     | Cloud Containers                      | Container Registries, ECS, EKS, GKE, AKS, Cloud Run, Azure Container Apps                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
 | 19     | Cloud Kubernetes                      | Managed Kubernetes, Node Pools, Autoscaling, Ingress Controllers, Storage Classes, Cluster Operations                      | Advanced     | ⭐⭐⭐⭐⭐      |
 | 20     | Cloud CI/CD Integration               | GitHub Actions, Cloud Build, CodePipeline, Azure DevOps, Artifact Registry, Deployment Pipelines                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 21     | High Availability & Disaster Recovery | Multi-AZ, Multi-Region, Replication, Backup, Failover, Disaster Recovery Strategies                                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 21     | High Availability & Disaster Recovery | Cloud-provider HA/DR mechanisms (Multi-AZ, Multi-Region); full depth — see Observability, Reliability & SRE Roadmap        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 22     | Scalability & Performance             | Horizontal Scaling, Vertical Scaling, Auto Scaling, Caching, Performance Optimization, Capacity Planning                   | Advanced     | ⭐⭐⭐⭐⭐      |
 | 23     | Cost Optimization (FinOps)            | Pricing Models, Cost Explorer, Reserved Instances, Savings Plans, Spot Instances, Resource Optimization, Budgeting         | Advanced     | ⭐⭐⭐⭐☆      |
 | 24     | Multi-Cloud & Hybrid Cloud            | Hybrid Architecture, Cross-Cloud Networking, Vendor Lock-In, Data Replication, Cloud Bursting                              | Advanced     | ⭐⭐⭐⭐☆      |
