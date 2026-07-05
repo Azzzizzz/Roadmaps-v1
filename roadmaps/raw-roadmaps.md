@@ -34,21 +34,22 @@
 
 16. [Security Engineering Roadmap](#security-engineering-roadmap)
 17. [Performance Engineering Roadmap](#performance-engineering-roadmap)
+18. [Software Testing Roadmap](#software-testing-roadmap)
 
 **AI / ML**
 
-18. [AI Engineering Roadmap](#ai-engineering-roadmap)
-19. [LLM Engineering Roadmap](#llm-engineering-roadmap)
-20. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
-21. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
-22. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+19. [AI Engineering Roadmap](#ai-engineering-roadmap)
+20. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+21. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+22. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+23. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
 
 **Career & Interview Skills**
 
-23. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
-24. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
-25. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
-26. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
+24. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+25. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+26. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+27. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
 
@@ -683,6 +684,42 @@
 | 28     | Performance Tools & Ecosystem             | JMeter, k6, Gatling, Locust, Lighthouse, wrk, Apache Benchmark (ab), Perf, Flame Graphs                                | Advanced     | ⭐⭐⭐⭐☆      |
 | 29     | Performance Architecture Reviews          | Performance Budgets, SLA/SLO/SLI, Capacity Reviews, Scaling Strategies, Architecture Trade-offs                        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Performance Engineering Interview Mastery | Performance Interview Questions, Bottleneck Analysis, Optimization Scenarios, Case Studies, Mock Interviews            | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Software Testing Roadmap
+
+| Module | High-Level Topic                       | Key Subtopics                                                                                         | Level        | Importance |
+| ------ | -------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Testing Fundamentals                   | Why Testing, Cost of Bugs, Testing Levels, Manual vs Automated Testing, Test Lifecycle                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | The Test Pyramid                       | Unit, Integration, End-to-End, Trade-offs, Ice Cream Cone Anti-Pattern, Testing Trophy                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Unit Testing Fundamentals              | Test Structure (AAA), Assertions, Test Isolation, Naming Conventions, Frameworks                      | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Test Doubles                           | Mocks, Stubs, Fakes, Spies, Dummies, When to Use Each                                                 | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Mocking Strategies                     | Dependency Injection for Testability, Mocking Frameworks, Over-Mocking Pitfalls                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 6      | Test-Driven Development (TDD)          | Red-Green-Refactor, Writing Tests First, TDD Katas, Benefits & Limitations                            | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Behavior-Driven Development (BDD)      | Given-When-Then, Gherkin, Living Documentation, Collaboration with Non-Engineers                      | Intermediate | ⭐⭐⭐⭐☆      |
+| 8      | Code Coverage                          | Line/Branch/Path Coverage, Coverage Tools, Coverage Targets, Coverage as a Vanity Metric              | Intermediate | ⭐⭐⭐⭐☆      |
+| 9      | Integration Testing                    | Testing Component Boundaries, Database Integration Tests, Test Containers, In-Memory Fakes            | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | API & Contract Testing                 | API Test Automation, Consumer-Driven Contracts (Pact), Schema Validation, Contract Breakage Detection | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | End-to-End Testing                     | Browser Automation, Selenium/Playwright/Cypress, Test Environments, Flakiness Sources                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | UI Testing                             | Component Testing, Visual Regression Testing, Snapshot Testing, Cross-Browser Testing                 | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | Test Data Management                   | Fixtures, Factories, Seed Data, Test Data Isolation, Data Anonymization                               | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | Flaky Tests                            | Common Causes, Detection, Quarantine Strategies, Retry Policies, Root Cause Elimination               | Advanced     | ⭐⭐⭐⭐⭐      |
+| 15     | Property-Based Testing                 | Generators, Shrinking, Invariants, Fuzzing Overview, Property-Based Frameworks                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 16     | Mutation Testing                       | Mutants, Kill Ratio, Mutation Testing Tools, Assessing Test Suite Quality                             | Advanced     | ⭐⭐⭐☆☆      |
+| 17     | Performance & Load Testing             | Load Testing, Stress Testing, Soak Testing, Spike Testing, Benchmarking Tools                         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Security Testing                       | SAST, DAST, Dependency Scanning, Penetration Testing Basics, Fuzz Testing                             | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Accessibility Testing                  | Automated a11y Checks, Screen Reader Testing, WCAG Compliance Testing                                 | Advanced     | ⭐⭐⭐☆☆      |
+| 20     | Chaos & Resilience Testing             | Fault Injection, Chaos Monkey, Game Days, Failure Scenario Design                                     | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Testing Asynchronous & Concurrent Code | Race Conditions, Testing Queues/Events, Deterministic Test Design                                     | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Testing Microservices                  | Service Virtualization, Contract Testing Across Services, Testing in Isolation vs Integration         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Testing in CI/CD                       | Test Automation Pipelines, Parallel Test Execution, Test Sharding, Quality Gates                      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 24     | Test Environments & Data Strategy      | Staging, Ephemeral Environments, Production-Like Data, Environment Parity                             | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Regression Testing                     | Regression Suites, Test Selection Strategies, Risk-Based Testing                                      | Intermediate | ⭐⭐⭐⭐☆      |
+| 26     | Testing Strategy & Test Plans          | Risk Assessment, Test Case Design, Exploratory Testing, Test Reporting                                | Intermediate | ⭐⭐⭐⭐☆      |
+| 27     | Testing Culture & Ownership            | Shift-Left Testing, Developer-Owned Testing, QA Collaboration Models                                  | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Testing AI/ML-Powered Systems          | Non-Determinism, Golden Datasets, Evaluation Metrics, Regression Detection in Model Outputs           | Advanced     | ⭐⭐⭐⭐☆      |
+| 29     | Production Testing Case Studies        | Payment Flow Testing, High-Traffic API Testing, Multi-Tenant Testing Strategies                       | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Testing Interview Mastery              | Test Strategy Questions, Debugging Flaky Tests, Test Design Scenarios, Mock Interviews                | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## AI Engineering Roadmap
