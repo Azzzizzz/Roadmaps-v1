@@ -149,7 +149,7 @@
 | 14     | Proxies & Gateways                  | Forward Proxy, Reverse Proxy, API Gateway, Load Balancer Basics, BFF Pattern                               | Intermediate | ⭐⭐⭐⭐☆      |
 | 15     | Load Balancing                      | L4 vs L7 Load Balancing, Round Robin, Least Connections, Sticky Sessions, Health Checks                    | Intermediate | ⭐⭐⭐⭐⭐      |
 | 16     | Caching & CDN                       | Network-layer cache headers overview; full depth — see Caching & Storage Systems Roadmap                   | Intermediate | ⭐⭐⭐⭐☆      |
-| 17     | Authentication over Networks        | Basic Auth, API Keys, Bearer Tokens, JWT, OAuth2, OpenID Connect, Session Authentication                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 17     | Authentication over Networks        | Auth mechanics at the protocol level; full depth — see Security Engineering Roadmap                        | Intermediate | ⭐⭐⭐⭐⭐      |
 | 18     | Network Security                    | Firewalls, VPN, IDS, IPS, DDoS Protection, Rate Limiting, WAF, Zero Trust Basics                           | Intermediate | ⭐⭐⭐⭐☆      |
 | 19     | Network Performance                 | Latency, Throughput, Bandwidth, Jitter, Packet Loss, MTU, Keep-Alive, Compression                          | Intermediate | ⭐⭐⭐⭐⭐      |
 | 20     | Network Troubleshooting             | Ping, Traceroute, nslookup, dig, curl, telnet, netstat, tcpdump, Wireshark Basics                          | Intermediate | ⭐⭐⭐⭐☆      |
@@ -215,8 +215,8 @@
 | 4      | HTTP Deep Dive                  | Methods, Status Codes, Headers, Cookies, Sessions, CORS, Content Negotiation, Compression, Caching                            | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 5      | Backend Project Structure       | Folder Structure, Layered Architecture, Modularization, Dependency Management, Configuration Management                       | Fundamental  | ⭐⭐⭐⭐☆      |
 | 6      | Validation & Serialization      | DTOs, Validation, Serialization, Transformation, Schema Validation, Data Sanitization                                         | Fundamental  | ⭐⭐⭐⭐☆      |
-| 7      | Authentication                  | Sessions, JWT, OAuth2, OpenID Connect, MFA, SSO, Refresh Tokens                                                               | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Authorization                   | RBAC, ABAC, Permissions, Roles, Resource Ownership, Policy-Based Access Control                                               | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Authentication                  | Refresh token handling in a backend service; full depth — see Security Engineering Roadmap                                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Authorization                   | Resource ownership checks in application code; full depth — see Security Engineering Roadmap                                  | Intermediate | ⭐⭐⭐⭐⭐      |
 | 9      | Database Integration            | ORM, Query Builders, Transactions, Connection Pooling, Repository Pattern, Migrations                                         | Intermediate | ⭐⭐⭐⭐⭐      |
 | 10     | SQL Databases                   | PostgreSQL, MySQL, Schema Design, Indexing, Query Optimization, Transactions                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
 | 11     | NoSQL Databases                 | MongoDB, Document Modeling, Aggregation, Indexing, Replication, Sharding                                                      | Intermediate | ⭐⭐⭐⭐⭐      |
@@ -259,8 +259,8 @@
 | 8      | API Versioning                     | URI Versioning, Header Versioning, Content Negotiation Versioning, Deprecation Strategy, Breaking vs Non-Breaking Changes | Intermediate | ⭐⭐⭐⭐⭐      |
 | 9      | Idempotency & Safety               | Idempotency Keys, Safe Methods, Retry Semantics, Duplicate Request Handling                                               | Intermediate | ⭐⭐⭐⭐⭐      |
 | 10     | Error Handling & Status Design     | Error Response Formats, Problem Details (RFC 7807), Error Codes, Validation Errors, Client vs Server Errors               | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | Authentication for APIs            | API Keys, Basic Auth, Bearer Tokens, JWT, OAuth2 Flows, OpenID Connect                                                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Authorization & Access Control     | RBAC, ABAC, Scopes, Resource Ownership, Fine-Grained Permissions                                                          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | Authentication for APIs            | API key/token delivery conventions; full depth — see Security Engineering Roadmap                                        | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Authorization & Access Control     | OAuth2 scopes for API access; full depth — see Security Engineering Roadmap                                              | Intermediate | ⭐⭐⭐⭐⭐      |
 | 13     | Rate Limiting & Throttling         | Fixed Window, Sliding Window, Token Bucket, Leaky Bucket, Per-Client Limits, 429 Responses                                | Intermediate | ⭐⭐⭐⭐⭐      |
 | 14     | API Gateway Patterns               | Routing, Aggregation, Backend-for-Frontend, Request Transformation, Composition                                           | Intermediate | ⭐⭐⭐⭐⭐      |
 | 15     | GraphQL Fundamentals               | Schema Definition, Queries, Mutations, Subscriptions, Resolvers, Type System                                              | Intermediate | ⭐⭐⭐⭐⭐      |
@@ -669,7 +669,7 @@
 | 9      | API Security                       | REST Security, GraphQL Security, gRPC Security, API Keys, JWT Validation, Rate Limiting, API Gateway Security                                                                             | Intermediate | ⭐⭐⭐⭐⭐      |
 | 10     | Secure Communication               | HTTPS, TLS, SSL, mTLS, Certificate Management, Perfect Forward Secrecy                                                                                                                    | Intermediate | ⭐⭐⭐⭐⭐      |
 | 11     | Secrets Management                 | Environment Variables, Secret Managers, Vault, Key Rotation, Credential Management                                                                                                        | Intermediate | ⭐⭐⭐⭐☆      |
-| 12     | Database Security                  | Database Authentication, Encryption at Rest, Encryption in Transit, Row-Level Security, Auditing                                                                                          | Intermediate | ⭐⭐⭐⭐☆      |
+| 12     | Database Security                  | Security principles applied to data stores; full depth — see Database Engineering Roadmap                                                                                                | Intermediate | ⭐⭐⭐⭐☆      |
 | 13     | Infrastructure Security            | Firewalls, WAF, VPN, Bastion Hosts, Network Segmentation, Zero Trust Networking                                                                                                           | Advanced     | ⭐⭐⭐⭐☆      |
 | 14     | Cloud Security                     | Shared Responsibility Model, IAM, Security Groups, Network ACLs, KMS, Cloud Security Best Practices                                                                                       | Advanced     | ⭐⭐⭐⭐⭐      |
 | 15     | Container & Kubernetes Security    | Image Scanning, Runtime Security, RBAC, Pod Security, Network Policies, Secrets, Admission Controllers                                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
@@ -696,13 +696,13 @@
 | ------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
 | 1      | Performance Engineering Fundamentals      | Performance vs Scalability, Latency, Throughput, Response Time, Resource Utilization, Bottlenecks, Performance Metrics | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 2      | Performance Analysis                      | CPU Profiling, Memory Profiling, I/O Analysis, Network Analysis, Benchmarking, Performance Baselines                   | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Time & Space Complexity                   | Big O, Big Θ, Big Ω, Amortized Analysis, Algorithm Optimization, Data Structure Selection                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Time & Space Complexity                   | Algorithm optimization & data structure selection for performance; Big-O depth — see DSA Roadmap (dsa/foundations)     | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 4      | CPU Optimization                          | CPU Scheduling, Context Switching, Parallelism, SIMD Basics, CPU Cache, Branch Prediction, Affinity                    | Intermediate | ⭐⭐⭐⭐☆      |
 | 5      | Memory Optimization                       | Stack vs Heap, Memory Allocation, Garbage Collection, Memory Leaks, Object Pooling, Fragmentation                      | Intermediate | ⭐⭐⭐⭐⭐      |
 | 6      | Disk & Storage Performance                | HDD vs SSD, Sequential vs Random I/O, Storage Latency, File System Performance, Storage Tuning                         | Intermediate | ⭐⭐⭐⭐☆      |
 | 7      | Network Performance                       | Latency, Throughput, Bandwidth, Packet Loss, Compression, Keep-Alive, Connection Reuse, HTTP Optimization              | Intermediate | ⭐⭐⭐⭐⭐      |
 | 8      | Database Performance                      | Query Optimization, Execution Plans, Indexing, Connection Pooling, Transactions, Replication, Partitioning             | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Caching Strategies                        | Redis, Memcached, Browser Cache, CDN, Cache Patterns, Cache Invalidation, Eviction Policies                            | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Caching Strategies                        | Caching as a performance lever (when/where to cache); full depth — see Caching & Storage Systems Roadmap               | Intermediate | ⭐⭐⭐⭐⭐      |
 | 10     | Backend Performance                       | API Optimization, Serialization, Pagination, Batch Processing, Async Processing, Streaming, Lazy Loading               | Intermediate | ⭐⭐⭐⭐⭐      |
 | 11     | Frontend Performance                      | Frontend performance in the context of overall system tuning; full depth — see Frontend Engineering Roadmap           | Intermediate | ⭐⭐⭐⭐☆      |
 | 12     | Concurrent & Parallel Programming         | Multithreading, Async Programming, Thread Pools, Worker Pools, Synchronization, Lock-Free Programming                  | Advanced     | ⭐⭐⭐⭐⭐      |
@@ -715,7 +715,7 @@
 | 19     | Performance Testing                       | Load Testing, Stress Testing, Spike Testing, Endurance Testing, Volume Testing, Scalability Testing                    | Advanced     | ⭐⭐⭐⭐⭐      |
 | 20     | Observability for Performance             | Metrics, Logging, Distributed Tracing, APM Tools, Prometheus, Grafana, OpenTelemetry                                   | Advanced     | ⭐⭐⭐⭐☆      |
 | 21     | Performance Patterns                      | Connection Pooling, Object Pooling, Lazy Initialization, Batch Processing, Async Processing, Circuit Breakers          | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | High Performance Architectures            | CQRS, Event Sourcing, CDN, Edge Computing, Read Replicas, Multi-Level Caching                                          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | High Performance Architectures            | Read Replicas; CQRS/Event Sourcing — see Message Queues & Event-Driven Systems Roadmap; CDN/caching — see Caching & Storage Systems Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
 | 23     | Production Performance Tuning             | Bottleneck Identification, Capacity Planning, Resource Optimization, Performance Regression Analysis                   | Advanced     | ⭐⭐⭐⭐⭐      |
 | 24     | Performance Anti-Patterns                 | N+1 Queries, Chatty APIs, Overfetching, Underfetching, Excessive Locking, Memory Bloat, Hot Partitions                 | Advanced     | ⭐⭐⭐⭐⭐      |
 | 25     | Performance in Real-Time Systems          | WebSockets, Streaming, Low-Latency Messaging, High-Frequency Processing, Backpressure Handling                         | Advanced     | ⭐⭐⭐⭐☆      |
