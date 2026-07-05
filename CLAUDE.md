@@ -40,6 +40,34 @@ file's flair.
   (e.g. `dsa-practice/linear-ds-tier2-3.md`). They are curated question lists with tags +
   example `input → output` — **never solutions**. Name as `<scope>-<tier>.md`.
 
+## DSA practice banks (two styles)
+
+Both live in `roadmaps/01-foundations/dsa-practice/`:
+
+1. **Structure-first, frequency-ranked (Tier-2/3)** — `linear-ds-tier2-3.md`. Sections are data
+   structures; rows ranked by interview frequency with a ▶️ easy→hard practice-order column.
+   For **foundations / breadth** (startups, service-based, mid MNCs). *Keep as-is.*
+2. **Pattern-first (Tier-1 / MAANG)** — `<topic>-patterns-tier1.md`. Sections are algorithmic
+   patterns; rows ordered **easy→hard**, medium/hard skew. For **interview pattern-recognition**.
+
+### Tier-1 pattern-first rules
+- **Two file kinds:** *structure files* (arrays, strings, linked-list, stacks-queues, trees,
+  graphs, heaps) and *paradigm files* (dynamic-programming, backtracking).
+- **One home per problem. Classification — ask in order:**
+  1. Core skill is DP or backtracking → **paradigm file**.
+  2. Manipulates a specific structure (LL / tree / graph / heap) → **that structure's file**.
+  3. Else → **arrays or strings** by input, grouped by the technique-pattern.
+- **Classify by the skill tested, not the helper DS used** (monotonic-stack-on-array → arrays).
+- **Techniques stay as sections, not files:** binary search, two pointers, sliding window,
+  greedy, prefix sum, bit manipulation (input is always a concrete array/string).
+- **Anti-duplication:** one home file; elsewhere use a one-line "see also" link, never a copy.
+- **Every file opens with a "how to use / why pattern-first" block**, then a 🧭 Pattern Index
+  (🔍 recognize-cues + jump links); each section = recognize-cue + easy→hard table
+  (`# · Question · Diff · example in→out · Freq`).
+- **Build order (foundations-first):** linked-list → stacks-queues → trees → graphs → heaps → dp → backtracking.
+- When the DP & Backtracking paradigm files are built, the existing "DP on Strings" / "Backtracking"
+  sections in `strings-patterns-tier1.md` become **cross-links** to them (no duplication).
+
 ## Status markers (put in each file's header)
 
 - `🚧 Stub` — created, not yet written
