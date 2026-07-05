@@ -200,7 +200,7 @@
 | 29     | Database Observability           | Query Logs, Slow Query Logs, Metrics, Monitoring, Alerting, Capacity Planning                                     | Advanced     | ⭐⭐⭐⭐☆      |
 | 30     | Cloud Databases                  | Amazon RDS, Aurora, Cloud SQL, Azure SQL, MongoDB Atlas, DynamoDB, Firestore                                      | Advanced     | ⭐⭐⭐⭐☆      |
 | 31     | Data Warehousing & Analytics     | OLTP vs OLAP, Star Schema, Snowflake Schema, ETL, ELT, Data Lakes, Warehouses                                     | Advanced     | ⭐⭐⭐⭐☆      |
-| 32     | Database Architecture Patterns   | CQRS, Event Sourcing, Polyglot Persistence, Read/Write Separation, Database-per-Service                           | Advanced     | ⭐⭐⭐⭐⭐      |
+| 32     | Database Architecture Patterns   | Polyglot Persistence, Read/Write Separation, Database-per-Service; CQRS & Event Sourcing — see Message Queues & Event-Driven Systems Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
 | 33     | Production Database Case Studies | E-commerce, Banking, Social Media, Messaging, Inventory, Payment, Analytics, Multi-Tenant Systems                 | Advanced     | ⭐⭐⭐⭐⭐      |
 | 34     | Database Interview Mastery       | SQL Interview Questions, Schema Design, Query Optimization, Trade-offs, Case Studies, Mock Interviews             | Advanced     | ⭐⭐⭐⭐⭐      |
 
@@ -226,7 +226,7 @@
 | 15     | Message Brokers                 | Kafka, RabbitMQ, BullMQ, Pub/Sub, Event Streaming, Ordering, Retry Strategies                                                 | Advanced     | ⭐⭐⭐⭐⭐      |
 | 16     | Event-Driven Architecture       | Events, Producers, Consumers, Domain Events, Integration Events, Event Bus                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
 | 17     | Microservices                   | Service Decomposition, Service Discovery, API Gateway, Service Communication, Shared Libraries                                | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Distributed Backend Patterns    | Saga Pattern, CQRS, Event Sourcing, Distributed Transactions, Outbox Pattern                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Distributed Backend Patterns    | Distributed Transactions overview; full depth on Saga Pattern, CQRS, Event Sourcing, Outbox Pattern — see Message Queues & Event-Driven Systems Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
 | 19     | Real-Time Communication         | WebSockets, SSE, Long Polling, Socket Scaling, Presence Systems, Notifications                                                | Advanced     | ⭐⭐⭐⭐☆      |
 | 20     | Security                        | OWASP Top 10, XSS, CSRF, SQL Injection, Secrets Management, Encryption, Rate Limiting                                         | Intermediate | ⭐⭐⭐⭐⭐      |
 | 21     | Logging & Observability         | Structured Logging, Correlation IDs, Metrics, Distributed Tracing, Health Checks, OpenTelemetry                               | Intermediate | ⭐⭐⭐⭐☆      |
