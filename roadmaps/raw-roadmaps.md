@@ -1,129 +1,121 @@
+## Table of Contents
 
+**Foundations**
 
-## Low-Level Design (LLD) Master Roadmap (Fundamentals → Advanced)
+1. [Networking Roadmap](#networking-roadmap)
+2. [Operating Systems Roadmap](#operating-systems-roadmap)
+3. [Database Engineering Roadmap](#database-engineering-roadmap)
+4. [Caching & Storage Systems Roadmap](#caching--storage-systems-roadmap)
 
-| Module | High-Level Topic                       | Key Subtopics                                                                                                                                        |     Level    | Importance |
-| :----: | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | :----------: | :--------: |
-|    1   | Programming Foundations                | Programming Paradigms, Variables, Functions, Scope, Modules, Packages, Code Organization                                                             |  Fundamental |    ⭐⭐⭐⭐⭐   |
-|    2   | Object-Oriented Programming (OOP)      | Classes, Objects, Constructors, Access Modifiers, Encapsulation, Abstraction, Inheritance, Polymorphism, Object Lifecycle                            |  Fundamental |    ⭐⭐⭐⭐⭐   |
-|    3   | Object Relationships                   | Association, Aggregation, Composition, Dependency, Inheritance, HAS-A vs IS-A, Ownership, Cardinality                                                |  Fundamental |    ⭐⭐⭐⭐⭐   |
-|    4   | Object Modeling                        | Entity Identification, Attributes, Behaviors, Domain Modeling, Value Objects, Entities, Aggregates                                                   |  Fundamental |    ⭐⭐⭐⭐⭐   |
-|    5   | UML & Design Documentation             | Class Diagrams, Sequence Diagrams, Activity Diagrams, State Diagrams, Use Case Diagrams, Component Diagrams, Package Diagrams                        |  Fundamental |    ⭐⭐⭐⭐☆   |
-|    6   | SOLID Principles                       | SRP, OCP, LSP, ISP, DIP, Violations, Refactoring using SOLID                                                                                         | Intermediate |    ⭐⭐⭐⭐⭐   |
-|    7   | Software Design Principles             | DRY, KISS, YAGNI, Separation of Concerns, High Cohesion, Low Coupling, Law of Demeter, Composition over Inheritance, Principle of Least Astonishment | Intermediate |    ⭐⭐⭐⭐⭐   |
-|    8   | Clean Code                             | Naming, Functions, Classes, Comments, Formatting, Readability, Error Messages, Constants, Code Smells                                                | Intermediate |    ⭐⭐⭐⭐⭐   |
-|    9   | Refactoring                            | Code Smells, Extract Method, Extract Class, Replace Conditional with Polymorphism, Inline Method, Move Method, Rename, Simplification                | Intermediate |    ⭐⭐⭐⭐☆   |
-|   10   | Design Patterns - Creational           | Singleton, Factory Method, Abstract Factory, Builder, Prototype                                                                                      | Intermediate |    ⭐⭐⭐⭐⭐   |
-|   11   | Design Patterns - Structural           | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy                                                                                      | Intermediate |    ⭐⭐⭐⭐⭐   |
-|   12   | Design Patterns - Behavioral           | Strategy, Observer, State, Command, Chain of Responsibility, Mediator, Iterator, Template Method, Visitor, Memento, Interpreter                      |   Advanced   |    ⭐⭐⭐⭐⭐   |
-|   13   | Dependency Management                  | Dependency Injection, IoC, Constructor Injection, Property Injection, Service Locator, Dependency Graphs                                             | Intermediate |    ⭐⭐⭐⭐☆   |
-|   14   | API & Class Design                     | Public APIs, Interfaces, DTOs, Value Objects, Immutable Objects, Builders, Validation, Exception Contracts                                           | Intermediate |    ⭐⭐⭐⭐⭐   |
-|   15   | Exception & Error Handling             | Exceptions, Custom Exceptions, Validation, Retry, Fallback, Idempotency, Fail Fast, Error Boundaries                                                 | Intermediate |    ⭐⭐⭐⭐☆   |
-|   16   | Collections & Data Modeling            | Choosing Data Structures, Collections Design, Generic Types, Equality, Hashing, Comparators, Iterators                                               | Intermediate |    ⭐⭐⭐⭐☆   |
-|   17   | Concurrency Fundamentals               | Processes, Threads, Synchronization, Race Conditions, Locks, Mutexes, Semaphores, Deadlocks, Immutability                                            |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   18   | Concurrent Object Design               | Thread-safe Classes, Producer-Consumer, Thread Pools, Executors, Futures, Async Patterns, Synchronization Strategies                                 |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   19   | Memory & Object Lifecycle              | Stack vs Heap, Garbage Collection, Memory Leaks, Object Pooling, References, Resource Management                                                     |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   20   | Logging & Observability                | Logging Levels, Structured Logging, Correlation IDs, Audit Logs, Metrics, Tracing Basics                                                             | Intermediate |    ⭐⭐⭐☆☆   |
-|   21   | Configuration & Extensibility          | Configuration Management, Feature Flags, Plug-in Architecture, Strategy Registration, Factory Registration                                           |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   22   | Validation & Business Rules            | Validation Layers, Domain Rules, Business Constraints, Specification Pattern                                                                         | Intermediate |    ⭐⭐⭐⭐☆   |
-|   23   | Persistence Layer Design               | Repository Pattern, DAO, Unit of Work, ORM Concepts, Transactions, Mapping Layers                                                                    |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   24   | Layered Architecture                   | Presentation Layer, Application Layer, Domain Layer, Infrastructure Layer, Layer Responsibilities                                                    |   Advanced   |    ⭐⭐⭐⭐⭐   |
-|   25   | Architectural Styles                   | Layered Architecture, Hexagonal, Clean Architecture, Onion Architecture, DDD Overview                                                                |   Advanced   |    ⭐⭐⭐⭐⭐   |
-|   26   | Domain-Driven Design (LLD Perspective) | Entities, Value Objects, Aggregates, Repositories, Domain Services, Bounded Context (Intro)                                                          |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   27   | Testing for LLD                        | Unit Testing, Testability, Mocking, Dependency Injection for Testing, Test Doubles, TDD Basics                                                       | Intermediate |    ⭐⭐⭐⭐☆   |
-|   28   | Security-Aware Design                  | Authentication Concepts, Authorization, Secure Object Design, Input Validation, Secrets Handling                                                     |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   29   | Performance-Oriented Design            | Lazy Loading, Object Pooling, Flyweight, Caching, Memory Optimization, Performance Trade-offs                                                        |   Advanced   |    ⭐⭐⭐⭐☆   |
-|   30   | Machine Coding Fundamentals            | Requirement Analysis, Incremental Design, Domain Modeling, Extensibility, Code Organization                                                          |   Advanced   |    ⭐⭐⭐⭐⭐   |
-|   31   | Machine Coding Case Studies            | Parking Lot, Splitwise, Elevator, Library, ATM, Chess, BookMyShow, Ride Sharing, Food Delivery, Hotel Booking, Notification System                   |   Advanced   |    ⭐⭐⭐⭐⭐   |
-|   32   | Production LLD Case Studies            | Auth Service, Chat Service, Payment Service, Order Service, Inventory Service, Notification Service, Media Service, Workflow Engine                  |   Advanced   |    ⭐⭐⭐⭐⭐   |
-|   33   | Interview Design Strategy              | Requirement Clarification, Assumption Gathering, Trade-offs, Whiteboarding, Communication, Incremental Design                                        |   Advanced   |    ⭐⭐⭐⭐⭐   |
-|   34   | LLD Interview Mastery                  | Common Interview Questions, Pattern Recognition, Design Decision Frameworks, Anti-patterns, Time Management, Mock Interviews                         |   Advanced   |    ⭐⭐⭐⭐⭐   |
+**Backend**
+
+5. [Backend Engineering Roadmap](#backend-engineering-roadmap)
+6. [Message Queues & Event-Driven Systems Roadmap](#message-queues--event-driven-systems-roadmap)
+
+**System Design**
+
+7. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
+8. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
+
+**Infrastructure**
+
+9. [Cloud Computing Roadmap](#cloud-computing-roadmap)
+10. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
+11. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
+12. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
+
+**Quality**
+
+13. [Security Engineering Roadmap](#security-engineering-roadmap)
+14. [Performance Engineering Roadmap](#performance-engineering-roadmap)
+
+**AI / ML**
+
+15. [AI Engineering Roadmap](#ai-engineering-roadmap)
+16. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+17. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+18. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+19. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+
+**Career & Interview Skills**
+
+20. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+21. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+22. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+23. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
 
+## Networking Roadmap
+
+| Module | High-Level Topic                    | Key Subtopics                                                                                              | Level        | Importance |
+| ------ | ----------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Networking Fundamentals             | What is Networking, Network Types, LAN, WAN, MAN, PAN, Client-Server, Peer-to-Peer, Network Topologies     | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | OSI Model                           | Physical, Data Link, Network, Transport, Session, Presentation, Application Layers, Layer Responsibilities | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | TCP/IP Model                        | Internet Layer, Transport Layer, Application Layer, Network Access Layer, Protocol Stack                   | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | IP Addressing                       | IPv4, IPv6, Public vs Private IP, Static vs Dynamic IP, CIDR, Subnetting, NAT                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Routing & Switching                 | Routers, Switches, Hubs, Gateways, Routing Tables, Static Routing, Dynamic Routing, VLANs                  | Fundamental  | ⭐⭐⭐⭐☆      |
+| 6      | DNS                                 | DNS Resolution, DNS Records (A, AAAA, CNAME, MX, TXT, NS), Recursive Resolver, Authoritative DNS, TTL      | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 7      | TCP                                 | Three-Way Handshake, Four-Way Termination, Flow Control, Congestion Control, Retransmission, Windowing     | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 8      | UDP                                 | Connectionless Communication, Datagram, Reliability Trade-offs, Streaming, Gaming, VoIP Use Cases          | Fundamental  | ⭐⭐⭐⭐☆      |
+| 9      | HTTP Fundamentals                   | HTTP Lifecycle, Methods, Status Codes, Headers, Cookies, Sessions, MIME Types                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 10     | HTTPS & TLS                         | SSL/TLS Handshake, Certificates, Certificate Authorities (CA), Encryption, mTLS, HSTS                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | HTTP Versions                       | HTTP/1.1, HTTP/2, HTTP/3, Multiplexing, Server Push, QUIC                                                  | Intermediate | ⭐⭐⭐⭐☆      |
+| 12     | REST, GraphQL & gRPC                | REST Principles, GraphQL Protocol, gRPC, Protobuf, API Communication Patterns                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | WebSockets & Realtime Communication | WebSockets, SSE, Long Polling, WebRTC Basics, Persistent Connections                                       | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | Proxies & Gateways                  | Forward Proxy, Reverse Proxy, API Gateway, Load Balancer Basics, BFF Pattern                               | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | Load Balancing                      | L4 vs L7 Load Balancing, Round Robin, Least Connections, Sticky Sessions, Health Checks                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | Caching & CDN                       | Browser Cache, Proxy Cache, HTTP Cache Headers, CDN, Edge Locations, Cache-Control, ETag                   | Intermediate | ⭐⭐⭐⭐☆      |
+| 17     | Authentication over Networks        | Basic Auth, API Keys, Bearer Tokens, JWT, OAuth2, OpenID Connect, Session Authentication                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 18     | Network Security                    | Firewalls, VPN, IDS, IPS, DDoS Protection, Rate Limiting, WAF, Zero Trust Basics                           | Intermediate | ⭐⭐⭐⭐☆      |
+| 19     | Network Performance                 | Latency, Throughput, Bandwidth, Jitter, Packet Loss, MTU, Keep-Alive, Compression                          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 20     | Network Troubleshooting             | Ping, Traceroute, nslookup, dig, curl, telnet, netstat, tcpdump, Wireshark Basics                          | Intermediate | ⭐⭐⭐⭐☆      |
+| 21     | Cloud Networking                    | VPC, Subnets, Internet Gateway, NAT Gateway, Route Tables, Security Groups, Network ACLs                   | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Container Networking                | Docker Networking, Kubernetes Networking, CNI, Services, Ingress, Service Discovery                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Service Communication               | Service Discovery, Service Mesh, Sidecars, Envoy, Istio Basics, Internal APIs                              | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Distributed Networking              | Multi-Region Networking, Global Load Balancing, Geo Routing, Anycast, Failover Strategies                  | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Messaging Protocols                 | SMTP, IMAP, POP3, MQTT, AMQP, Kafka Protocol Basics, gRPC Streaming                                        | Advanced     | ⭐⭐⭐☆☆      |
+| 26     | Network Observability               | Network Monitoring, Logs, Metrics, Tracing, Packet Capture, Traffic Analysis                               | Advanced     | ⭐⭐⭐⭐☆      |
+| 27     | High Availability & Reliability     | Redundancy, Failover, Active-Active, Active-Passive, Health Checks, Circuit Breakers                       | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Networking Design Patterns          | Client-Server, Reverse Proxy, API Gateway, CDN Architecture, Edge Computing, Zero Trust Network            | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Production Networking Case Studies  | Web Applications, Microservices Networking, Chat Systems, Video Streaming, CDN, Global Applications        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Networking Interview Mastery        | Common Networking Questions, Protocol Selection, Trade-offs, Debugging Scenarios, Mock Interviews          | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
-# High-Level Design (HLD) / System Design Roadmap
+## Operating Systems Roadmap
 
-| Module | High-Level Topic                 | Key Subtopics                                                                                                                                                          | Level        | Importance |
-| ------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | System Design Fundamentals       | What is System Design, Functional Requirements, Non-Functional Requirements, Scalability, Availability, Reliability, Maintainability, Performance, Latency, Throughput | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Requirement Analysis             | Functional Requirements, Non-Functional Requirements, Assumptions, Constraints, Use Cases, Capacity Planning, Traffic Estimation, Storage Estimation                   | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Capacity Estimation              | QPS, DAU/MAU, Read/Write Ratio, Storage Growth, Bandwidth, Memory Estimation, Server Sizing, Cost Estimation                                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | Networking Fundamentals          | OSI Model, TCP/IP, HTTP, HTTPS, HTTP/2, HTTP/3, DNS, TLS/SSL, WebSockets, SSE, gRPC, REST                                                                              | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | API Design                       | REST APIs, GraphQL, gRPC, API Gateway, Versioning, Pagination, Filtering, Sorting, Idempotency, Rate Limiting                                                          | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 6      | Load Balancing                   | Reverse Proxy, L4 vs L7 Load Balancer, Round Robin, Least Connections, Sticky Sessions, Health Checks, Global Load Balancing                                           | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Proxy & Gateway                  | Forward Proxy, Reverse Proxy, API Gateway, Service Gateway, BFF Pattern, Edge Routing                                                                                  | Intermediate | ⭐⭐⭐⭐☆      |
-| 8      | Caching                          | Client Cache, Server Cache, Redis, Memcached, CDN Cache, Cache Aside, Write Through, Write Back, Cache Invalidation, Eviction Policies                                 | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Content Delivery Network (CDN)   | Edge Locations, Cache Distribution, Static Assets, Dynamic Content, Signed URLs, Geo Routing                                                                           | Intermediate | ⭐⭐⭐⭐☆      |
-| 10     | Database Fundamentals            | SQL, NoSQL, CAP Theorem, ACID, BASE, Indexing, Query Optimization, Transactions                                                                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 11     | Database Scaling                 | Replication, Sharding, Partitioning, Read Replicas, Write Scaling, Multi-Master, Consistency Trade-offs                                                                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Data Storage Systems             | Object Storage, Blob Storage, Block Storage, File Storage, Distributed File Systems, Storage Tiers                                                                     | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | Search Systems                   | Elasticsearch, OpenSearch, Inverted Index, Full Text Search, Ranking, Auto Complete, Faceted Search                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 14     | Message Queues                   | Kafka, RabbitMQ, ActiveMQ, BullMQ, SQS, Pub/Sub, Ordering, Retry, DLQ, Event Streaming                                                                                 | Intermediate | ⭐⭐⭐⭐⭐      |
-| 15     | Event-Driven Architecture        | Events, Producers, Consumers, Event Bus, Pub/Sub, Event Sourcing, CQRS Introduction                                                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 16     | Microservices Architecture       | Monolith vs Microservices, Service Discovery, API Gateway, Service Registry, Service Communication, Distributed Transactions                                           | Intermediate | ⭐⭐⭐⭐⭐      |
-| 17     | Distributed Systems Fundamentals | CAP Theorem, PACELC, Consistency Models, Replication, Consensus, Quorum, Leader Election, Gossip Protocol                                                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Distributed Coordination         | ZooKeeper, etcd, Distributed Locks, Leader Election, Coordination Services, Heartbeats                                                                                 | Advanced     | ⭐⭐⭐⭐☆      |
-| 19     | Consistency & Transactions       | Strong Consistency, Eventual Consistency, Read/Write Consistency, Optimistic Locking, Pessimistic Locking, Two-Phase Commit, Saga Pattern                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 20     | Scalability Patterns             | Horizontal Scaling, Vertical Scaling, Stateless Services, Stateful Services, Auto Scaling, Elasticity                                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 21     | Reliability & Fault Tolerance    | Retry, Timeout, Circuit Breaker, Bulkhead, Fallback, Graceful Degradation, Disaster Recovery                                                                           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | High Availability                | Failover, Active-Active, Active-Passive, Redundancy, Multi-AZ, Multi-Region Deployments                                                                                | Advanced     | ⭐⭐⭐⭐⭐      |
-| 23     | Security in Distributed Systems  | Authentication, Authorization, OAuth2, JWT, API Keys, mTLS, Secrets Management, Encryption, Rate Limiting                                                              | Intermediate | ⭐⭐⭐⭐⭐      |
-| 24     | Observability                    | Logging, Metrics, Distributed Tracing, Correlation IDs, Prometheus, Grafana, OpenTelemetry, Alerting                                                                   | Intermediate | ⭐⭐⭐⭐☆      |
-| 25     | Cloud Architecture               | Compute, Networking, IAM, Managed Databases, Object Storage, Serverless, Multi-Cloud Basics                                                                            | Intermediate | ⭐⭐⭐⭐☆      |
-| 26     | Containers & Orchestration       | Docker, Images, Containers, Kubernetes, Pods, Services, Deployments, Ingress, Service Mesh Basics                                                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 27     | DevOps & Deployment Strategies   | CI/CD, Blue-Green Deployment, Canary Deployment, Rolling Updates, Rollbacks, Infrastructure as Code                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 28     | Performance Engineering          | Bottleneck Analysis, Profiling, Connection Pooling, Compression, Query Optimization, Load Testing, Stress Testing                                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 29     | Architecture Patterns            | Layered Architecture, Clean Architecture, Hexagonal Architecture, Onion Architecture, Event-Driven Architecture, CQRS, Event Sourcing                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Design Trade-offs                | SQL vs NoSQL, Sync vs Async, Cache vs DB, Consistency vs Availability, Monolith vs Microservices, Cost vs Performance                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 31     | Multi-Tenant Systems             | Tenant Isolation, Shared Database, Separate Database, Shared Schema, Data Isolation Strategies                                                                         | Advanced     | ⭐⭐⭐⭐☆      |
-| 32     | Realtime Systems                 | Chat Systems, Notifications, Presence, WebSockets, SSE, Long Polling, Push Notifications                                                                               | Advanced     | ⭐⭐⭐⭐☆      |
-| 33     | Geo-Distributed Systems          | Geo Replication, Multi-Region Deployments, Global Traffic Routing, Data Locality, Disaster Recovery                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 34     | Large-Scale Production Systems   | Service Mesh, Distributed Configuration, Feature Flags, Workflow Engines, Scheduler Design, Stream Processing                                                          | Advanced     | ⭐⭐⭐⭐⭐      |
-| 35     | System Design Case Studies       | URL Shortener, Instagram, WhatsApp, Uber, YouTube, Netflix, Dropbox, Google Drive, Twitter/X, Payment Gateway, Food Delivery, Ride Sharing                             | Advanced     | ⭐⭐⭐⭐⭐      |
-| 36     | Interview Framework              | Requirement Gathering, Assumption Validation, Capacity Estimation, Component Design, Trade-offs, Bottleneck Analysis, Whiteboarding                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 37     | System Design Interview Mastery  | Design Templates, Communication Strategy, Common Pitfalls, Time Management, Mock Interviews, Company-Specific Patterns                                                 | Advanced     | ⭐⭐⭐⭐⭐      |
-
-
-## Backend Engineering Roadmap
-
-| Module | High-Level Topic                | Key Subtopics                                                                                                                 | Level        | Importance |
-| ------ | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Backend Fundamentals            | Client-Server Architecture, Request-Response Lifecycle, HTTP Basics, Stateless vs Stateful, Backend Responsibilities          | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Programming Language Mastery    | JavaScript/TypeScript (or Java/C#/Go), Modules, Async Programming, Error Handling, Memory Management                          | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | API Fundamentals                | REST, GraphQL, gRPC, API Design Principles, CRUD, Resource Modeling                                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | HTTP Deep Dive                  | Methods, Status Codes, Headers, Cookies, Sessions, CORS, Content Negotiation, Compression, Caching                            | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Backend Project Structure       | Folder Structure, Layered Architecture, Modularization, Dependency Management, Configuration Management                       | Fundamental  | ⭐⭐⭐⭐☆      |
-| 6      | Validation & Serialization      | DTOs, Validation, Serialization, Transformation, Schema Validation, Data Sanitization                                         | Fundamental  | ⭐⭐⭐⭐☆      |
-| 7      | Authentication                  | Sessions, JWT, OAuth2, OpenID Connect, MFA, SSO, Refresh Tokens                                                               | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Authorization                   | RBAC, ABAC, Permissions, Roles, Resource Ownership, Policy-Based Access Control                                               | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Database Integration            | ORM, Query Builders, Transactions, Connection Pooling, Repository Pattern, Migrations                                         | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | SQL Databases                   | PostgreSQL, MySQL, Schema Design, Indexing, Query Optimization, Transactions                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | NoSQL Databases                 | MongoDB, Document Modeling, Aggregation, Indexing, Replication, Sharding                                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Caching                         | Redis, Cache Patterns, TTL, Cache Invalidation, Distributed Cache, Session Store                                              | Intermediate | ⭐⭐⭐⭐⭐      |
-| 13     | File & Object Storage           | Local Storage, S3, GCS, Azure Blob, Presigned URLs, Multipart Uploads, CDN Integration                                        | Intermediate | ⭐⭐⭐⭐☆      |
-| 14     | Background Jobs                 | Cron Jobs, Queues, Workers, Scheduling, Retry, Dead Letter Queue                                                              | Intermediate | ⭐⭐⭐⭐☆      |
-| 15     | Message Brokers                 | Kafka, RabbitMQ, BullMQ, Pub/Sub, Event Streaming, Ordering, Retry Strategies                                                 | Advanced     | ⭐⭐⭐⭐⭐      |
-| 16     | Event-Driven Architecture       | Events, Producers, Consumers, Domain Events, Integration Events, Event Bus                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 17     | Microservices                   | Service Decomposition, Service Discovery, API Gateway, Service Communication, Shared Libraries                                | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Distributed Backend Patterns    | Saga Pattern, CQRS, Event Sourcing, Distributed Transactions, Outbox Pattern                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Real-Time Communication         | WebSockets, SSE, Long Polling, Socket Scaling, Presence Systems, Notifications                                                | Advanced     | ⭐⭐⭐⭐☆      |
-| 20     | Security                        | OWASP Top 10, XSS, CSRF, SQL Injection, Secrets Management, Encryption, Rate Limiting                                         | Intermediate | ⭐⭐⭐⭐⭐      |
-| 21     | Logging & Observability         | Structured Logging, Correlation IDs, Metrics, Distributed Tracing, Health Checks, OpenTelemetry                               | Intermediate | ⭐⭐⭐⭐☆      |
-| 22     | Error Handling & Resilience     | Exception Handling, Retry, Timeout, Circuit Breaker, Bulkhead, Graceful Degradation                                           | Intermediate | ⭐⭐⭐⭐⭐      |
-| 23     | Performance Optimization        | Connection Pooling, Query Optimization, Compression, Streaming, Lazy Loading, Profiling                                       | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Scalability                     | Horizontal Scaling, Stateless Services, Sticky Sessions, Load Balancing, Auto Scaling                                         | Advanced     | ⭐⭐⭐⭐⭐      |
-| 25     | Testing                         | Unit Testing, Integration Testing, API Testing, Contract Testing, Mocking, Test Containers                                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 26     | API Documentation               | OpenAPI/Swagger, GraphQL Schema Docs, Versioning, SDK Generation                                                              | Intermediate | ⭐⭐⭐⭐☆      |
-| 27     | Configuration Management        | Environment Variables, Secrets, Feature Flags, Configuration Providers                                                        | Intermediate | ⭐⭐⭐⭐☆      |
-| 28     | CI/CD for Backend               | Build Pipelines, Automated Testing, Dockerization, Deployment Strategies, Rollbacks                                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 29     | Containerization & Deployment   | Docker, Kubernetes Basics, Reverse Proxy, Nginx, Service Deployment                                                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 30     | Cloud Backend Services          | Compute, Managed Databases, Object Storage, Serverless, Queues, IAM                                                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 31     | Backend Architecture            | Layered Architecture, Clean Architecture, Hexagonal Architecture, DDD Basics, Repository Pattern                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 32     | Production Readiness            | Monitoring, Alerting, Backup, Disaster Recovery, Health Checks, SLO/SLI, Incident Handling                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 33     | Production Backend Case Studies | Auth Service, User Service, Notification Service, Payment Service, Order Service, Chat Service, Media Service, Search Service | Advanced     | ⭐⭐⭐⭐⭐      |
-| 34     | Backend Interview Mastery       | API Design Interviews, Backend Scenarios, Debugging, Production Problems, Mock Interviews                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+| Module | High-Level Topic                   | Key Subtopics                                                                                                            | Level        | Importance |
+| ------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------ | ---------- |
+| 1      | Operating System Fundamentals      | What is an Operating System, OS Architecture, Kernel, User Space, System Calls, Boot Process, Types of OS                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Processes                          | Process Lifecycle, Process Control Block (PCB), Process States, Context Switching, Process Creation, Process Termination | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Threads                            | Threads vs Processes, User Threads, Kernel Threads, Multithreading Models, Thread Lifecycle                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | CPU Scheduling                     | FCFS, SJF, Priority Scheduling, Round Robin, Multilevel Queue, Multilevel Feedback Queue, Scheduling Metrics             | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Process Synchronization            | Critical Section, Race Conditions, Mutex, Semaphore, Spinlock, Monitors, Condition Variables                             | Intermediate | ⭐⭐⭐⭐⭐      |
+| 6      | Deadlocks                          | Deadlock Conditions, Prevention, Avoidance, Detection, Recovery, Banker's Algorithm                                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Inter-Process Communication (IPC)  | Shared Memory, Pipes, Named Pipes, Message Queues, Signals, Sockets, Memory Mapping                                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Memory Management                  | Logical vs Physical Memory, Address Space, Paging, Segmentation, Virtual Memory, Swapping                                | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Virtual Memory                     | Demand Paging, Page Tables, TLB, Copy-on-Write, Memory Allocation, Memory Protection                                     | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Page Replacement Algorithms        | FIFO, LRU, LFU, Optimal, Clock Algorithm, Thrashing                                                                      | Intermediate | ⭐⭐⭐⭐☆      |
+| 11     | File Systems                       | File System Architecture, Inodes, Directories, File Allocation Methods, Journaling, Mounting                             | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Disk Management                    | HDD vs SSD, Disk Scheduling, RAID Levels, Storage Hierarchy, Disk Performance                                            | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | I/O Systems                        | Interrupts, DMA, Device Drivers, Buffering, Caching, Spooling, Polling                                                   | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | System Calls                       | Process Management, File Operations, Memory Management, Networking System Calls, Signals                                 | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | Concurrency                        | Parallelism, Synchronization Strategies, Lock-Free Programming, Atomic Operations, Memory Barriers                       | Advanced     | ⭐⭐⭐⭐⭐      |
+| 16     | Multicore & Parallel Computing     | CPU Cores, Hyper-Threading, NUMA, CPU Affinity, Parallel Execution Models                                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 17     | Memory Optimization                | Heap vs Stack, Garbage Collection Concepts, Memory Leaks, Fragmentation, Resource Management                             | Advanced     | ⭐⭐⭐⭐☆      |
+| 18     | Linux Internals                    | Linux Kernel Architecture, Scheduler, cgroups, Namespaces, Proc Filesystem, Sysfs                                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Security Fundamentals              | User Privileges, File Permissions, Access Control, Sandboxing, SELinux/AppArmor Basics                                   | Intermediate | ⭐⭐⭐⭐☆      |
+| 20     | Virtualization                     | Hypervisors, Virtual Machines, Hardware Virtualization, Full vs Para Virtualization                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Containers                         | Linux Namespaces, cgroups, Container Isolation, Docker Runtime Basics, OCI Concepts                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Performance & Monitoring           | CPU Utilization, Memory Usage, I/O Bottlenecks, Load Average, Profiling, Performance Tuning                              | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Reliability & Fault Tolerance      | Crash Recovery, Checkpointing, Watchdogs, Failover Concepts, System Reliability                                          | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Distributed OS Concepts            | Distributed Systems Basics, Clock Synchronization, Distributed Scheduling, Resource Sharing                              | Advanced     | ⭐⭐⭐☆☆      |
+| 25     | Operating System Design            | Monolithic Kernel, Microkernel, Hybrid Kernel, Exokernel, Modular Kernel Architecture                                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 26     | Real-Time Operating Systems (RTOS) | Hard vs Soft RTOS, Scheduling, Interrupt Handling, Embedded OS Concepts                                                  | Advanced     | ⭐⭐⭐☆☆      |
+| 27     | Production OS Concepts             | Resource Limits, Process Isolation, Service Management, Daemons, Logging, Crash Dumps                                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Operating System Case Studies      | Linux, Windows, macOS, Android, iOS, Containerized Environments                                                          | Advanced     | ⭐⭐⭐⭐☆      |
+| 29     | OS & Backend Integration           | Process Management in Servers, Thread Pools, Async I/O, Event Loops, Network Stack Interaction                           | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Operating System Interview Mastery | Common OS Interview Questions, Scheduling Problems, Memory Scenarios, Concurrency Questions, Debugging, Mock Interviews  | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Database Engineering Roadmap
@@ -201,6 +193,47 @@
 | 29     | Production Case Studies             | Image CDN, Video Streaming, File Sharing, Document Storage, Media Service, Avatar Service, Backup Service         | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Caching & Storage Interview Mastery | Cache Strategy Selection, Storage Trade-offs, CDN Design, Redis Scenarios, Object Storage Design, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
 
+
+## Backend Engineering Roadmap
+
+| Module | High-Level Topic                | Key Subtopics                                                                                                                 | Level        | Importance |
+| ------ | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Backend Fundamentals            | Client-Server Architecture, Request-Response Lifecycle, HTTP Basics, Stateless vs Stateful, Backend Responsibilities          | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Programming Language Mastery    | JavaScript/TypeScript (or Java/C#/Go), Modules, Async Programming, Error Handling, Memory Management                          | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | API Fundamentals                | REST, GraphQL, gRPC, API Design Principles, CRUD, Resource Modeling                                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | HTTP Deep Dive                  | Methods, Status Codes, Headers, Cookies, Sessions, CORS, Content Negotiation, Compression, Caching                            | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Backend Project Structure       | Folder Structure, Layered Architecture, Modularization, Dependency Management, Configuration Management                       | Fundamental  | ⭐⭐⭐⭐☆      |
+| 6      | Validation & Serialization      | DTOs, Validation, Serialization, Transformation, Schema Validation, Data Sanitization                                         | Fundamental  | ⭐⭐⭐⭐☆      |
+| 7      | Authentication                  | Sessions, JWT, OAuth2, OpenID Connect, MFA, SSO, Refresh Tokens                                                               | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Authorization                   | RBAC, ABAC, Permissions, Roles, Resource Ownership, Policy-Based Access Control                                               | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Database Integration            | ORM, Query Builders, Transactions, Connection Pooling, Repository Pattern, Migrations                                         | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | SQL Databases                   | PostgreSQL, MySQL, Schema Design, Indexing, Query Optimization, Transactions                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | NoSQL Databases                 | MongoDB, Document Modeling, Aggregation, Indexing, Replication, Sharding                                                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Caching                         | Redis, Cache Patterns, TTL, Cache Invalidation, Distributed Cache, Session Store                                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | File & Object Storage           | Local Storage, S3, GCS, Azure Blob, Presigned URLs, Multipart Uploads, CDN Integration                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | Background Jobs                 | Cron Jobs, Queues, Workers, Scheduling, Retry, Dead Letter Queue                                                              | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | Message Brokers                 | Kafka, RabbitMQ, BullMQ, Pub/Sub, Event Streaming, Ordering, Retry Strategies                                                 | Advanced     | ⭐⭐⭐⭐⭐      |
+| 16     | Event-Driven Architecture       | Events, Producers, Consumers, Domain Events, Integration Events, Event Bus                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 17     | Microservices                   | Service Decomposition, Service Discovery, API Gateway, Service Communication, Shared Libraries                                | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Distributed Backend Patterns    | Saga Pattern, CQRS, Event Sourcing, Distributed Transactions, Outbox Pattern                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Real-Time Communication         | WebSockets, SSE, Long Polling, Socket Scaling, Presence Systems, Notifications                                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Security                        | OWASP Top 10, XSS, CSRF, SQL Injection, Secrets Management, Encryption, Rate Limiting                                         | Intermediate | ⭐⭐⭐⭐⭐      |
+| 21     | Logging & Observability         | Structured Logging, Correlation IDs, Metrics, Distributed Tracing, Health Checks, OpenTelemetry                               | Intermediate | ⭐⭐⭐⭐☆      |
+| 22     | Error Handling & Resilience     | Exception Handling, Retry, Timeout, Circuit Breaker, Bulkhead, Graceful Degradation                                           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 23     | Performance Optimization        | Connection Pooling, Query Optimization, Compression, Streaming, Lazy Loading, Profiling                                       | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Scalability                     | Horizontal Scaling, Stateless Services, Sticky Sessions, Load Balancing, Auto Scaling                                         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 25     | Testing                         | Unit Testing, Integration Testing, API Testing, Contract Testing, Mocking, Test Containers                                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 26     | API Documentation               | OpenAPI/Swagger, GraphQL Schema Docs, Versioning, SDK Generation                                                              | Intermediate | ⭐⭐⭐⭐☆      |
+| 27     | Configuration Management        | Environment Variables, Secrets, Feature Flags, Configuration Providers                                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 28     | CI/CD for Backend               | Build Pipelines, Automated Testing, Dockerization, Deployment Strategies, Rollbacks                                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 29     | Containerization & Deployment   | Docker, Kubernetes Basics, Reverse Proxy, Nginx, Service Deployment                                                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 30     | Cloud Backend Services          | Compute, Managed Databases, Object Storage, Serverless, Queues, IAM                                                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 31     | Backend Architecture            | Layered Architecture, Clean Architecture, Hexagonal Architecture, DDD Basics, Repository Pattern                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 32     | Production Readiness            | Monitoring, Alerting, Backup, Disaster Recovery, Health Checks, SLO/SLI, Incident Handling                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 33     | Production Backend Case Studies | Auth Service, User Service, Notification Service, Payment Service, Order Service, Chat Service, Media Service, Search Service | Advanced     | ⭐⭐⭐⭐⭐      |
+| 34     | Backend Interview Mastery       | API Design Interviews, Backend Scenarios, Debugging, Production Problems, Mock Interviews                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
 ## Message Queues & Event-Driven Systems Roadmap
 
 | Module | High-Level Topic                               | Key Subtopics                                                                                                           | Level        | Importance |
@@ -237,113 +270,233 @@
 | 30     | Message Queue & Event-Driven Interview Mastery | Broker Selection, Messaging Trade-offs, Kafka Design Questions, Queue Design, Event Modeling, Mock Interviews           | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
-## Networking Roadmap
+## Low-Level Design (LLD) Roadmap
 
-| Module | High-Level Topic                    | Key Subtopics                                                                                              | Level        | Importance |
-| ------ | ----------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Networking Fundamentals             | What is Networking, Network Types, LAN, WAN, MAN, PAN, Client-Server, Peer-to-Peer, Network Topologies     | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | OSI Model                           | Physical, Data Link, Network, Transport, Session, Presentation, Application Layers, Layer Responsibilities | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | TCP/IP Model                        | Internet Layer, Transport Layer, Application Layer, Network Access Layer, Protocol Stack                   | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | IP Addressing                       | IPv4, IPv6, Public vs Private IP, Static vs Dynamic IP, CIDR, Subnetting, NAT                              | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Routing & Switching                 | Routers, Switches, Hubs, Gateways, Routing Tables, Static Routing, Dynamic Routing, VLANs                  | Fundamental  | ⭐⭐⭐⭐☆      |
-| 6      | DNS                                 | DNS Resolution, DNS Records (A, AAAA, CNAME, MX, TXT, NS), Recursive Resolver, Authoritative DNS, TTL      | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 7      | TCP                                 | Three-Way Handshake, Four-Way Termination, Flow Control, Congestion Control, Retransmission, Windowing     | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 8      | UDP                                 | Connectionless Communication, Datagram, Reliability Trade-offs, Streaming, Gaming, VoIP Use Cases          | Fundamental  | ⭐⭐⭐⭐☆      |
-| 9      | HTTP Fundamentals                   | HTTP Lifecycle, Methods, Status Codes, Headers, Cookies, Sessions, MIME Types                              | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 10     | HTTPS & TLS                         | SSL/TLS Handshake, Certificates, Certificate Authorities (CA), Encryption, mTLS, HSTS                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | HTTP Versions                       | HTTP/1.1, HTTP/2, HTTP/3, Multiplexing, Server Push, QUIC                                                  | Intermediate | ⭐⭐⭐⭐☆      |
-| 12     | REST, GraphQL & gRPC                | REST Principles, GraphQL Protocol, gRPC, Protobuf, API Communication Patterns                              | Intermediate | ⭐⭐⭐⭐⭐      |
-| 13     | WebSockets & Realtime Communication | WebSockets, SSE, Long Polling, WebRTC Basics, Persistent Connections                                       | Intermediate | ⭐⭐⭐⭐☆      |
-| 14     | Proxies & Gateways                  | Forward Proxy, Reverse Proxy, API Gateway, Load Balancer Basics, BFF Pattern                               | Intermediate | ⭐⭐⭐⭐☆      |
-| 15     | Load Balancing                      | L4 vs L7 Load Balancing, Round Robin, Least Connections, Sticky Sessions, Health Checks                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 16     | Caching & CDN                       | Browser Cache, Proxy Cache, HTTP Cache Headers, CDN, Edge Locations, Cache-Control, ETag                   | Intermediate | ⭐⭐⭐⭐☆      |
-| 17     | Authentication over Networks        | Basic Auth, API Keys, Bearer Tokens, JWT, OAuth2, OpenID Connect, Session Authentication                   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 18     | Network Security                    | Firewalls, VPN, IDS, IPS, DDoS Protection, Rate Limiting, WAF, Zero Trust Basics                           | Intermediate | ⭐⭐⭐⭐☆      |
-| 19     | Network Performance                 | Latency, Throughput, Bandwidth, Jitter, Packet Loss, MTU, Keep-Alive, Compression                          | Intermediate | ⭐⭐⭐⭐⭐      |
-| 20     | Network Troubleshooting             | Ping, Traceroute, nslookup, dig, curl, telnet, netstat, tcpdump, Wireshark Basics                          | Intermediate | ⭐⭐⭐⭐☆      |
-| 21     | Cloud Networking                    | VPC, Subnets, Internet Gateway, NAT Gateway, Route Tables, Security Groups, Network ACLs                   | Advanced     | ⭐⭐⭐⭐☆      |
-| 22     | Container Networking                | Docker Networking, Kubernetes Networking, CNI, Services, Ingress, Service Discovery                        | Advanced     | ⭐⭐⭐⭐☆      |
-| 23     | Service Communication               | Service Discovery, Service Mesh, Sidecars, Envoy, Istio Basics, Internal APIs                              | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Distributed Networking              | Multi-Region Networking, Global Load Balancing, Geo Routing, Anycast, Failover Strategies                  | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Messaging Protocols                 | SMTP, IMAP, POP3, MQTT, AMQP, Kafka Protocol Basics, gRPC Streaming                                        | Advanced     | ⭐⭐⭐☆☆      |
-| 26     | Network Observability               | Network Monitoring, Logs, Metrics, Tracing, Packet Capture, Traffic Analysis                               | Advanced     | ⭐⭐⭐⭐☆      |
-| 27     | High Availability & Reliability     | Redundancy, Failover, Active-Active, Active-Passive, Health Checks, Circuit Breakers                       | Advanced     | ⭐⭐⭐⭐⭐      |
-| 28     | Networking Design Patterns          | Client-Server, Reverse Proxy, API Gateway, CDN Architecture, Edge Computing, Zero Trust Network            | Advanced     | ⭐⭐⭐⭐⭐      |
-| 29     | Production Networking Case Studies  | Web Applications, Microservices Networking, Chat Systems, Video Streaming, CDN, Global Applications        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Networking Interview Mastery        | Common Networking Questions, Protocol Selection, Trade-offs, Debugging Scenarios, Mock Interviews          | Advanced     | ⭐⭐⭐⭐⭐      |
+| Module | High-Level Topic                       | Key Subtopics                                                                                                                                        |     Level    | Importance |
+| :----: | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | :----------: | :--------: |
+|    1   | Programming Foundations                | Programming Paradigms, Variables, Functions, Scope, Modules, Packages, Code Organization                                                             |  Fundamental |    ⭐⭐⭐⭐⭐   |
+|    2   | Object-Oriented Programming (OOP)      | Classes, Objects, Constructors, Access Modifiers, Encapsulation, Abstraction, Inheritance, Polymorphism, Object Lifecycle                            |  Fundamental |    ⭐⭐⭐⭐⭐   |
+|    3   | Object Relationships                   | Association, Aggregation, Composition, Dependency, Inheritance, HAS-A vs IS-A, Ownership, Cardinality                                                |  Fundamental |    ⭐⭐⭐⭐⭐   |
+|    4   | Object Modeling                        | Entity Identification, Attributes, Behaviors, Domain Modeling, Value Objects, Entities, Aggregates                                                   |  Fundamental |    ⭐⭐⭐⭐⭐   |
+|    5   | UML & Design Documentation             | Class Diagrams, Sequence Diagrams, Activity Diagrams, State Diagrams, Use Case Diagrams, Component Diagrams, Package Diagrams                        |  Fundamental |    ⭐⭐⭐⭐☆   |
+|    6   | SOLID Principles                       | SRP, OCP, LSP, ISP, DIP, Violations, Refactoring using SOLID                                                                                         | Intermediate |    ⭐⭐⭐⭐⭐   |
+|    7   | Software Design Principles             | DRY, KISS, YAGNI, Separation of Concerns, High Cohesion, Low Coupling, Law of Demeter, Composition over Inheritance, Principle of Least Astonishment | Intermediate |    ⭐⭐⭐⭐⭐   |
+|    8   | Clean Code                             | Naming, Functions, Classes, Comments, Formatting, Readability, Error Messages, Constants, Code Smells                                                | Intermediate |    ⭐⭐⭐⭐⭐   |
+|    9   | Refactoring                            | Code Smells, Extract Method, Extract Class, Replace Conditional with Polymorphism, Inline Method, Move Method, Rename, Simplification                | Intermediate |    ⭐⭐⭐⭐☆   |
+|   10   | Design Patterns - Creational           | Singleton, Factory Method, Abstract Factory, Builder, Prototype                                                                                      | Intermediate |    ⭐⭐⭐⭐⭐   |
+|   11   | Design Patterns - Structural           | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy                                                                                      | Intermediate |    ⭐⭐⭐⭐⭐   |
+|   12   | Design Patterns - Behavioral           | Strategy, Observer, State, Command, Chain of Responsibility, Mediator, Iterator, Template Method, Visitor, Memento, Interpreter                      |   Advanced   |    ⭐⭐⭐⭐⭐   |
+|   13   | Dependency Management                  | Dependency Injection, IoC, Constructor Injection, Property Injection, Service Locator, Dependency Graphs                                             | Intermediate |    ⭐⭐⭐⭐☆   |
+|   14   | API & Class Design                     | Public APIs, Interfaces, DTOs, Value Objects, Immutable Objects, Builders, Validation, Exception Contracts                                           | Intermediate |    ⭐⭐⭐⭐⭐   |
+|   15   | Exception & Error Handling             | Exceptions, Custom Exceptions, Validation, Retry, Fallback, Idempotency, Fail Fast, Error Boundaries                                                 | Intermediate |    ⭐⭐⭐⭐☆   |
+|   16   | Collections & Data Modeling            | Choosing Data Structures, Collections Design, Generic Types, Equality, Hashing, Comparators, Iterators                                               | Intermediate |    ⭐⭐⭐⭐☆   |
+|   17   | Concurrency Fundamentals               | Processes, Threads, Synchronization, Race Conditions, Locks, Mutexes, Semaphores, Deadlocks, Immutability                                            |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   18   | Concurrent Object Design               | Thread-safe Classes, Producer-Consumer, Thread Pools, Executors, Futures, Async Patterns, Synchronization Strategies                                 |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   19   | Memory & Object Lifecycle              | Stack vs Heap, Garbage Collection, Memory Leaks, Object Pooling, References, Resource Management                                                     |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   20   | Logging & Observability                | Logging Levels, Structured Logging, Correlation IDs, Audit Logs, Metrics, Tracing Basics                                                             | Intermediate |    ⭐⭐⭐☆☆   |
+|   21   | Configuration & Extensibility          | Configuration Management, Feature Flags, Plug-in Architecture, Strategy Registration, Factory Registration                                           |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   22   | Validation & Business Rules            | Validation Layers, Domain Rules, Business Constraints, Specification Pattern                                                                         | Intermediate |    ⭐⭐⭐⭐☆   |
+|   23   | Persistence Layer Design               | Repository Pattern, DAO, Unit of Work, ORM Concepts, Transactions, Mapping Layers                                                                    |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   24   | Layered Architecture                   | Presentation Layer, Application Layer, Domain Layer, Infrastructure Layer, Layer Responsibilities                                                    |   Advanced   |    ⭐⭐⭐⭐⭐   |
+|   25   | Architectural Styles                   | Layered Architecture, Hexagonal, Clean Architecture, Onion Architecture, DDD Overview                                                                |   Advanced   |    ⭐⭐⭐⭐⭐   |
+|   26   | Domain-Driven Design (LLD Perspective) | Entities, Value Objects, Aggregates, Repositories, Domain Services, Bounded Context (Intro)                                                          |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   27   | Testing for LLD                        | Unit Testing, Testability, Mocking, Dependency Injection for Testing, Test Doubles, TDD Basics                                                       | Intermediate |    ⭐⭐⭐⭐☆   |
+|   28   | Security-Aware Design                  | Authentication Concepts, Authorization, Secure Object Design, Input Validation, Secrets Handling                                                     |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   29   | Performance-Oriented Design            | Lazy Loading, Object Pooling, Flyweight, Caching, Memory Optimization, Performance Trade-offs                                                        |   Advanced   |    ⭐⭐⭐⭐☆   |
+|   30   | Machine Coding Fundamentals            | Requirement Analysis, Incremental Design, Domain Modeling, Extensibility, Code Organization                                                          |   Advanced   |    ⭐⭐⭐⭐⭐   |
+|   31   | Machine Coding Case Studies            | Parking Lot, Splitwise, Elevator, Library, ATM, Chess, BookMyShow, Ride Sharing, Food Delivery, Hotel Booking, Notification System                   |   Advanced   |    ⭐⭐⭐⭐⭐   |
+|   32   | Production LLD Case Studies            | Auth Service, Chat Service, Payment Service, Order Service, Inventory Service, Notification Service, Media Service, Workflow Engine                  |   Advanced   |    ⭐⭐⭐⭐⭐   |
+|   33   | Interview Design Strategy              | Requirement Clarification, Assumption Gathering, Trade-offs, Whiteboarding, Communication, Incremental Design                                        |   Advanced   |    ⭐⭐⭐⭐⭐   |
+|   34   | LLD Interview Mastery                  | Common Interview Questions, Pattern Recognition, Design Decision Frameworks, Anti-patterns, Time Management, Mock Interviews                         |   Advanced   |    ⭐⭐⭐⭐⭐   |
+
+---
 
 
-## Operating Systems Roadmap
+## High-Level Design (HLD) / System Design Roadmap
 
-| Module | High-Level Topic                   | Key Subtopics                                                                                                            | Level        | Importance |
-| ------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------ | ---------- |
-| 1      | Operating System Fundamentals      | What is an Operating System, OS Architecture, Kernel, User Space, System Calls, Boot Process, Types of OS                | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Processes                          | Process Lifecycle, Process Control Block (PCB), Process States, Context Switching, Process Creation, Process Termination | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Threads                            | Threads vs Processes, User Threads, Kernel Threads, Multithreading Models, Thread Lifecycle                              | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | CPU Scheduling                     | FCFS, SJF, Priority Scheduling, Round Robin, Multilevel Queue, Multilevel Feedback Queue, Scheduling Metrics             | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Process Synchronization            | Critical Section, Race Conditions, Mutex, Semaphore, Spinlock, Monitors, Condition Variables                             | Intermediate | ⭐⭐⭐⭐⭐      |
-| 6      | Deadlocks                          | Deadlock Conditions, Prevention, Avoidance, Detection, Recovery, Banker's Algorithm                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Inter-Process Communication (IPC)  | Shared Memory, Pipes, Named Pipes, Message Queues, Signals, Sockets, Memory Mapping                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Memory Management                  | Logical vs Physical Memory, Address Space, Paging, Segmentation, Virtual Memory, Swapping                                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Virtual Memory                     | Demand Paging, Page Tables, TLB, Copy-on-Write, Memory Allocation, Memory Protection                                     | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | Page Replacement Algorithms        | FIFO, LRU, LFU, Optimal, Clock Algorithm, Thrashing                                                                      | Intermediate | ⭐⭐⭐⭐☆      |
-| 11     | File Systems                       | File System Architecture, Inodes, Directories, File Allocation Methods, Journaling, Mounting                             | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Disk Management                    | HDD vs SSD, Disk Scheduling, RAID Levels, Storage Hierarchy, Disk Performance                                            | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | I/O Systems                        | Interrupts, DMA, Device Drivers, Buffering, Caching, Spooling, Polling                                                   | Intermediate | ⭐⭐⭐⭐☆      |
-| 14     | System Calls                       | Process Management, File Operations, Memory Management, Networking System Calls, Signals                                 | Intermediate | ⭐⭐⭐⭐☆      |
-| 15     | Concurrency                        | Parallelism, Synchronization Strategies, Lock-Free Programming, Atomic Operations, Memory Barriers                       | Advanced     | ⭐⭐⭐⭐⭐      |
-| 16     | Multicore & Parallel Computing     | CPU Cores, Hyper-Threading, NUMA, CPU Affinity, Parallel Execution Models                                                | Advanced     | ⭐⭐⭐⭐☆      |
-| 17     | Memory Optimization                | Heap vs Stack, Garbage Collection Concepts, Memory Leaks, Fragmentation, Resource Management                             | Advanced     | ⭐⭐⭐⭐☆      |
-| 18     | Linux Internals                    | Linux Kernel Architecture, Scheduler, cgroups, Namespaces, Proc Filesystem, Sysfs                                        | Advanced     | ⭐⭐⭐⭐☆      |
-| 19     | Security Fundamentals              | User Privileges, File Permissions, Access Control, Sandboxing, SELinux/AppArmor Basics                                   | Intermediate | ⭐⭐⭐⭐☆      |
-| 20     | Virtualization                     | Hypervisors, Virtual Machines, Hardware Virtualization, Full vs Para Virtualization                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 21     | Containers                         | Linux Namespaces, cgroups, Container Isolation, Docker Runtime Basics, OCI Concepts                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 22     | Performance & Monitoring           | CPU Utilization, Memory Usage, I/O Bottlenecks, Load Average, Profiling, Performance Tuning                              | Advanced     | ⭐⭐⭐⭐☆      |
-| 23     | Reliability & Fault Tolerance      | Crash Recovery, Checkpointing, Watchdogs, Failover Concepts, System Reliability                                          | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Distributed OS Concepts            | Distributed Systems Basics, Clock Synchronization, Distributed Scheduling, Resource Sharing                              | Advanced     | ⭐⭐⭐☆☆      |
-| 25     | Operating System Design            | Monolithic Kernel, Microkernel, Hybrid Kernel, Exokernel, Modular Kernel Architecture                                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 26     | Real-Time Operating Systems (RTOS) | Hard vs Soft RTOS, Scheduling, Interrupt Handling, Embedded OS Concepts                                                  | Advanced     | ⭐⭐⭐☆☆      |
-| 27     | Production OS Concepts             | Resource Limits, Process Isolation, Service Management, Daemons, Logging, Crash Dumps                                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 28     | Operating System Case Studies      | Linux, Windows, macOS, Android, iOS, Containerized Environments                                                          | Advanced     | ⭐⭐⭐⭐☆      |
-| 29     | OS & Backend Integration           | Process Management in Servers, Thread Pools, Async I/O, Event Loops, Network Stack Interaction                           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Operating System Interview Mastery | Common OS Interview Questions, Scheduling Problems, Memory Scenarios, Concurrency Questions, Debugging, Mock Interviews  | Advanced     | ⭐⭐⭐⭐⭐      |
+| Module | High-Level Topic                 | Key Subtopics                                                                                                                                                          | Level        | Importance |
+| ------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | System Design Fundamentals       | What is System Design, Functional Requirements, Non-Functional Requirements, Scalability, Availability, Reliability, Maintainability, Performance, Latency, Throughput | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Requirement Analysis             | Functional Requirements, Non-Functional Requirements, Assumptions, Constraints, Use Cases, Capacity Planning, Traffic Estimation, Storage Estimation                   | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Capacity Estimation              | QPS, DAU/MAU, Read/Write Ratio, Storage Growth, Bandwidth, Memory Estimation, Server Sizing, Cost Estimation                                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Networking Fundamentals          | OSI Model, TCP/IP, HTTP, HTTPS, HTTP/2, HTTP/3, DNS, TLS/SSL, WebSockets, SSE, gRPC, REST                                                                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | API Design                       | REST APIs, GraphQL, gRPC, API Gateway, Versioning, Pagination, Filtering, Sorting, Idempotency, Rate Limiting                                                          | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 6      | Load Balancing                   | Reverse Proxy, L4 vs L7 Load Balancer, Round Robin, Least Connections, Sticky Sessions, Health Checks, Global Load Balancing                                           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Proxy & Gateway                  | Forward Proxy, Reverse Proxy, API Gateway, Service Gateway, BFF Pattern, Edge Routing                                                                                  | Intermediate | ⭐⭐⭐⭐☆      |
+| 8      | Caching                          | Client Cache, Server Cache, Redis, Memcached, CDN Cache, Cache Aside, Write Through, Write Back, Cache Invalidation, Eviction Policies                                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Content Delivery Network (CDN)   | Edge Locations, Cache Distribution, Static Assets, Dynamic Content, Signed URLs, Geo Routing                                                                           | Intermediate | ⭐⭐⭐⭐☆      |
+| 10     | Database Fundamentals            | SQL, NoSQL, CAP Theorem, ACID, BASE, Indexing, Query Optimization, Transactions                                                                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 11     | Database Scaling                 | Replication, Sharding, Partitioning, Read Replicas, Write Scaling, Multi-Master, Consistency Trade-offs                                                                | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Data Storage Systems             | Object Storage, Blob Storage, Block Storage, File Storage, Distributed File Systems, Storage Tiers                                                                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | Search Systems                   | Elasticsearch, OpenSearch, Inverted Index, Full Text Search, Ranking, Auto Complete, Faceted Search                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 14     | Message Queues                   | Kafka, RabbitMQ, ActiveMQ, BullMQ, SQS, Pub/Sub, Ordering, Retry, DLQ, Event Streaming                                                                                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 15     | Event-Driven Architecture        | Events, Producers, Consumers, Event Bus, Pub/Sub, Event Sourcing, CQRS Introduction                                                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 16     | Microservices Architecture       | Monolith vs Microservices, Service Discovery, API Gateway, Service Registry, Service Communication, Distributed Transactions                                           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 17     | Distributed Systems Fundamentals | CAP Theorem, PACELC, Consistency Models, Replication, Consensus, Quorum, Leader Election, Gossip Protocol                                                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Distributed Coordination         | ZooKeeper, etcd, Distributed Locks, Leader Election, Coordination Services, Heartbeats                                                                                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Consistency & Transactions       | Strong Consistency, Eventual Consistency, Read/Write Consistency, Optimistic Locking, Pessimistic Locking, Two-Phase Commit, Saga Pattern                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 20     | Scalability Patterns             | Horizontal Scaling, Vertical Scaling, Stateless Services, Stateful Services, Auto Scaling, Elasticity                                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 21     | Reliability & Fault Tolerance    | Retry, Timeout, Circuit Breaker, Bulkhead, Fallback, Graceful Degradation, Disaster Recovery                                                                           | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | High Availability                | Failover, Active-Active, Active-Passive, Redundancy, Multi-AZ, Multi-Region Deployments                                                                                | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Security in Distributed Systems  | Authentication, Authorization, OAuth2, JWT, API Keys, mTLS, Secrets Management, Encryption, Rate Limiting                                                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 24     | Observability                    | Logging, Metrics, Distributed Tracing, Correlation IDs, Prometheus, Grafana, OpenTelemetry, Alerting                                                                   | Intermediate | ⭐⭐⭐⭐☆      |
+| 25     | Cloud Architecture               | Compute, Networking, IAM, Managed Databases, Object Storage, Serverless, Multi-Cloud Basics                                                                            | Intermediate | ⭐⭐⭐⭐☆      |
+| 26     | Containers & Orchestration       | Docker, Images, Containers, Kubernetes, Pods, Services, Deployments, Ingress, Service Mesh Basics                                                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 27     | DevOps & Deployment Strategies   | CI/CD, Blue-Green Deployment, Canary Deployment, Rolling Updates, Rollbacks, Infrastructure as Code                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Performance Engineering          | Bottleneck Analysis, Profiling, Connection Pooling, Compression, Query Optimization, Load Testing, Stress Testing                                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 29     | Architecture Patterns            | Layered Architecture, Clean Architecture, Hexagonal Architecture, Onion Architecture, Event-Driven Architecture, CQRS, Event Sourcing                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Design Trade-offs                | SQL vs NoSQL, Sync vs Async, Cache vs DB, Consistency vs Availability, Monolith vs Microservices, Cost vs Performance                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 31     | Multi-Tenant Systems             | Tenant Isolation, Shared Database, Separate Database, Shared Schema, Data Isolation Strategies                                                                         | Advanced     | ⭐⭐⭐⭐☆      |
+| 32     | Realtime Systems                 | Chat Systems, Notifications, Presence, WebSockets, SSE, Long Polling, Push Notifications                                                                               | Advanced     | ⭐⭐⭐⭐☆      |
+| 33     | Geo-Distributed Systems          | Geo Replication, Multi-Region Deployments, Global Traffic Routing, Data Locality, Disaster Recovery                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 34     | Large-Scale Production Systems   | Service Mesh, Distributed Configuration, Feature Flags, Workflow Engines, Scheduler Design, Stream Processing                                                          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 35     | System Design Case Studies       | URL Shortener, Instagram, WhatsApp, Uber, YouTube, Netflix, Dropbox, Google Drive, Twitter/X, Payment Gateway, Food Delivery, Ride Sharing                             | Advanced     | ⭐⭐⭐⭐⭐      |
+| 36     | Interview Framework              | Requirement Gathering, Assumption Validation, Capacity Estimation, Component Design, Trade-offs, Bottleneck Analysis, Whiteboarding                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 37     | System Design Interview Mastery  | Design Templates, Communication Strategy, Common Pitfalls, Time Management, Mock Interviews, Company-Specific Patterns                                                 | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Cloud Computing Roadmap
 
-| Module | High-Level Topic                      | Key Subtopics                                                                                                         | Level        | Importance |
-| ------ | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Cloud Computing Fundamentals          | What is Cloud Computing, Benefits, Characteristics, Shared Responsibility Model, Cloud Adoption                       | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Cloud Service Models                  | IaaS, PaaS, SaaS, FaaS, BaaS, Managed Services                                                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Cloud Deployment Models               | Public Cloud, Private Cloud, Hybrid Cloud, Multi-Cloud, Community Cloud                                               | Fundamental  | ⭐⭐⭐⭐☆      |
-| 4      | Cloud Providers                       | AWS Overview, Microsoft Azure Overview, Google Cloud Platform (GCP) Overview, Provider Comparison                     | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Identity & Access Management (IAM)    | Users, Groups, Roles, Policies, Permissions, Least Privilege, Service Accounts, Federation                            | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 6      | Cloud Networking                      | VPC, Subnets, Route Tables, Internet Gateway, NAT Gateway, VPN, Peering, Private Connectivity                         | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Compute Services                      | Virtual Machines, EC2, Compute Engine, Azure VMs, Autoscaling, Instance Types, Spot Instances                         | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Serverless Computing                  | AWS Lambda, Google Cloud Functions, Azure Functions, Event-Driven Functions, Cold Starts                              | Intermediate | ⭐⭐⭐⭐☆      |
-| 9      | Object Storage                        | Amazon S3, Google Cloud Storage, Azure Blob Storage, Storage Classes, Versioning, Lifecycle Policies                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | Block & File Storage                  | EBS, Persistent Disk, Azure Managed Disks, EFS, FSx, Cloud Filestore                                                  | Intermediate | ⭐⭐⭐⭐☆      |
-| 11     | Managed Databases                     | RDS, Cloud SQL, Azure SQL, MongoDB Atlas, DynamoDB, Firestore, Cosmos DB                                              | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Caching Services                      | ElastiCache, Memorystore, Azure Cache for Redis, Distributed Caching Strategies                                       | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | Messaging & Event Services            | SQS, SNS, EventBridge, Pub/Sub, Event Grid, Service Bus, Managed Kafka                                                | Intermediate | ⭐⭐⭐⭐☆      |
-| 14     | Load Balancing & Traffic Management   | Application Load Balancer, Network Load Balancer, Global Load Balancer, Traffic Routing, Health Checks                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 15     | DNS & CDN                             | Route 53, Cloud DNS, Azure DNS, CloudFront, Cloud CDN, Azure CDN, Edge Locations                                      | Intermediate | ⭐⭐⭐⭐☆      |
-| 16     | Containers in the Cloud               | Container Registries, ECS, EKS, GKE, AKS, Container Deployment, Scaling                                               | Advanced     | ⭐⭐⭐⭐⭐      |
-| 17     | Kubernetes on Cloud                   | Managed Kubernetes, Node Pools, Ingress Controllers, Storage Classes, Autoscaling                                     | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Infrastructure as Code (IaC)          | Terraform, CloudFormation, ARM Templates, Pulumi, Infrastructure Automation                                           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | CI/CD in the Cloud                    | GitHub Actions, Cloud Build, CodePipeline, Azure DevOps, Artifact Registries, Deployment Strategies                   | Advanced     | ⭐⭐⭐⭐☆      |
-| 20     | Security in the Cloud                 | Encryption at Rest, Encryption in Transit, Secrets Management, KMS, WAF, Security Groups, Network ACLs                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 21     | Monitoring & Observability            | CloudWatch, Azure Monitor, Cloud Monitoring, Logging, Metrics, Tracing, Alerting                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 22     | High Availability & Disaster Recovery | Multi-AZ, Multi-Region, Backup, Replication, Failover, Disaster Recovery Strategies                                   | Advanced     | ⭐⭐⭐⭐⭐      |
-| 23     | Scalability & Performance             | Auto Scaling, Load Testing, Horizontal Scaling, Vertical Scaling, Performance Optimization                            | Advanced     | ⭐⭐⭐⭐⭐      |
-| 24     | Cost Optimization                     | Pricing Models, Reserved Instances, Spot Instances, Cost Explorer, Budgets, Resource Optimization                     | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Cloud Architecture Patterns           | Lift & Shift, Cloud-Native, Microservices, Serverless, Event-Driven, Hybrid Architecture                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 26     | Multi-Cloud & Hybrid Cloud            | Cross-Cloud Networking, Workload Distribution, Vendor Lock-In, Data Replication, Cloud Bursting                       | Advanced     | ⭐⭐⭐⭐☆      |
-| 27     | Production Cloud Architecture         | Secure VPC Design, Multi-Tier Applications, Microservices Deployment, Global Applications                             | Advanced     | ⭐⭐⭐⭐⭐      |
-| 28     | Cloud Migration                       | Migration Strategies, Database Migration, Application Modernization, Zero-Downtime Migration                          | Advanced     | ⭐⭐⭐⭐☆      |
-| 29     | Cloud Case Studies                    | E-commerce Platform, Streaming Platform, SaaS Application, AI Platform, Multi-Region Backend Systems                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Cloud Interview Mastery               | Cloud Architecture Questions, Service Selection, Trade-offs, Cost vs Performance, Security Scenarios, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
+| Module | High-Level Topic                      | Key Subtopics                                                                                                              | Level        | Importance |
+| ------ | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Cloud Computing Fundamentals          | What is Cloud Computing, Cloud Characteristics, Benefits, Shared Responsibility Model, Cloud Adoption                      | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Cloud Service Models                  | IaaS, PaaS, SaaS, FaaS, BaaS, Managed Services                                                                             | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Cloud Deployment Models               | Public Cloud, Private Cloud, Hybrid Cloud, Multi-Cloud, Community Cloud                                                    | Fundamental  | ⭐⭐⭐⭐☆      |
+| 4      | Cloud Providers                       | AWS, Microsoft Azure, Google Cloud Platform (GCP), Oracle Cloud, DigitalOcean, Provider Comparison                         | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Identity & Access Management (IAM)    | Users, Groups, Roles, Policies, Service Accounts, Federation, Least Privilege, MFA                                         | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 6      | Cloud Networking                      | VPC/VNet, Subnets, Route Tables, Internet Gateway, NAT Gateway, VPN, Peering, Private Connectivity, DNS                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Compute Services                      | Virtual Machines, EC2, Compute Engine, Azure VMs, Autoscaling, Instance Types, Spot/Preemptible Instances                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Serverless Computing                  | AWS Lambda, Cloud Functions, Azure Functions, Event-Driven Computing, Cold Starts, Function URLs                           | Intermediate | ⭐⭐⭐⭐☆      |
+| 9      | Object Storage                        | Amazon S3, Google Cloud Storage, Azure Blob Storage, Buckets, Objects, Versioning, Lifecycle Policies                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Block & File Storage                  | EBS, Persistent Disk, Azure Managed Disks, EFS, FSx, Filestore, Storage Performance                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 11     | Managed Databases                     | RDS, Cloud SQL, Azure SQL, MongoDB Atlas, DynamoDB, Firestore, Cosmos DB, Managed Redis                                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Messaging & Event Services            | SQS, SNS, EventBridge, Pub/Sub, Event Grid, Service Bus, Managed Kafka                                                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | Load Balancing & Traffic Management   | Application Load Balancer, Network Load Balancer, Global Load Balancer, Traffic Routing, Health Checks                     | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | CDN & Edge Computing                  | CloudFront, Cloud CDN, Azure CDN, Edge Locations, Edge Caching, Signed URLs, Edge Functions                                | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | Security in the Cloud                 | Security Groups, Network ACLs, KMS, Secret Managers, WAF, Shield, Encryption, Zero Trust                                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | Monitoring & Logging                  | CloudWatch, Azure Monitor, Cloud Monitoring, Logging, Metrics, Alerting, Dashboards                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 17     | Infrastructure as Code (IaC)          | Terraform, CloudFormation, ARM/Bicep, Pulumi, Infrastructure Automation, State Management                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Cloud Containers                      | Container Registries, ECS, EKS, GKE, AKS, Cloud Run, Azure Container Apps                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Cloud Kubernetes                      | Managed Kubernetes, Node Pools, Autoscaling, Ingress Controllers, Storage Classes, Cluster Operations                      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 20     | Cloud CI/CD Integration               | GitHub Actions, Cloud Build, CodePipeline, Azure DevOps, Artifact Registry, Deployment Pipelines                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | High Availability & Disaster Recovery | Multi-AZ, Multi-Region, Replication, Backup, Failover, Disaster Recovery Strategies                                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | Scalability & Performance             | Horizontal Scaling, Vertical Scaling, Auto Scaling, Caching, Performance Optimization, Capacity Planning                   | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Cost Optimization (FinOps)            | Pricing Models, Cost Explorer, Reserved Instances, Savings Plans, Spot Instances, Resource Optimization, Budgeting         | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Multi-Cloud & Hybrid Cloud            | Hybrid Architecture, Cross-Cloud Networking, Vendor Lock-In, Data Replication, Cloud Bursting                              | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Cloud Architecture Patterns           | 3-Tier Architecture, Microservices, Event-Driven Architecture, Serverless Architecture, Multi-Tenant SaaS                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 26     | Production Cloud Architecture         | Secure VPC Design, Multi-Tier Systems, Global Applications, AI Infrastructure, Production Readiness                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | Cloud Migration                       | Lift & Shift, Replatforming, Refactoring, Database Migration, Zero-Downtime Migration                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Cloud Governance                      | Resource Organization, Tagging, Policies, Compliance, Landing Zones, Organizational Units                                  | Advanced     | ⭐⭐⭐⭐☆      |
+| 29     | Cloud Case Studies                    | E-commerce Platform, SaaS Platform, AI Platform, Streaming Platform, Multi-Region Backend, Enterprise Systems              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Cloud Computing Interview Mastery     | Cloud Architecture Questions, Service Selection, Design Trade-offs, Cost Optimization, Security Scenarios, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
 
+
+## Docker & Kubernetes Roadmap
+
+| Module | High-Level Topic                      | Key Subtopics                                                                                                                 | Level        | Importance |
+| ------ | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Containerization Fundamentals         | What are Containers, Virtual Machines vs Containers, OCI, Container Runtime, Container Lifecycle                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Docker Fundamentals                   | Docker Architecture, Docker Engine, Images, Containers, Registries, Docker CLI, Docker Desktop                                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Docker Images                         | Dockerfile, Layers, Build Context, Multi-Stage Builds, Image Optimization, Image Tagging                                      | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Docker Containers                     | Creating, Running, Stopping, Restarting, Inspecting, Logs, Exec, Attach, Lifecycle Management                                 | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Docker Storage                        | Volumes, Bind Mounts, tmpfs, Persistent Data, Backup & Restore                                                                | Fundamental  | ⭐⭐⭐⭐☆      |
+| 6      | Docker Networking                     | Bridge Network, Host Network, Overlay Network, Macvlan, DNS, Port Mapping, Service Discovery                                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Docker Compose                        | Compose File, Multi-Container Applications, Networks, Volumes, Environment Variables, Profiles                                | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Docker Registry                       | Docker Hub, Private Registries, Artifact Registry, Amazon ECR, Azure ACR, Google Artifact Registry                            | Intermediate | ⭐⭐⭐⭐☆      |
+| 9      | Docker Security                       | Image Scanning, Secrets, Rootless Containers, Capabilities, Seccomp, AppArmor, Best Practices                                 | Intermediate | ⭐⭐⭐⭐☆      |
+| 10     | Kubernetes Fundamentals               | Kubernetes Architecture, Cluster Components, Control Plane, Worker Nodes, API Server, etcd                                    | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 11     | Pods                                  | Pod Lifecycle, Init Containers, Sidecar Containers, Multi-Container Pods, Health Checks                                       | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 12     | Workloads                             | Deployments, ReplicaSets, StatefulSets, DaemonSets, Jobs, CronJobs                                                            | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | Services                              | ClusterIP, NodePort, LoadBalancer, ExternalName, Service Discovery, DNS                                                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | Configuration Management              | ConfigMaps, Secrets, Environment Variables, Downward API, Resource Configuration                                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 15     | Storage in Kubernetes                 | Persistent Volumes (PV), Persistent Volume Claims (PVC), Storage Classes, CSI Drivers, Dynamic Provisioning                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | Scheduling & Resource Management      | Scheduler, Node Affinity, Taints & Tolerations, Resource Requests, Limits, QoS Classes                                        | Intermediate | ⭐⭐⭐⭐⭐      |
+| 17     | Networking in Kubernetes              | CNI, Ingress, Ingress Controllers, Network Policies, Service Mesh Basics                                                      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Scaling                               | Horizontal Pod Autoscaler (HPA), Vertical Pod Autoscaler (VPA), Cluster Autoscaler, Scaling Strategies                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Observability                         | kubectl, Logs, Events, Metrics Server, Prometheus, Grafana, Kubernetes Dashboard                                              | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Security                              | RBAC, Service Accounts, Pod Security, Admission Controllers, Image Policies, Secret Management                                | Advanced     | ⭐⭐⭐⭐⭐      |
+| 21     | Helm                                  | Charts, Templates, Values, Releases, Repositories, Helm Best Practices                                                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | Operators & CRDs                      | Custom Resource Definitions (CRDs), Operators, Kubernetes API Extension, Operator Framework                                   | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Service Mesh                          | Istio, Linkerd, Envoy, Traffic Management, mTLS, Observability, Policy Enforcement                                            | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | CI/CD Integration                     | Docker Build Pipelines, Image Publishing, Kubernetes Deployments, GitOps, Argo CD, Flux CD                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 25     | Production Kubernetes                 | High Availability, Multi-Cluster, Rolling Updates, Blue-Green, Canary Deployments, Disaster Recovery                          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 26     | Performance Optimization              | Image Optimization, Startup Time, Resource Optimization, Scheduling Efficiency, Cluster Performance                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 27     | Cloud Kubernetes                      | Amazon EKS, Google GKE, Azure AKS, OpenShift, Managed Kubernetes Comparison                                                   | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Production Case Studies               | Microservices Deployment, AI Platform, SaaS Application, Event-Driven Systems, High-Traffic APIs                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Common Pitfalls & Best Practices      | Image Bloat, CrashLoopBackOff, Pending Pods, Resource Misconfiguration, Security Misconfigurations                            | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Docker & Kubernetes Interview Mastery | Architecture Questions, Deployment Scenarios, Troubleshooting, Scaling Strategies, Production Best Practices, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## CI/CD & DevOps Roadmap
+
+| Module | High-Level Topic                 | Key Subtopics                                                                                         | Level        | Importance |
+| ------ | -------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | DevOps Fundamentals              | DevOps Culture, DevOps Lifecycle, CALMS, Agile & DevOps, SDLC, DevSecOps                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Version Control                  | Git Fundamentals, Branching, Merging, Rebasing, Tags, Git Flow, Trunk-Based Development               | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Repository Management            | GitHub, GitLab, Bitbucket, Repository Structure, Branch Protection, CODEOWNERS                        | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | CI Fundamentals                  | Continuous Integration, Build Pipelines, Automated Builds, Pipeline Triggers, Pipeline Stages         | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Build Automation                 | Build Systems, Dependency Management, Package Managers, Artifact Generation, Versioning               | Fundamental  | ⭐⭐⭐⭐☆      |
+| 6      | Automated Testing                | Unit Tests, Integration Tests, End-to-End Tests, Contract Tests, Test Automation, Quality Gates       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Code Quality & Security          | Static Code Analysis (SAST), Linting, Formatting, Code Coverage, Dependency Scanning, Secret Scanning | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Artifact Management              | Docker Images, Package Registries, Artifact Repositories, Versioning, Release Management              | Intermediate | ⭐⭐⭐⭐☆      |
+| 9      | CI Platforms                     | GitHub Actions, GitLab CI, Jenkins, CircleCI, Azure DevOps, Cloud Build                               | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | CD Fundamentals                  | Continuous Delivery, Continuous Deployment, Release Automation, Deployment Pipelines                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | Deployment Strategies            | Rolling Updates, Blue-Green Deployment, Canary Deployment, Recreate, Feature Flags                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Infrastructure as Code           | Terraform, OpenTofu, Pulumi, CloudFormation, ARM/Bicep, Infrastructure Provisioning                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | Configuration Management         | Ansible, Chef, Puppet, SaltStack, Environment Management, Configuration Drift                         | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | Container-Based CI/CD            | Docker Build Pipelines, Image Scanning, Registry Management, Kubernetes Deployments                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 15     | GitOps                           | GitOps Principles, Argo CD, Flux CD, Declarative Deployments, Drift Detection                         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 16     | Kubernetes Delivery              | Helm, Kustomize, Progressive Delivery, Rollbacks, Release Management                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 17     | Secrets Management               | Vault, Cloud Secret Managers, Sealed Secrets, Secret Rotation, Secure Pipelines                       | Advanced     | ⭐⭐⭐⭐☆      |
+| 18     | DevSecOps                        | Security in CI/CD, SAST, DAST, IAST, SBOM, Supply Chain Security, Policy as Code                      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Release Management               | Semantic Versioning, Release Notes, Release Branches, Feature Toggles, Change Management              | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Pipeline Optimization            | Pipeline Parallelism, Caching, Incremental Builds, Matrix Builds, Self-Hosted Runners                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Cloud CI/CD                      | AWS CodePipeline, Azure DevOps, Google Cloud Build, Cloud Deploy, Managed CI/CD Services              | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Monitoring CI/CD                 | Pipeline Metrics, Deployment Metrics, DORA Metrics, Build Monitoring, Alerts                          | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Reliability in Delivery          | Rollback Strategies, Disaster Recovery, Deployment Validation, Health Checks, Failure Recovery        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 24     | Compliance & Governance          | Audit Trails, Change Approval, Compliance Automation, Policy Enforcement, Access Control              | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Production DevOps                | Environment Strategy, Multi-Environment Pipelines, Multi-Region Deployments, Production Readiness     | Advanced     | ⭐⭐⭐⭐⭐      |
+| 26     | DevOps Architecture Patterns     | CI/CD Architecture, GitOps Architecture, Platform Engineering, Internal Developer Platforms (IDP)     | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | Production Case Studies          | Microservices Delivery, Kubernetes Deployment, AI Platform Deployment, SaaS Release Pipeline          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Common DevOps Pitfalls           | Long Build Times, Deployment Failures, Configuration Drift, Secret Leaks, Pipeline Bottlenecks        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | DevOps Tool Ecosystem            | GitHub Actions, Jenkins, Argo CD, Flux CD, Terraform, Vault, SonarQube, Nexus, Artifactory            | Advanced     | ⭐⭐⭐⭐☆      |
+| 30     | CI/CD & DevOps Interview Mastery | Pipeline Design, Deployment Scenarios, GitOps Questions, DevSecOps, DORA Metrics, Mock Interviews     | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Observability, Reliability & Site Reliability Engineering (SRE) Roadmap
+
+| Module | High-Level Topic                                   | Key Subtopics                                                                                                                            | Level        | Importance |
+| ------ | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Observability Fundamentals                         | Observability vs Monitoring, Three Pillars, Telemetry, SLI, SLO, SLA, Golden Signals, RED & USE Methodologies                            | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Logging Fundamentals                               | Structured Logging, Log Levels, Log Formats, Correlation IDs, Log Aggregation, Audit Logs                                                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Metrics Fundamentals                               | Counters, Gauges, Histograms, Summaries, Business Metrics, Infrastructure Metrics, Custom Metrics                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Distributed Tracing                                | Trace, Span, Context Propagation, Correlation, End-to-End Request Tracing, Trace Visualization                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | OpenTelemetry                                      | OpenTelemetry Architecture, Instrumentation, SDKs, Collectors, Exporters, Semantic Conventions                                           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 6      | Logging Platforms                                  | ELK Stack, OpenSearch, Loki, Fluent Bit, Fluentd, Log Pipelines                                                                          | Intermediate | ⭐⭐⭐⭐☆      |
+| 7      | Metrics Platforms                                  | Prometheus, VictoriaMetrics, Grafana Mimir, Metric Collection, PromQL, Dashboards                                                        | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Tracing Platforms                                  | Jaeger, Zipkin, Grafana Tempo, Trace Analysis, Sampling Strategies                                                                       | Intermediate | ⭐⭐⭐⭐☆      |
+| 9      | Dashboards & Visualization                         | Grafana, Kibana, Dashboard Design, Visualization Best Practices, Business Dashboards                                                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 10     | Alerting                                           | Alert Rules, Alert Fatigue, Alert Routing, Alertmanager, Escalation Policies, On-Call Notifications                                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | Health Checks                                      | Liveness Probes, Readiness Probes, Startup Probes, Synthetic Monitoring, Heartbeats                                                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Application Performance Monitoring (APM)           | New Relic, Datadog, Dynatrace, Elastic APM, Application Insights, Performance Monitoring                                                 | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | Reliability Engineering Fundamentals               | Reliability Principles, Failure Modes, MTBF, MTTR, Availability Calculations, Error Budgets                                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | Site Reliability Engineering (SRE)                 | SRE Principles, Toil Reduction, Automation, Reliability Culture, Operational Excellence                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 15     | High Availability                                  | Redundancy, Active-Active, Active-Passive, Failover, Multi-AZ, Multi-Region Architectures                                                | Advanced     | ⭐⭐⭐⭐⭐      |
+| 16     | Fault Tolerance                                    | Retry, Timeout, Circuit Breaker, Bulkhead, Graceful Degradation, Self-Healing Systems                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 17     | Disaster Recovery                                  | Backup Strategies, Restore Procedures, RPO, RTO, Disaster Recovery Planning, Chaos Readiness                                             | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Capacity Planning                                  | Capacity Forecasting, Resource Utilization, Auto Scaling, Load Forecasting, Performance Baselines                                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Chaos Engineering                                  | Chaos Principles, Fault Injection, Chaos Monkey, Resilience Testing, Failure Simulation                                                  | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Incident Management                                | Incident Lifecycle, Severity Levels, Incident Command, Communication, Escalation, War Rooms                                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 21     | Postmortems & RCA                                  | Blameless Postmortems, Root Cause Analysis, Corrective Actions, Preventive Actions, Incident Reviews                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | Reliability Automation                             | Auto Remediation, Self-Healing, Runbooks, Playbooks, Automation Workflows                                                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Security Observability                             | Security Logging, Audit Trails, Threat Detection, SIEM Integration, Compliance Monitoring                                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Cloud Observability                                | AWS CloudWatch, Azure Monitor, Google Cloud Monitoring, Managed Observability Services                                                   | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Kubernetes Observability                           | Kubernetes Metrics, Cluster Monitoring, Pod Monitoring, kube-state-metrics, Container Insights                                           | Advanced     | ⭐⭐⭐⭐⭐      |
+| 26     | Production Reliability Patterns                    | Rate Limiting, Backpressure, Load Shedding, Queue Monitoring, Service Degradation Strategies                                             | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | Observability Architecture                         | Centralized Logging, Distributed Tracing Architecture, Metrics Pipeline, Telemetry Pipeline Design                                       | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Production Case Studies                            | E-commerce Incident, Payment Failure, Distributed System Outage, Kubernetes Failure, AI Platform Monitoring                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Common Reliability Pitfalls                        | Alert Fatigue, Missing Metrics, Noisy Logs, Poor Dashboards, Lack of Runbooks, Single Points of Failure                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Observability, Reliability & SRE Interview Mastery | SRE Interview Questions, Incident Scenarios, Reliability Design, Observability Architecture, Production Troubleshooting, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Security Engineering Roadmap
@@ -382,7 +535,6 @@
 | 30     | Security Interview Mastery         | Security Interview Questions, Threat Analysis, Secure System Design, Vulnerability Scenarios, Best Practices, Mock Interviews                                                             | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
-
 ## Performance Engineering Roadmap
 
 | Module | High-Level Topic                          | Key Subtopics                                                                                                          | Level        | Importance |
@@ -417,7 +569,6 @@
 | 28     | Performance Tools & Ecosystem             | JMeter, k6, Gatling, Locust, Lighthouse, wrk, Apache Benchmark (ab), Perf, Flame Graphs                                | Advanced     | ⭐⭐⭐⭐☆      |
 | 29     | Performance Architecture Reviews          | Performance Budgets, SLA/SLO/SLI, Capacity Reviews, Scaling Strategies, Architecture Trade-offs                        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Performance Engineering Interview Mastery | Performance Interview Questions, Bottleneck Analysis, Optimization Scenarios, Case Studies, Mock Interviews            | Advanced     | ⭐⭐⭐⭐⭐      |
-
 
 
 ## AI Engineering Roadmap
@@ -563,16 +714,8 @@
 | 29     | Emerging Agent Standards           | MCP Best Practices, A2A Protocol, Agent Interoperability, Agent Mesh, Future Agent Ecosystem                           | Advanced     | ⭐⭐⭐⭐☆      |
 | 30     | AI Agents & MCP Interview Mastery  | Agent Design Questions, MCP Architecture, Multi-Agent Design, Tool Integration, Workflow Design, Mock Interviews       | Advanced     | ⭐⭐⭐⭐⭐      |
 
-### Notes
 
-
-Yes, I recommend it.
-
-In fact, I would make it **Roadmap #30** after AI Agents & MCP.
-
-The reason is that **Tier 1 companies don't hire for "LangChain developers."** They hire engineers who understand AI systems and can choose the right framework. Today it's LangChain/LangGraph; tomorrow it may be something else.
-
-## 30. AI Frameworks & Orchestration
+## AI Frameworks & Orchestration Roadmap
 
 | Module | High-Level Topic            | Key Subtopics                                                                       | Level        | Importance |
 | ------ | --------------------------- | ----------------------------------------------------------------------------------- | ------------ | ---------- |
@@ -594,78 +737,6 @@ The reason is that **Tier 1 companies don't hire for "LangChain developers."** T
 | 16     | Framework Comparison        | Architecture, Performance, Extensibility, Ecosystem, Production Readiness           | Advanced     | ⭐⭐⭐⭐⭐      |
 | 17     | Production Patterns         | Agent Workflows, Multi-Agent Systems, RAG Pipelines, Human Approval, Observability  | Advanced     | ⭐⭐⭐⭐⭐      |
 | 18     | Framework Interview Mastery | Choosing the Right Framework, Trade-offs, Architecture Discussions, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
-
-
-## Behavioral & Leadership Interviews Roadmap
-
-| Module | High-Level Topic                  | Key Subtopics                                                                                                              | Level        | Importance |
-| ------ | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Behavioral Interview Fundamentals | Why Behavioral Interviews, Evaluation Criteria, Leadership Signals, Mid vs Senior Expectations                             | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Interview Frameworks              | STAR, CAR, PAR, SOAR, Structured Storytelling, Situation Framing                                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Self-Assessment                   | Career Timeline, Key Projects, Achievements, Failures, Lessons Learned, Career Highlights                                  | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | Story Bank Preparation            | Project Stories, Success Stories, Failure Stories, Leadership Stories, Conflict Stories, Innovation Stories                | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Ownership                         | End-to-End Ownership, Accountability, Initiative, Delivering Results, Customer Impact                                      | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 6      | Leadership Fundamentals           | Leadership Without Authority, Technical Leadership, Vision, Influence, Decision Making                                     | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Decision Making                   | Trade-offs, Prioritization, Risk Assessment, Technical Decisions, Business Decisions                                       | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Problem Solving                   | Root Cause Analysis, Debugging Production Issues, Critical Thinking, Incident Handling                                     | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Conflict Resolution               | Team Conflicts, Technical Disagreements, Stakeholder Conflicts, Negotiation, Difficult Conversations                       | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | Communication with Stakeholders   | Engineers, Product Managers, Designers, QA, Executives, Customers, Cross-Functional Collaboration                          | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | Team Collaboration                | Cross-Team Collaboration, Pair Programming, Knowledge Sharing, Feedback, Trust Building                                    | Intermediate | ⭐⭐⭐⭐☆      |
-| 12     | Mentorship                        | Coaching, Knowledge Transfer, Code Reviews, Technical Guidance, Growing Junior Engineers                                   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 13     | Project Management                | Planning, Estimation, Sprint Execution, Risk Management, Scope Management, Delivery                                        | Intermediate | ⭐⭐⭐⭐☆      |
-| 14     | Technical Leadership              | Architecture Decisions, Design Reviews, Technical Vision, Driving Engineering Standards                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 15     | Execution Excellence              | Prioritization, Time Management, Managing Multiple Projects, Delivering Under Pressure                                     | Advanced     | ⭐⭐⭐⭐⭐      |
-| 16     | Innovation & Initiative           | Process Improvements, Automation, Cost Optimization, Performance Improvements, Technical Innovation                        | Advanced     | ⭐⭐⭐⭐☆      |
-| 17     | Failure & Recovery                | Handling Failures, Learning from Mistakes, Incident Response, Postmortems, Accountability                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Handling Ambiguity                | Incomplete Requirements, Changing Priorities, Uncertain Environments, Decision Making Under Uncertainty                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Customer Obsession                | Customer Focus, User Impact, Product Thinking, Balancing Technical & Business Needs                                        | Advanced     | ⭐⭐⭐⭐☆      |
-| 20     | Engineering Excellence            | Code Quality, Testing, Reliability, Scalability, Security Mindset, Continuous Improvement                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 21     | Business Acumen                   | Product Metrics, KPIs, ROI, Cost Awareness, Engineering Impact, Business Alignment                                         | Advanced     | ⭐⭐⭐⭐☆      |
-| 22     | Company Leadership Principles     | Amazon Leadership Principles, Google Behaviors, Meta Values, Microsoft Culture, OpenAI Principles                          | Advanced     | ⭐⭐⭐⭐⭐      |
-| 23     | Senior Engineer Expectations      | Ownership at Scale, Driving Initiatives, Cross-Team Leadership, Strategic Thinking, Influence                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 24     | Staff+ Expectations (Overview)    | Technical Strategy, Organization Impact, Engineering Culture, Mentoring Leaders, Long-Term Vision                          | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Difficult Behavioral Questions    | Weaknesses, Failures, Conflict, Disagreements, Ethical Decisions, Tough Feedback, Mistakes                                 | Advanced     | ⭐⭐⭐⭐⭐      |
-| 26     | Behavioral Patterns by Company    | FAANG Patterns, Product Companies, AI Companies, Startup Expectations, Enterprise Companies                                | Advanced     | ⭐⭐⭐⭐☆      |
-| 27     | Mock Behavioral Interviews        | Story Evaluation, STAR Practice, Follow-up Questions, Time Management, Feedback Sessions                                   | Advanced     | ⭐⭐⭐⭐⭐      |
-| 28     | Red Flags & Common Mistakes       | Blaming Others, Weak Ownership, Vague Stories, Poor Metrics, Lack of Reflection, Overconfidence                            | Advanced     | ⭐⭐⭐⭐⭐      |
-| 29     | Behavioral Question Bank          | 100+ Common Behavioral Questions, Leadership Scenarios, Ownership Scenarios, Conflict Scenarios, Decision-Making Scenarios | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Behavioral Interview Mastery      | Story Refinement, Leadership Presence, Executive Communication, Confidence, Mock Interviews, Offer-Level Performance       | Advanced     | ⭐⭐⭐⭐⭐      |
-
-
-## Communication & Storytelling Roadmap
-
-| Module | High-Level Topic                      | Key Subtopics                                                                                         | Level        | Importance |
-| ------ | ------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Communication Fundamentals            | Communication Principles, Verbal vs Non-Verbal Communication, Active Listening, Clarity, Conciseness  | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Technical Communication               | Explaining Technical Concepts, Audience Awareness, Simplifying Complex Topics, Technical Vocabulary   | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Storytelling Fundamentals             | Story Structure, Context, Problem, Solution, Outcome, Impact, Lessons Learned                         | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | Structured Communication              | Pyramid Principle, BLUF (Bottom Line Up Front), MECE, Logical Flow, Structured Thinking               | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | STAR & Technical Storytelling         | STAR Method, CAR, PAR, Engineering Storytelling, Metrics-Driven Stories                               | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 6      | Project Walkthroughs                  | Project Overview, Architecture, Challenges, Trade-offs, Decisions, Results, Learnings                 | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Explaining System Design              | Requirement Clarification, Component Explanation, Architecture Flow, Trade-offs, Scaling Decisions    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Whiteboarding Skills                  | Drawing Architecture, Visual Communication, Incremental Design, Diagram Best Practices                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Design Reviews                        | Presenting Designs, Defending Decisions, Receiving Feedback, Handling Questions, Consensus Building   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | Technical Discussions                 | Brainstorming, Architecture Discussions, Code Reviews, RFC Discussions, Design Debates                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | Stakeholder Communication             | Engineers, Product Managers, Designers, QA, Leadership, Customers, Cross-Functional Teams             | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Meeting Communication                 | Stand-ups, Sprint Planning, Retrospectives, Technical Meetings, Decision Meetings, Follow-ups         | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | Written Communication                 | Technical Documentation, Design Docs, RFCs, ADRs, READMEs, Meeting Notes                              | Intermediate | ⭐⭐⭐⭐⭐      |
-| 14     | Technical Writing                     | API Documentation, Architecture Documents, Knowledge Base Articles, Incident Reports                  | Intermediate | ⭐⭐⭐⭐☆      |
-| 15     | Presentation Skills                   | Technical Presentations, Demo Sessions, Brown Bag Talks, Conference Talks, Internal Knowledge Sharing | Intermediate | ⭐⭐⭐⭐☆      |
-| 16     | Explaining Trade-offs                 | Pros & Cons, Decision Frameworks, Cost vs Performance, Simplicity vs Flexibility, Build vs Buy        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 17     | Handling Questions                    | Clarification Questions, Challenging Questions, Unknown Questions, Thinking Aloud, Objection Handling | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Interview Communication               | Coding Interviews, System Design Interviews, Behavioral Interviews, Thinking Aloud, Time Management   | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Leadership Communication              | Influencing Teams, Vision Communication, Technical Leadership, Mentoring, Executive Updates           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 20     | Executive Communication               | Business Impact, Strategic Thinking, Decision Summaries, KPI Communication, Risk Communication        | Advanced     | ⭐⭐⭐⭐☆      |
-| 21     | Difficult Conversations               | Giving Feedback, Receiving Feedback, Conflict Resolution, Escalations, Disagreements                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | Persuasion & Influence                | Convincing Stakeholders, Selling Ideas, Negotiation, Consensus Building, Managing Resistance          | Advanced     | ⭐⭐⭐⭐⭐      |
-| 23     | Cross-Cultural Communication          | Global Teams, Remote Communication, Time Zones, Cultural Awareness, Inclusive Communication           | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Communication in Production           | Incident Communication, Status Updates, Root Cause Analysis, Postmortems, Customer Communication      | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Personal Branding                     | Professional Presence, Confidence, Public Speaking, Networking, Online Presence                       | Advanced     | ⭐⭐⭐⭐☆      |
-| 26     | Storytelling for Career Growth        | Resume Stories, Promotion Stories, Leadership Stories, Performance Reviews, Interview Stories         | Advanced     | ⭐⭐⭐⭐⭐      |
-| 27     | Real-World Communication Case Studies | Architecture Review, Executive Presentation, Client Discussion, Incident Bridge, Design Proposal      | Advanced     | ⭐⭐⭐⭐⭐      |
-| 28     | Common Communication Mistakes         | Over-Explaining, Under-Explaining, Poor Structure, Lack of Metrics, Jargon Overuse, Weak Conclusions  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 29     | Communication Practice                | Mock Presentations, Mock System Design, Technical Talks, Storytelling Exercises, Peer Feedback        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Communication & Storytelling Mastery  | Executive Presence, Confident Communication, Interview Excellence, Leadership Presence, Mock Sessions | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Resume, LinkedIn & Portfolio Roadmap
@@ -704,6 +775,78 @@ The reason is that **Tier 1 companies don't hire for "LangChain developers."** T
 | 30     | Resume, LinkedIn & Portfolio Mastery   | End-to-End Personal Brand, Interview-Ready Profile, Tier 1 Resume Standards, Portfolio Excellence   | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
+## Communication & Storytelling Roadmap
+
+| Module | High-Level Topic                      | Key Subtopics                                                                                         | Level        | Importance |
+| ------ | ------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Communication Fundamentals            | Communication Principles, Verbal vs Non-Verbal Communication, Active Listening, Clarity, Conciseness  | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Technical Communication               | Explaining Technical Concepts, Audience Awareness, Simplifying Complex Topics, Technical Vocabulary   | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Storytelling Fundamentals             | Story Structure, Context, Problem, Solution, Outcome, Impact, Lessons Learned                         | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Structured Communication              | Pyramid Principle, BLUF (Bottom Line Up Front), MECE, Logical Flow, Structured Thinking               | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | STAR & Technical Storytelling         | STAR Method, CAR, PAR, Engineering Storytelling, Metrics-Driven Stories                               | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 6      | Project Walkthroughs                  | Project Overview, Architecture, Challenges, Trade-offs, Decisions, Results, Learnings                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Explaining System Design              | Requirement Clarification, Component Explanation, Architecture Flow, Trade-offs, Scaling Decisions    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Whiteboarding Skills                  | Drawing Architecture, Visual Communication, Incremental Design, Diagram Best Practices                | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Design Reviews                        | Presenting Designs, Defending Decisions, Receiving Feedback, Handling Questions, Consensus Building   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Technical Discussions                 | Brainstorming, Architecture Discussions, Code Reviews, RFC Discussions, Design Debates                | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | Stakeholder Communication             | Engineers, Product Managers, Designers, QA, Leadership, Customers, Cross-Functional Teams             | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Meeting Communication                 | Stand-ups, Sprint Planning, Retrospectives, Technical Meetings, Decision Meetings, Follow-ups         | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | Written Communication                 | Technical Documentation, Design Docs, RFCs, ADRs, READMEs, Meeting Notes                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | Technical Writing                     | API Documentation, Architecture Documents, Knowledge Base Articles, Incident Reports                  | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | Presentation Skills                   | Technical Presentations, Demo Sessions, Brown Bag Talks, Conference Talks, Internal Knowledge Sharing | Intermediate | ⭐⭐⭐⭐☆      |
+| 16     | Explaining Trade-offs                 | Pros & Cons, Decision Frameworks, Cost vs Performance, Simplicity vs Flexibility, Build vs Buy        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 17     | Handling Questions                    | Clarification Questions, Challenging Questions, Unknown Questions, Thinking Aloud, Objection Handling | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Interview Communication               | Coding Interviews, System Design Interviews, Behavioral Interviews, Thinking Aloud, Time Management   | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Leadership Communication              | Influencing Teams, Vision Communication, Technical Leadership, Mentoring, Executive Updates           | Advanced     | ⭐⭐⭐⭐⭐      |
+| 20     | Executive Communication               | Business Impact, Strategic Thinking, Decision Summaries, KPI Communication, Risk Communication        | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Difficult Conversations               | Giving Feedback, Receiving Feedback, Conflict Resolution, Escalations, Disagreements                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | Persuasion & Influence                | Convincing Stakeholders, Selling Ideas, Negotiation, Consensus Building, Managing Resistance          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Cross-Cultural Communication          | Global Teams, Remote Communication, Time Zones, Cultural Awareness, Inclusive Communication           | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Communication in Production           | Incident Communication, Status Updates, Root Cause Analysis, Postmortems, Customer Communication      | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Personal Branding                     | Professional Presence, Confidence, Public Speaking, Networking, Online Presence                       | Advanced     | ⭐⭐⭐⭐☆      |
+| 26     | Storytelling for Career Growth        | Resume Stories, Promotion Stories, Leadership Stories, Performance Reviews, Interview Stories         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | Real-World Communication Case Studies | Architecture Review, Executive Presentation, Client Discussion, Incident Bridge, Design Proposal      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Common Communication Mistakes         | Over-Explaining, Under-Explaining, Poor Structure, Lack of Metrics, Jargon Overuse, Weak Conclusions  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Communication Practice                | Mock Presentations, Mock System Design, Technical Talks, Storytelling Exercises, Peer Feedback        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Communication & Storytelling Mastery  | Executive Presence, Confident Communication, Interview Excellence, Leadership Presence, Mock Sessions | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Behavioral & Leadership Interviews Roadmap
+
+| Module | High-Level Topic                  | Key Subtopics                                                                                                              | Level        | Importance |
+| ------ | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Behavioral Interview Fundamentals | Why Behavioral Interviews, Evaluation Criteria, Leadership Signals, Mid vs Senior Expectations                             | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Interview Frameworks              | STAR, CAR, PAR, SOAR, Structured Storytelling, Situation Framing                                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Self-Assessment                   | Career Timeline, Key Projects, Achievements, Failures, Lessons Learned, Career Highlights                                  | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Story Bank Preparation            | Project Stories, Success Stories, Failure Stories, Leadership Stories, Conflict Stories, Innovation Stories                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Ownership                         | End-to-End Ownership, Accountability, Initiative, Delivering Results, Customer Impact                                      | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 6      | Leadership Fundamentals           | Leadership Without Authority, Technical Leadership, Vision, Influence, Decision Making                                     | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Decision Making                   | Trade-offs, Prioritization, Risk Assessment, Technical Decisions, Business Decisions                                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Problem Solving                   | Root Cause Analysis, Debugging Production Issues, Critical Thinking, Incident Handling                                     | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Conflict Resolution               | Team Conflicts, Technical Disagreements, Stakeholder Conflicts, Negotiation, Difficult Conversations                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Communication with Stakeholders   | Engineers, Product Managers, Designers, QA, Executives, Customers, Cross-Functional Collaboration                          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | Team Collaboration                | Cross-Team Collaboration, Pair Programming, Knowledge Sharing, Feedback, Trust Building                                    | Intermediate | ⭐⭐⭐⭐☆      |
+| 12     | Mentorship                        | Coaching, Knowledge Transfer, Code Reviews, Technical Guidance, Growing Junior Engineers                                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | Project Management                | Planning, Estimation, Sprint Execution, Risk Management, Scope Management, Delivery                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | Technical Leadership              | Architecture Decisions, Design Reviews, Technical Vision, Driving Engineering Standards                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 15     | Execution Excellence              | Prioritization, Time Management, Managing Multiple Projects, Delivering Under Pressure                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+| 16     | Innovation & Initiative           | Process Improvements, Automation, Cost Optimization, Performance Improvements, Technical Innovation                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 17     | Failure & Recovery                | Handling Failures, Learning from Mistakes, Incident Response, Postmortems, Accountability                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Handling Ambiguity                | Incomplete Requirements, Changing Priorities, Uncertain Environments, Decision Making Under Uncertainty                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Customer Obsession                | Customer Focus, User Impact, Product Thinking, Balancing Technical & Business Needs                                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Engineering Excellence            | Code Quality, Testing, Reliability, Scalability, Security Mindset, Continuous Improvement                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 21     | Business Acumen                   | Product Metrics, KPIs, ROI, Cost Awareness, Engineering Impact, Business Alignment                                         | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Company Leadership Principles     | Amazon Leadership Principles, Google Behaviors, Meta Values, Microsoft Culture, OpenAI Principles                          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Senior Engineer Expectations      | Ownership at Scale, Driving Initiatives, Cross-Team Leadership, Strategic Thinking, Influence                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 24     | Staff+ Expectations (Overview)    | Technical Strategy, Organization Impact, Engineering Culture, Mentoring Leaders, Long-Term Vision                          | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Difficult Behavioral Questions    | Weaknesses, Failures, Conflict, Disagreements, Ethical Decisions, Tough Feedback, Mistakes                                 | Advanced     | ⭐⭐⭐⭐⭐      |
+| 26     | Behavioral Patterns by Company    | FAANG Patterns, Product Companies, AI Companies, Startup Expectations, Enterprise Companies                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 27     | Mock Behavioral Interviews        | Story Evaluation, STAR Practice, Follow-up Questions, Time Management, Feedback Sessions                                   | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Red Flags & Common Mistakes       | Blaming Others, Weak Ownership, Vague Stories, Poor Metrics, Lack of Reflection, Overconfidence                            | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Behavioral Question Bank          | 100+ Common Behavioral Questions, Leadership Scenarios, Ownership Scenarios, Conflict Scenarios, Decision-Making Scenarios | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Behavioral Interview Mastery      | Story Refinement, Leadership Presence, Executive Communication, Confidence, Mock Interviews, Offer-Level Performance       | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
 ## Salary Negotiation & Career Strategy Roadmap
 
 | Module | High-Level Topic                    | Key Subtopics                                                                                                      | Level        | Importance |
@@ -738,146 +881,3 @@ The reason is that **Tier 1 companies don't hire for "LangChain developers."** T
 | 28     | Company-Specific Compensation       | FAANG, AI Companies, Unicorns, Startups, Service Companies, Remote Companies                                       | Advanced     | ⭐⭐⭐⭐☆      |
 | 29     | Career Strategy Playbooks           | 3-Year Plan, 5-Year Plan, Staff Engineer Path, AI Engineer Path, Engineering Manager Path                          | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Salary Negotiation & Career Mastery | Negotiation Simulations, Career Decision Frameworks, Offer Optimization, Long-Term Career Strategy                 | Advanced     | ⭐⭐⭐⭐⭐      |
-
-
-
-
-## Cloud Computing Roadmap
-
-| Module | High-Level Topic                      | Key Subtopics                                                                                                              | Level        | Importance |
-| ------ | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Cloud Computing Fundamentals          | What is Cloud Computing, Cloud Characteristics, Benefits, Shared Responsibility Model, Cloud Adoption                      | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Cloud Service Models                  | IaaS, PaaS, SaaS, FaaS, BaaS, Managed Services                                                                             | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Cloud Deployment Models               | Public Cloud, Private Cloud, Hybrid Cloud, Multi-Cloud, Community Cloud                                                    | Fundamental  | ⭐⭐⭐⭐☆      |
-| 4      | Cloud Providers                       | AWS, Microsoft Azure, Google Cloud Platform (GCP), Oracle Cloud, DigitalOcean, Provider Comparison                         | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Identity & Access Management (IAM)    | Users, Groups, Roles, Policies, Service Accounts, Federation, Least Privilege, MFA                                         | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 6      | Cloud Networking                      | VPC/VNet, Subnets, Route Tables, Internet Gateway, NAT Gateway, VPN, Peering, Private Connectivity, DNS                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Compute Services                      | Virtual Machines, EC2, Compute Engine, Azure VMs, Autoscaling, Instance Types, Spot/Preemptible Instances                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Serverless Computing                  | AWS Lambda, Cloud Functions, Azure Functions, Event-Driven Computing, Cold Starts, Function URLs                           | Intermediate | ⭐⭐⭐⭐☆      |
-| 9      | Object Storage                        | Amazon S3, Google Cloud Storage, Azure Blob Storage, Buckets, Objects, Versioning, Lifecycle Policies                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | Block & File Storage                  | EBS, Persistent Disk, Azure Managed Disks, EFS, FSx, Filestore, Storage Performance                                        | Intermediate | ⭐⭐⭐⭐☆      |
-| 11     | Managed Databases                     | RDS, Cloud SQL, Azure SQL, MongoDB Atlas, DynamoDB, Firestore, Cosmos DB, Managed Redis                                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Messaging & Event Services            | SQS, SNS, EventBridge, Pub/Sub, Event Grid, Service Bus, Managed Kafka                                                     | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | Load Balancing & Traffic Management   | Application Load Balancer, Network Load Balancer, Global Load Balancer, Traffic Routing, Health Checks                     | Intermediate | ⭐⭐⭐⭐⭐      |
-| 14     | CDN & Edge Computing                  | CloudFront, Cloud CDN, Azure CDN, Edge Locations, Edge Caching, Signed URLs, Edge Functions                                | Intermediate | ⭐⭐⭐⭐☆      |
-| 15     | Security in the Cloud                 | Security Groups, Network ACLs, KMS, Secret Managers, WAF, Shield, Encryption, Zero Trust                                   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 16     | Monitoring & Logging                  | CloudWatch, Azure Monitor, Cloud Monitoring, Logging, Metrics, Alerting, Dashboards                                        | Intermediate | ⭐⭐⭐⭐☆      |
-| 17     | Infrastructure as Code (IaC)          | Terraform, CloudFormation, ARM/Bicep, Pulumi, Infrastructure Automation, State Management                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Cloud Containers                      | Container Registries, ECS, EKS, GKE, AKS, Cloud Run, Azure Container Apps                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Cloud Kubernetes                      | Managed Kubernetes, Node Pools, Autoscaling, Ingress Controllers, Storage Classes, Cluster Operations                      | Advanced     | ⭐⭐⭐⭐⭐      |
-| 20     | Cloud CI/CD Integration               | GitHub Actions, Cloud Build, CodePipeline, Azure DevOps, Artifact Registry, Deployment Pipelines                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 21     | High Availability & Disaster Recovery | Multi-AZ, Multi-Region, Replication, Backup, Failover, Disaster Recovery Strategies                                        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | Scalability & Performance             | Horizontal Scaling, Vertical Scaling, Auto Scaling, Caching, Performance Optimization, Capacity Planning                   | Advanced     | ⭐⭐⭐⭐⭐      |
-| 23     | Cost Optimization (FinOps)            | Pricing Models, Cost Explorer, Reserved Instances, Savings Plans, Spot Instances, Resource Optimization, Budgeting         | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Multi-Cloud & Hybrid Cloud            | Hybrid Architecture, Cross-Cloud Networking, Vendor Lock-In, Data Replication, Cloud Bursting                              | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Cloud Architecture Patterns           | 3-Tier Architecture, Microservices, Event-Driven Architecture, Serverless Architecture, Multi-Tenant SaaS                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 26     | Production Cloud Architecture         | Secure VPC Design, Multi-Tier Systems, Global Applications, AI Infrastructure, Production Readiness                        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 27     | Cloud Migration                       | Lift & Shift, Replatforming, Refactoring, Database Migration, Zero-Downtime Migration                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 28     | Cloud Governance                      | Resource Organization, Tagging, Policies, Compliance, Landing Zones, Organizational Units                                  | Advanced     | ⭐⭐⭐⭐☆      |
-| 29     | Cloud Case Studies                    | E-commerce Platform, SaaS Platform, AI Platform, Streaming Platform, Multi-Region Backend, Enterprise Systems              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Cloud Computing Interview Mastery     | Cloud Architecture Questions, Service Selection, Design Trade-offs, Cost Optimization, Security Scenarios, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
-
-## Docker & Kubernetes Roadmap
-
-| Module | High-Level Topic                      | Key Subtopics                                                                                                                 | Level        | Importance |
-| ------ | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Containerization Fundamentals         | What are Containers, Virtual Machines vs Containers, OCI, Container Runtime, Container Lifecycle                              | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Docker Fundamentals                   | Docker Architecture, Docker Engine, Images, Containers, Registries, Docker CLI, Docker Desktop                                | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Docker Images                         | Dockerfile, Layers, Build Context, Multi-Stage Builds, Image Optimization, Image Tagging                                      | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | Docker Containers                     | Creating, Running, Stopping, Restarting, Inspecting, Logs, Exec, Attach, Lifecycle Management                                 | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Docker Storage                        | Volumes, Bind Mounts, tmpfs, Persistent Data, Backup & Restore                                                                | Fundamental  | ⭐⭐⭐⭐☆      |
-| 6      | Docker Networking                     | Bridge Network, Host Network, Overlay Network, Macvlan, DNS, Port Mapping, Service Discovery                                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Docker Compose                        | Compose File, Multi-Container Applications, Networks, Volumes, Environment Variables, Profiles                                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Docker Registry                       | Docker Hub, Private Registries, Artifact Registry, Amazon ECR, Azure ACR, Google Artifact Registry                            | Intermediate | ⭐⭐⭐⭐☆      |
-| 9      | Docker Security                       | Image Scanning, Secrets, Rootless Containers, Capabilities, Seccomp, AppArmor, Best Practices                                 | Intermediate | ⭐⭐⭐⭐☆      |
-| 10     | Kubernetes Fundamentals               | Kubernetes Architecture, Cluster Components, Control Plane, Worker Nodes, API Server, etcd                                    | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 11     | Pods                                  | Pod Lifecycle, Init Containers, Sidecar Containers, Multi-Container Pods, Health Checks                                       | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 12     | Workloads                             | Deployments, ReplicaSets, StatefulSets, DaemonSets, Jobs, CronJobs                                                            | Intermediate | ⭐⭐⭐⭐⭐      |
-| 13     | Services                              | ClusterIP, NodePort, LoadBalancer, ExternalName, Service Discovery, DNS                                                       | Intermediate | ⭐⭐⭐⭐⭐      |
-| 14     | Configuration Management              | ConfigMaps, Secrets, Environment Variables, Downward API, Resource Configuration                                              | Intermediate | ⭐⭐⭐⭐⭐      |
-| 15     | Storage in Kubernetes                 | Persistent Volumes (PV), Persistent Volume Claims (PVC), Storage Classes, CSI Drivers, Dynamic Provisioning                   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 16     | Scheduling & Resource Management      | Scheduler, Node Affinity, Taints & Tolerations, Resource Requests, Limits, QoS Classes                                        | Intermediate | ⭐⭐⭐⭐⭐      |
-| 17     | Networking in Kubernetes              | CNI, Ingress, Ingress Controllers, Network Policies, Service Mesh Basics                                                      | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Scaling                               | Horizontal Pod Autoscaler (HPA), Vertical Pod Autoscaler (VPA), Cluster Autoscaler, Scaling Strategies                        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Observability                         | kubectl, Logs, Events, Metrics Server, Prometheus, Grafana, Kubernetes Dashboard                                              | Advanced     | ⭐⭐⭐⭐☆      |
-| 20     | Security                              | RBAC, Service Accounts, Pod Security, Admission Controllers, Image Policies, Secret Management                                | Advanced     | ⭐⭐⭐⭐⭐      |
-| 21     | Helm                                  | Charts, Templates, Values, Releases, Repositories, Helm Best Practices                                                        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | Operators & CRDs                      | Custom Resource Definitions (CRDs), Operators, Kubernetes API Extension, Operator Framework                                   | Advanced     | ⭐⭐⭐⭐☆      |
-| 23     | Service Mesh                          | Istio, Linkerd, Envoy, Traffic Management, mTLS, Observability, Policy Enforcement                                            | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | CI/CD Integration                     | Docker Build Pipelines, Image Publishing, Kubernetes Deployments, GitOps, Argo CD, Flux CD                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 25     | Production Kubernetes                 | High Availability, Multi-Cluster, Rolling Updates, Blue-Green, Canary Deployments, Disaster Recovery                          | Advanced     | ⭐⭐⭐⭐⭐      |
-| 26     | Performance Optimization              | Image Optimization, Startup Time, Resource Optimization, Scheduling Efficiency, Cluster Performance                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 27     | Cloud Kubernetes                      | Amazon EKS, Google GKE, Azure AKS, OpenShift, Managed Kubernetes Comparison                                                   | Advanced     | ⭐⭐⭐⭐☆      |
-| 28     | Production Case Studies               | Microservices Deployment, AI Platform, SaaS Application, Event-Driven Systems, High-Traffic APIs                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 29     | Common Pitfalls & Best Practices      | Image Bloat, CrashLoopBackOff, Pending Pods, Resource Misconfiguration, Security Misconfigurations                            | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Docker & Kubernetes Interview Mastery | Architecture Questions, Deployment Scenarios, Troubleshooting, Scaling Strategies, Production Best Practices, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
-
-## CI/CD & DevOps Roadmap
-
-| Module | High-Level Topic                 | Key Subtopics                                                                                         | Level        | Importance |
-| ------ | -------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | DevOps Fundamentals              | DevOps Culture, DevOps Lifecycle, CALMS, Agile & DevOps, SDLC, DevSecOps                              | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Version Control                  | Git Fundamentals, Branching, Merging, Rebasing, Tags, Git Flow, Trunk-Based Development               | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Repository Management            | GitHub, GitLab, Bitbucket, Repository Structure, Branch Protection, CODEOWNERS                        | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | CI Fundamentals                  | Continuous Integration, Build Pipelines, Automated Builds, Pipeline Triggers, Pipeline Stages         | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Build Automation                 | Build Systems, Dependency Management, Package Managers, Artifact Generation, Versioning               | Fundamental  | ⭐⭐⭐⭐☆      |
-| 6      | Automated Testing                | Unit Tests, Integration Tests, End-to-End Tests, Contract Tests, Test Automation, Quality Gates       | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Code Quality & Security          | Static Code Analysis (SAST), Linting, Formatting, Code Coverage, Dependency Scanning, Secret Scanning | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Artifact Management              | Docker Images, Package Registries, Artifact Repositories, Versioning, Release Management              | Intermediate | ⭐⭐⭐⭐☆      |
-| 9      | CI Platforms                     | GitHub Actions, GitLab CI, Jenkins, CircleCI, Azure DevOps, Cloud Build                               | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | CD Fundamentals                  | Continuous Delivery, Continuous Deployment, Release Automation, Deployment Pipelines                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | Deployment Strategies            | Rolling Updates, Blue-Green Deployment, Canary Deployment, Recreate, Feature Flags                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Infrastructure as Code           | Terraform, OpenTofu, Pulumi, CloudFormation, ARM/Bicep, Infrastructure Provisioning                   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 13     | Configuration Management         | Ansible, Chef, Puppet, SaltStack, Environment Management, Configuration Drift                         | Intermediate | ⭐⭐⭐⭐☆      |
-| 14     | Container-Based CI/CD            | Docker Build Pipelines, Image Scanning, Registry Management, Kubernetes Deployments                   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 15     | GitOps                           | GitOps Principles, Argo CD, Flux CD, Declarative Deployments, Drift Detection                         | Advanced     | ⭐⭐⭐⭐⭐      |
-| 16     | Kubernetes Delivery              | Helm, Kustomize, Progressive Delivery, Rollbacks, Release Management                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 17     | Secrets Management               | Vault, Cloud Secret Managers, Sealed Secrets, Secret Rotation, Secure Pipelines                       | Advanced     | ⭐⭐⭐⭐☆      |
-| 18     | DevSecOps                        | Security in CI/CD, SAST, DAST, IAST, SBOM, Supply Chain Security, Policy as Code                      | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Release Management               | Semantic Versioning, Release Notes, Release Branches, Feature Toggles, Change Management              | Advanced     | ⭐⭐⭐⭐☆      |
-| 20     | Pipeline Optimization            | Pipeline Parallelism, Caching, Incremental Builds, Matrix Builds, Self-Hosted Runners                 | Advanced     | ⭐⭐⭐⭐☆      |
-| 21     | Cloud CI/CD                      | AWS CodePipeline, Azure DevOps, Google Cloud Build, Cloud Deploy, Managed CI/CD Services              | Advanced     | ⭐⭐⭐⭐☆      |
-| 22     | Monitoring CI/CD                 | Pipeline Metrics, Deployment Metrics, DORA Metrics, Build Monitoring, Alerts                          | Advanced     | ⭐⭐⭐⭐☆      |
-| 23     | Reliability in Delivery          | Rollback Strategies, Disaster Recovery, Deployment Validation, Health Checks, Failure Recovery        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 24     | Compliance & Governance          | Audit Trails, Change Approval, Compliance Automation, Policy Enforcement, Access Control              | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Production DevOps                | Environment Strategy, Multi-Environment Pipelines, Multi-Region Deployments, Production Readiness     | Advanced     | ⭐⭐⭐⭐⭐      |
-| 26     | DevOps Architecture Patterns     | CI/CD Architecture, GitOps Architecture, Platform Engineering, Internal Developer Platforms (IDP)     | Advanced     | ⭐⭐⭐⭐⭐      |
-| 27     | Production Case Studies          | Microservices Delivery, Kubernetes Deployment, AI Platform Deployment, SaaS Release Pipeline          | Advanced     | ⭐⭐⭐⭐⭐      |
-| 28     | Common DevOps Pitfalls           | Long Build Times, Deployment Failures, Configuration Drift, Secret Leaks, Pipeline Bottlenecks        | Advanced     | ⭐⭐⭐⭐⭐      |
-| 29     | DevOps Tool Ecosystem            | GitHub Actions, Jenkins, Argo CD, Flux CD, Terraform, Vault, SonarQube, Nexus, Artifactory            | Advanced     | ⭐⭐⭐⭐☆      |
-| 30     | CI/CD & DevOps Interview Mastery | Pipeline Design, Deployment Scenarios, GitOps Questions, DevSecOps, DORA Metrics, Mock Interviews     | Advanced     | ⭐⭐⭐⭐⭐      |
-
-## Observability, Reliability & Site Reliability Engineering (SRE) Roadmap
-
-| Module | High-Level Topic                                   | Key Subtopics                                                                                                                            | Level        | Importance |
-| ------ | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Observability Fundamentals                         | Observability vs Monitoring, Three Pillars, Telemetry, SLI, SLO, SLA, Golden Signals, RED & USE Methodologies                            | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Logging Fundamentals                               | Structured Logging, Log Levels, Log Formats, Correlation IDs, Log Aggregation, Audit Logs                                                | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Metrics Fundamentals                               | Counters, Gauges, Histograms, Summaries, Business Metrics, Infrastructure Metrics, Custom Metrics                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | Distributed Tracing                                | Trace, Span, Context Propagation, Correlation, End-to-End Request Tracing, Trace Visualization                                           | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | OpenTelemetry                                      | OpenTelemetry Architecture, Instrumentation, SDKs, Collectors, Exporters, Semantic Conventions                                           | Intermediate | ⭐⭐⭐⭐⭐      |
-| 6      | Logging Platforms                                  | ELK Stack, OpenSearch, Loki, Fluent Bit, Fluentd, Log Pipelines                                                                          | Intermediate | ⭐⭐⭐⭐☆      |
-| 7      | Metrics Platforms                                  | Prometheus, VictoriaMetrics, Grafana Mimir, Metric Collection, PromQL, Dashboards                                                        | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Tracing Platforms                                  | Jaeger, Zipkin, Grafana Tempo, Trace Analysis, Sampling Strategies                                                                       | Intermediate | ⭐⭐⭐⭐☆      |
-| 9      | Dashboards & Visualization                         | Grafana, Kibana, Dashboard Design, Visualization Best Practices, Business Dashboards                                                     | Intermediate | ⭐⭐⭐⭐☆      |
-| 10     | Alerting                                           | Alert Rules, Alert Fatigue, Alert Routing, Alertmanager, Escalation Policies, On-Call Notifications                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 11     | Health Checks                                      | Liveness Probes, Readiness Probes, Startup Probes, Synthetic Monitoring, Heartbeats                                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Application Performance Monitoring (APM)           | New Relic, Datadog, Dynatrace, Elastic APM, Application Insights, Performance Monitoring                                                 | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | Reliability Engineering Fundamentals               | Reliability Principles, Failure Modes, MTBF, MTTR, Availability Calculations, Error Budgets                                              | Intermediate | ⭐⭐⭐⭐⭐      |
-| 14     | Site Reliability Engineering (SRE)                 | SRE Principles, Toil Reduction, Automation, Reliability Culture, Operational Excellence                                                  | Intermediate | ⭐⭐⭐⭐⭐      |
-| 15     | High Availability                                  | Redundancy, Active-Active, Active-Passive, Failover, Multi-AZ, Multi-Region Architectures                                                | Advanced     | ⭐⭐⭐⭐⭐      |
-| 16     | Fault Tolerance                                    | Retry, Timeout, Circuit Breaker, Bulkhead, Graceful Degradation, Self-Healing Systems                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 17     | Disaster Recovery                                  | Backup Strategies, Restore Procedures, RPO, RTO, Disaster Recovery Planning, Chaos Readiness                                             | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Capacity Planning                                  | Capacity Forecasting, Resource Utilization, Auto Scaling, Load Forecasting, Performance Baselines                                        | Advanced     | ⭐⭐⭐⭐☆      |
-| 19     | Chaos Engineering                                  | Chaos Principles, Fault Injection, Chaos Monkey, Resilience Testing, Failure Simulation                                                  | Advanced     | ⭐⭐⭐⭐☆      |
-| 20     | Incident Management                                | Incident Lifecycle, Severity Levels, Incident Command, Communication, Escalation, War Rooms                                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 21     | Postmortems & RCA                                  | Blameless Postmortems, Root Cause Analysis, Corrective Actions, Preventive Actions, Incident Reviews                                     | Advanced     | ⭐⭐⭐⭐⭐      |
-| 22     | Reliability Automation                             | Auto Remediation, Self-Healing, Runbooks, Playbooks, Automation Workflows                                                                | Advanced     | ⭐⭐⭐⭐☆      |
-| 23     | Security Observability                             | Security Logging, Audit Trails, Threat Detection, SIEM Integration, Compliance Monitoring                                                | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Cloud Observability                                | AWS CloudWatch, Azure Monitor, Google Cloud Monitoring, Managed Observability Services                                                   | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Kubernetes Observability                           | Kubernetes Metrics, Cluster Monitoring, Pod Monitoring, kube-state-metrics, Container Insights                                           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 26     | Production Reliability Patterns                    | Rate Limiting, Backpressure, Load Shedding, Queue Monitoring, Service Degradation Strategies                                             | Advanced     | ⭐⭐⭐⭐⭐      |
-| 27     | Observability Architecture                         | Centralized Logging, Distributed Tracing Architecture, Metrics Pipeline, Telemetry Pipeline Design                                       | Advanced     | ⭐⭐⭐⭐⭐      |
-| 28     | Production Case Studies                            | E-commerce Incident, Payment Failure, Distributed System Outage, Kubernetes Failure, AI Platform Monitoring                              | Advanced     | ⭐⭐⭐⭐⭐      |
-| 29     | Common Reliability Pitfalls                        | Alert Fatigue, Missing Metrics, Noisy Logs, Poor Dashboards, Lack of Runbooks, Single Points of Failure                                  | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Observability, Reliability & SRE Interview Mastery | SRE Interview Questions, Incident Scenarios, Reliability Design, Observability Architecture, Production Troubleshooting, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
