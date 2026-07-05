@@ -24,25 +24,29 @@
 11. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
 12. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
 
+**Frontend**
+
+13. [Frontend Engineering Roadmap](#frontend-engineering-roadmap)
+
 **Quality**
 
-13. [Security Engineering Roadmap](#security-engineering-roadmap)
-14. [Performance Engineering Roadmap](#performance-engineering-roadmap)
+14. [Security Engineering Roadmap](#security-engineering-roadmap)
+15. [Performance Engineering Roadmap](#performance-engineering-roadmap)
 
 **AI / ML**
 
-15. [AI Engineering Roadmap](#ai-engineering-roadmap)
-16. [LLM Engineering Roadmap](#llm-engineering-roadmap)
-17. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
-18. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
-19. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+16. [AI Engineering Roadmap](#ai-engineering-roadmap)
+17. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+18. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+19. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+20. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
 
 **Career & Interview Skills**
 
-20. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
-21. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
-22. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
-23. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
+21. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+22. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+23. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+24. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
 
@@ -497,6 +501,42 @@
 | 28     | Production Case Studies                            | E-commerce Incident, Payment Failure, Distributed System Outage, Kubernetes Failure, AI Platform Monitoring                              | Advanced     | ⭐⭐⭐⭐⭐      |
 | 29     | Common Reliability Pitfalls                        | Alert Fatigue, Missing Metrics, Noisy Logs, Poor Dashboards, Lack of Runbooks, Single Points of Failure                                  | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Observability, Reliability & SRE Interview Mastery | SRE Interview Questions, Incident Scenarios, Reliability Design, Observability Architecture, Production Troubleshooting, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Frontend Engineering Roadmap
+
+| Module | High-Level Topic                           | Key Subtopics                                                                                                    | Level        | Importance |
+| ------ | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Frontend Fundamentals                      | What is Frontend Development, Client-Server Model, Browser Basics, Rendering Pipeline, Frontend Responsibilities | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | HTML Fundamentals                          | Semantic HTML, Document Structure, Forms, Tables, Media Elements, Accessibility Basics, SEO Basics               | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | CSS Fundamentals                           | Selectors, Box Model, Specificity, Cascade, Units, Positioning, Display, Pseudo-Classes/Elements                 | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | CSS Layout                                 | Flexbox, Grid, Responsive Design, Media Queries, Container Queries, Mobile-First Design                          | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | CSS Architecture & Styling Systems         | BEM, Utility-First CSS, CSS Modules, CSS-in-JS, Sass/LESS, Design Tokens                                         | Intermediate | ⭐⭐⭐⭐☆      |
+| 6      | JavaScript Fundamentals                    | Variables, Data Types, Functions, Closures, Scope, Hoisting, this, Prototypes, ES6+ Features                     | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 7      | Asynchronous JavaScript                    | Callbacks, Promises, Async/Await, Event Loop, Microtasks vs Macrotasks, Fetch API                                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 8      | DOM & Browser APIs                         | DOM Manipulation, Events, Event Delegation, Web Storage, History API, Intersection/Mutation/Resize Observers     | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 9      | TypeScript for Frontend                    | Types, Interfaces, Generics, Type Narrowing, Utility Types, Type-Safe Props & State                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Component-Based Architecture               | Components, Props, Composition, Reusability, Component Design Principles, Slots/Children                         | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | React Fundamentals                         | JSX, Components, Props, State, Hooks (useState, useEffect), Rendering, Keys, Lists                               | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Advanced React                             | Custom Hooks, Context API, useMemo/useCallback, Refs, Portals, Error Boundaries, Suspense, Concurrent Rendering  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | State Management                           | Local vs Global State, Redux, Zustand, Recoil, Context vs State Libraries, Server State (React Query, SWR)       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | Routing & Navigation                       | Client-Side Routing, Nested Routes, Dynamic Routes, Route Guards, Code Splitting by Route                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | Forms & Validation                         | Controlled vs Uncontrolled Inputs, Form Libraries, Validation Schemas, Error Handling, Multi-Step Forms          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | Data Fetching & API Integration            | REST Integration, GraphQL Clients, Caching, Pagination, Optimistic Updates, Loading/Error States                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 17     | Build Tools & Module Bundlers              | Vite, Webpack, ESBuild, Rollup, Module Resolution, Tree Shaking, Code Splitting, Environment Config              | Intermediate | ⭐⭐⭐⭐☆      |
+| 18     | Meta-Frameworks & Rendering Strategies     | Next.js, Remix, Nuxt, CSR vs SSR vs SSG vs ISR, Hydration, Server Components                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Styling at Scale & Design Systems          | Component Libraries, Design Tokens, Theming, Storybook, Shared UI Libraries, Style Guide Enforcement             | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Frontend Testing                           | Unit Testing, Component Testing, End-to-End Testing, Visual Regression Testing, Mocking, Test Coverage           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 21     | Web Performance                            | Critical Rendering Path, Core Web Vitals, Lazy Loading, Code Splitting, Image Optimization, Bundle Analysis      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | Accessibility (a11y)                       | WCAG, ARIA, Semantic Markup, Keyboard Navigation, Screen Readers, Color Contrast, Accessibility Testing Tools    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Browser Rendering & Internals              | Parsing, Reflow, Repaint, Compositing, GPU Rendering, requestAnimationFrame, Layout Thrashing                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Frontend Security                          | XSS, CSRF, Content Security Policy, Same-Origin Policy, CORS, Secure Token Storage, Dependency Vulnerabilities   | Advanced     | ⭐⭐⭐⭐⭐      |
+| 25     | Progressive Web Apps & Offline             | Service Workers, Web App Manifest, Caching Strategies, Push Notifications, Offline-First Design                  | Advanced     | ⭐⭐⭐☆☆      |
+| 26     | Micro-Frontends & Large-Scale Architecture | Module Federation, Micro-Frontend Patterns, Shared Dependencies, Monorepos, Team Ownership Boundaries            | Advanced     | ⭐⭐⭐⭐☆      |
+| 27     | Internationalization & Localization        | i18n Libraries, Locale Formatting, RTL Support, Translation Management, Pluralization                            | Advanced     | ⭐⭐⭐☆☆      |
+| 28     | Frontend Observability & Monitoring        | Error Tracking, Real User Monitoring, Analytics, Logging, Performance Monitoring Dashboards                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 29     | Production Frontend Case Studies           | E-commerce Storefront, Admin Dashboard, Real-Time Chat UI, Design System Rollout, Large-Scale Migration          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Frontend Interview Mastery                 | Component Design Questions, JavaScript Deep Dive, Frontend System Design, Performance Scenarios, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Security Engineering Roadmap
