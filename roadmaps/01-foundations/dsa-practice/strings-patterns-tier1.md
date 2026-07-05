@@ -7,7 +7,7 @@
 | **Status** | ✅ Complete — Strings (2nd in the Tier-1 pattern series) |
 | **Scope** | Strings — organized by **algorithmic pattern**, Tier-1 / MAANG difficulty |
 | **Targets** | Tier-1 product companies · MAANG / FAANG |
-| **Coverage** | 9 in-file patterns · 80 questions (String DP → [DP bank](dp-patterns-tier1.md#p6)) |
+| **Coverage** | 8 in-file patterns · 72 questions (String DP → [DP bank](dp-patterns-tier1.md#p6) · Backtracking → [BT bank](backtracking-patterns-tier1.md)) |
 | **Related** | Next in series → `trees-patterns-tier1.md`, `graphs-patterns-tier1.md`, … |
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 medium · 🔴 hard &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
@@ -33,7 +33,7 @@ Internalize the *trigger*, not the solution.
 | 4 | [DP on Strings → DP bank](dp-patterns-tier1.md#p6) | — | *moved* — DP is a paradigm; String DP lives in the DP bank |
 | 5 | [Palindrome Techniques](#p5) | 10 | longest/count palindromic substrings · partition into palindromes · make a palindrome |
 | 6 | [Stack-Based](#p6) | 8 | nested/matching brackets · decode · remove adjacent · evaluate expressions |
-| 7 | [Backtracking](#p7) | 8 | generate all combinations / permutations / partitions of a string |
+| 7 | [Backtracking → BT bank](backtracking-patterns-tier1.md) | — | *moved* — backtracking is a paradigm; lives in the Backtracking bank |
 | 8 | [Parsing / Simulation](#p8) | 8 | convert a formatted string · roman/atoi · add/multiply as strings |
 | 9 | [Trie / Prefix](#p9) | 8 | many prefix queries · dictionary of words · autocomplete · word search on a grid |
 | 10 | [String Matching](#p10) | 6 | find a pattern in text · repeated patterns · prefix-function (KMP) / rolling hash |
@@ -147,21 +147,15 @@ Internalize the *trigger*, not the solution.
 | 8 | Basic Calculator | 🔴 | `"(1+(4+5+2)-3)+(6+8)" → 23` | ⭐⭐ |
 
 <a id="p7"></a>
-## 7 · Backtracking (8)
+## 7 · Backtracking → moved to the Backtracking bank
 
-> 🔍 **Recognize it when…** you must enumerate *all* combinations, permutations, or valid partitions
-> of a string — build incrementally and undo on backtrack.
-
-| # | Question | Diff | Example `input → output` | Freq |
-|:--|:--|:--:|:--|:--:|
-| 1 | Letter Case Permutation | 🟢 | `"a1b2" → ["a1b2","a1B2","A1b2","A1B2"]` | ⭐⭐ |
-| 2 | Generate Parentheses | 🟡 | `n=3 → ["((()))","(()())","(())()","()(())","()()()"]` | ⭐⭐⭐ |
-| 3 | Letter Combinations of a Phone Number | 🟡 | `"23" → ["ad","ae","af","bd","be","bf","cd","ce","cf"]` | ⭐⭐⭐ |
-| 4 | Restore IP Addresses | 🟡 | `"25525511135" → ["255.255.11.135","255.255.111.35"]` | ⭐⭐ |
-| 5 | String Permutations | 🟡 | `"abc" → [abc,acb,bac,bca,cab,cba]` | ⭐⭐ |
-| 6 | Word Search (grid of chars) | 🟡 | `board, "ABCCED" → true` | ⭐⭐⭐ |
-| 7 | Word Break II | 🔴 | `"catsanddog", dict → ["cats and dog","cat sand dog"]` | ⭐⭐ |
-| 8 | Expression Add Operators | 🔴 | `"123", target=6 → ["1+2+3","1*2*3"]` | ⭐⭐ |
+> 🧭 **String backtracking now lives in its canonical home:** [Backtracking bank](backtracking-patterns-tier1.md).
+> Generate Parentheses, Letter Combinations, Restore IP Addresses, String Permutations, Word Search,
+> Word Break II, Expression Add Operators — all there, grouped with their non-string siblings
+> (subsets, permutations, N-Queens, partitioning) so you learn the paradigm as one thing.
+>
+> **Why moved:** backtracking is a *paradigm*, not a string technique (one home per problem, per
+> [CLAUDE.md](../../../CLAUDE.md)).
 
 <a id="p8"></a>
 ## 8 · Parsing / Simulation (8)

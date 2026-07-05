@@ -12,7 +12,7 @@
 > **Legend** — Levels: 🟢 Fresher (0–1y) · 🟡 Mid (2–5y) · 🔴 Senior (5+y) &nbsp;•&nbsp; In each module: 📚 Topics · 🧩 Exercises · 🛠️ Project · 🎯 Interview
 
 > 📌 **Targeting Tier-2/3 companies or startups?** Start with the focused [Tier-2/3 Question Bank](dsa-practice/linear-ds-tier2-3.md) — 111 highest-probability questions (arrays, strings, hashing & linear DS) those rounds actually ask.
-> 🎯 **Cracking Tier-1 / MAANG?** Use the pattern-based banks — medium/hard questions grouped by algorithmic pattern: [Arrays](dsa-practice/arrays-patterns-tier1.md) (90) · [Strings](dsa-practice/strings-patterns-tier1.md) (90) · [Linked List](dsa-practice/linked-list-patterns-tier1.md) (46) · [Stacks & Queues](dsa-practice/stacks-queues-patterns-tier1.md) (37) · [Trees](dsa-practice/trees-patterns-tier1.md) (80) · [Graphs](dsa-practice/graphs-patterns-tier1.md) (70) · [Heaps](dsa-practice/heaps-patterns-tier1.md) (35) · [Dynamic Programming](dsa-practice/dp-patterns-tier1.md) (90). Coming next: backtracking.
+> 🎯 **Cracking Tier-1 / MAANG?** Use the pattern-based banks — medium/hard questions grouped by algorithmic pattern: [Arrays](dsa-practice/arrays-patterns-tier1.md) (90) · [Strings](dsa-practice/strings-patterns-tier1.md) (90) · [Linked List](dsa-practice/linked-list-patterns-tier1.md) (46) · [Stacks & Queues](dsa-practice/stacks-queues-patterns-tier1.md) (37) · [Trees](dsa-practice/trees-patterns-tier1.md) (80) · [Graphs](dsa-practice/graphs-patterns-tier1.md) (70) · [Heaps](dsa-practice/heaps-patterns-tier1.md) (35) · [Dynamic Programming](dsa-practice/dp-patterns-tier1.md) (90) · [Backtracking](dsa-practice/backtracking-patterns-tier1.md) (45). **Full 9-topic series complete.**
 
 ---
 
