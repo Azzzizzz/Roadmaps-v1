@@ -6,23 +6,23 @@
 2. [Operating Systems Roadmap](#operating-systems-roadmap)
 3. [Networking Roadmap](#networking-roadmap)
 4. [Database Engineering Roadmap](#database-engineering-roadmap)
-5. [Caching & Storage Systems Roadmap](#caching--storage-systems-roadmap)
 
 **Backend**
 
-6. [Backend Engineering Roadmap](#backend-engineering-roadmap)
-7. [API Design & Engineering Roadmap](#api-design--engineering-roadmap)
-8. [Message Queues & Event-Driven Systems Roadmap](#message-queues--event-driven-systems-roadmap)
+5. [Backend Engineering Roadmap](#backend-engineering-roadmap)
+6. [API Design & Engineering Roadmap](#api-design--engineering-roadmap)
+7. [Message Queues & Event-Driven Systems Roadmap](#message-queues--event-driven-systems-roadmap)
 
 **System Design**
 
-9. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
-10. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
-11. [Distributed Systems Roadmap](#distributed-systems-roadmap)
+8. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
+9. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
+10. [Distributed Systems Roadmap](#distributed-systems-roadmap)
 
 **Infrastructure**
 
-12. [Cloud Computing Roadmap](#cloud-computing-roadmap)
+11. [Cloud Computing Roadmap](#cloud-computing-roadmap)
+12. [Caching & Storage Systems Roadmap](#caching--storage-systems-roadmap)
 13. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
 14. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
 15. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
@@ -203,42 +203,6 @@
 | 32     | Database Architecture Patterns   | CQRS, Event Sourcing, Polyglot Persistence, Read/Write Separation, Database-per-Service                           | Advanced     | ⭐⭐⭐⭐⭐      |
 | 33     | Production Database Case Studies | E-commerce, Banking, Social Media, Messaging, Inventory, Payment, Analytics, Multi-Tenant Systems                 | Advanced     | ⭐⭐⭐⭐⭐      |
 | 34     | Database Interview Mastery       | SQL Interview Questions, Schema Design, Query Optimization, Trade-offs, Case Studies, Mock Interviews             | Advanced     | ⭐⭐⭐⭐⭐      |
-
-
-## Caching & Storage Systems Roadmap
-
-| Module | High-Level Topic                    | Key Subtopics                                                                                                     | Level        | Importance |
-| ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
-| 1      | Caching Fundamentals                | What is Caching, Why Cache, Cache Lifecycle, Cache Hit, Cache Miss, Cache Warm-up, Latency vs Throughput          | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Cache Architecture                  | Client Cache, Browser Cache, Application Cache, Distributed Cache, Edge Cache, Multi-Level Cache                  | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Cache Data Structures               | Strings, Hashes, Lists, Sets, Sorted Sets, Bitmaps, HyperLogLog, Bloom Filters                                    | Fundamental  | ⭐⭐⭐⭐☆      |
-| 4      | Cache Patterns                      | Cache Aside (Lazy Loading), Read Through, Write Through, Write Back (Write Behind), Write Around, Refresh Ahead   | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Cache Invalidation                  | TTL, Expiration, Manual Invalidation, Event-Based Invalidation, Versioned Cache, Cache Busting                    | Intermediate | ⭐⭐⭐⭐⭐      |
-| 6      | Cache Eviction Policies             | LRU, LFU, FIFO, Random Replacement, TTL-Based Eviction, Memory Management                                         | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Distributed Caching                 | Redis Cluster, Memcached Cluster, Consistent Hashing, Cache Partitioning, Cache Replication                       | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Redis Deep Dive                     | Redis Architecture, Persistence (RDB, AOF), Replication, Sentinel, Cluster Mode, Pub/Sub, Streams                 | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Memcached                           | Architecture, Slab Allocation, Memory Management, Eviction, Scaling, Use Cases                                    | Intermediate | ⭐⭐⭐⭐☆      |
-| 10     | Session Management                  | Session Storage, Distributed Sessions, Sticky Sessions, Stateless Authentication, JWT vs Session Cache            | Intermediate | ⭐⭐⭐⭐☆      |
-| 11     | CDN Fundamentals                    | Edge Servers, POPs, Static Content Delivery, Dynamic Content, Cache Hierarchy, Geo Distribution                   | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | CDN Optimization                    | Cache-Control Headers, ETag, Last-Modified, Signed URLs, Signed Cookies, Image Optimization                       | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | HTTP Caching                        | Browser Cache, Proxy Cache, Cache-Control, Expires, ETag, Conditional Requests, Vary Header                       | Intermediate | ⭐⭐⭐⭐⭐      |
-| 14     | Object Storage Fundamentals         | Object Storage, Blob Storage, Block Storage, File Storage, Storage Classes                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 15     | Cloud Object Storage                | Amazon S3, Google Cloud Storage, Azure Blob Storage, Buckets, Objects, Lifecycle Policies                         | Intermediate | ⭐⭐⭐⭐⭐      |
-| 16     | File Storage Systems                | NAS, SAN, Distributed File Systems, NFS, SMB, File Metadata, File Sharing                                         | Intermediate | ⭐⭐⭐⭐☆      |
-| 17     | Distributed File Systems            | HDFS, Ceph, GlusterFS, Replication, Fault Tolerance, Data Distribution                                            | Advanced     | ⭐⭐⭐⭐☆      |
-| 18     | File Upload & Download              | Multipart Upload, Chunked Upload, Resume Uploads, Streaming Downloads, Presigned URLs                             | Intermediate | ⭐⭐⭐⭐⭐      |
-| 19     | Media Storage Systems               | Image Storage, Video Storage, Audio Storage, Thumbnail Generation, Transcoding, CDN Integration                   | Advanced     | ⭐⭐⭐⭐☆      |
-| 20     | Storage Optimization                | Compression, Deduplication, Tiered Storage, Archival Storage, Lifecycle Management                                | Advanced     | ⭐⭐⭐⭐☆      |
-| 21     | Data Replication                    | Replication Strategies, Geo Replication, Cross-Region Replication, Multi-Region Storage                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 22     | Data Durability & Availability      | Replication Factor, Erasure Coding, Backup, Restore, Disaster Recovery, High Availability                         | Advanced     | ⭐⭐⭐⭐⭐      |
-| 23     | Storage Security                    | Encryption at Rest, Encryption in Transit, IAM, ACLs, Signed URLs, Secret Management                              | Intermediate | ⭐⭐⭐⭐☆      |
-| 24     | Search & Index Storage              | Metadata Storage, Inverted Indexes, Search Indexes, Object Metadata, Tagging                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Large-Scale Storage Systems         | Data Partitioning, Sharding, Consistent Hashing, Hot vs Cold Storage, Storage Scaling                             | Advanced     | ⭐⭐⭐⭐⭐      |
-| 26     | Performance Optimization            | Cache Warming, Prefetching, Connection Pooling, Lazy Loading, Streaming, Memory Optimization                      | Advanced     | ⭐⭐⭐⭐⭐      |
-| 27     | Monitoring & Observability          | Cache Hit Ratio, Cache Miss Ratio, Evictions, Memory Usage, Storage Metrics, Alerts                               | Advanced     | ⭐⭐⭐⭐☆      |
-| 28     | Storage Architecture Patterns       | CDN + Object Storage, Cache + Database, Read-Through Architecture, Content Distribution, Hybrid Storage           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 29     | Production Case Studies             | Image CDN, Video Streaming, File Sharing, Document Storage, Media Service, Avatar Service, Backup Service         | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Caching & Storage Interview Mastery | Cache Strategy Selection, Storage Trade-offs, CDN Design, Redis Scenarios, Object Storage Design, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Backend Engineering Roadmap
@@ -508,6 +472,42 @@
 | 28     | Cloud Governance                      | Resource Organization, Tagging, Policies, Compliance, Landing Zones, Organizational Units                                  | Advanced     | ⭐⭐⭐⭐☆      |
 | 29     | Cloud Case Studies                    | E-commerce Platform, SaaS Platform, AI Platform, Streaming Platform, Multi-Region Backend, Enterprise Systems              | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Cloud Computing Interview Mastery     | Cloud Architecture Questions, Service Selection, Design Trade-offs, Cost Optimization, Security Scenarios, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Caching & Storage Systems Roadmap
+
+| Module | High-Level Topic                    | Key Subtopics                                                                                                     | Level        | Importance |
+| ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Caching Fundamentals                | What is Caching, Why Cache, Cache Lifecycle, Cache Hit, Cache Miss, Cache Warm-up, Latency vs Throughput          | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Cache Architecture                  | Client Cache, Browser Cache, Application Cache, Distributed Cache, Edge Cache, Multi-Level Cache                  | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Cache Data Structures               | Strings, Hashes, Lists, Sets, Sorted Sets, Bitmaps, HyperLogLog, Bloom Filters                                    | Fundamental  | ⭐⭐⭐⭐☆      |
+| 4      | Cache Patterns                      | Cache Aside (Lazy Loading), Read Through, Write Through, Write Back (Write Behind), Write Around, Refresh Ahead   | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Cache Invalidation                  | TTL, Expiration, Manual Invalidation, Event-Based Invalidation, Versioned Cache, Cache Busting                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 6      | Cache Eviction Policies             | LRU, LFU, FIFO, Random Replacement, TTL-Based Eviction, Memory Management                                         | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Distributed Caching                 | Redis Cluster, Memcached Cluster, Consistent Hashing, Cache Partitioning, Cache Replication                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Redis Deep Dive                     | Redis Architecture, Persistence (RDB, AOF), Replication, Sentinel, Cluster Mode, Pub/Sub, Streams                 | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Memcached                           | Architecture, Slab Allocation, Memory Management, Eviction, Scaling, Use Cases                                    | Intermediate | ⭐⭐⭐⭐☆      |
+| 10     | Session Management                  | Session Storage, Distributed Sessions, Sticky Sessions, Stateless Authentication, JWT vs Session Cache            | Intermediate | ⭐⭐⭐⭐☆      |
+| 11     | CDN Fundamentals                    | Edge Servers, POPs, Static Content Delivery, Dynamic Content, Cache Hierarchy, Geo Distribution                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | CDN Optimization                    | Cache-Control Headers, ETag, Last-Modified, Signed URLs, Signed Cookies, Image Optimization                       | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | HTTP Caching                        | Browser Cache, Proxy Cache, Cache-Control, Expires, ETag, Conditional Requests, Vary Header                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | Object Storage Fundamentals         | Object Storage, Blob Storage, Block Storage, File Storage, Storage Classes                                        | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 15     | Cloud Object Storage                | Amazon S3, Google Cloud Storage, Azure Blob Storage, Buckets, Objects, Lifecycle Policies                         | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | File Storage Systems                | NAS, SAN, Distributed File Systems, NFS, SMB, File Metadata, File Sharing                                         | Intermediate | ⭐⭐⭐⭐☆      |
+| 17     | Distributed File Systems            | HDFS, Ceph, GlusterFS, Replication, Fault Tolerance, Data Distribution                                            | Advanced     | ⭐⭐⭐⭐☆      |
+| 18     | File Upload & Download              | Multipart Upload, Chunked Upload, Resume Uploads, Streaming Downloads, Presigned URLs                             | Intermediate | ⭐⭐⭐⭐⭐      |
+| 19     | Media Storage Systems               | Image Storage, Video Storage, Audio Storage, Thumbnail Generation, Transcoding, CDN Integration                   | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Storage Optimization                | Compression, Deduplication, Tiered Storage, Archival Storage, Lifecycle Management                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Data Replication                    | Replication Strategies, Geo Replication, Cross-Region Replication, Multi-Region Storage                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Data Durability & Availability      | Replication Factor, Erasure Coding, Backup, Restore, Disaster Recovery, High Availability                         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 23     | Storage Security                    | Encryption at Rest, Encryption in Transit, IAM, ACLs, Signed URLs, Secret Management                              | Intermediate | ⭐⭐⭐⭐☆      |
+| 24     | Search & Index Storage              | Metadata Storage, Inverted Indexes, Search Indexes, Object Metadata, Tagging                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Large-Scale Storage Systems         | Data Partitioning, Sharding, Consistent Hashing, Hot vs Cold Storage, Storage Scaling                             | Advanced     | ⭐⭐⭐⭐⭐      |
+| 26     | Performance Optimization            | Cache Warming, Prefetching, Connection Pooling, Lazy Loading, Streaming, Memory Optimization                      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | Monitoring & Observability          | Cache Hit Ratio, Cache Miss Ratio, Evictions, Memory Usage, Storage Metrics, Alerts                               | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Storage Architecture Patterns       | CDN + Object Storage, Cache + Database, Read-Through Architecture, Content Distribution, Hybrid Storage           | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Production Case Studies             | Image CDN, Video Streaming, File Sharing, Document Storage, Media Service, Avatar Service, Backup Service         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Caching & Storage Interview Mastery | Cache Strategy Selection, Storage Trade-offs, CDN Design, Redis Scenarios, Object Storage Design, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Docker & Kubernetes Roadmap
