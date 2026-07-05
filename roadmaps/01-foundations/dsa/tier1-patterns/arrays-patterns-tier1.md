@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Tier-2/3 Bank](linear-ds-tier2-3.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Tier-2/3 Bank](../foundations/06-core-problems-tier2-3.md) |
 | **Status** | ✅ Complete — Arrays (first in the Tier-1 pattern series) |
 | **Scope** | Arrays — organized by **algorithmic pattern**, Tier-1 / MAANG difficulty |
 | **Targets** | Tier-1 product companies · MAANG / FAANG |

@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Strings Patterns](strings-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Strings Patterns](strings-patterns-tier1.md) |
 | **Status** | ✅ Complete — Linked List (3rd in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Singly / doubly linked lists, organized by **algorithmic pattern**, Tier-1 / MAANG |
@@ -33,7 +33,7 @@ seen or unseen.
 **Where this file sits in the suite:** this is a *structure file* — its home is problems whose
 subject is the linked list itself. Patterns that merely *use* a list elsewhere (e.g. LRU also uses
 hashing) still live here because the list is the core skill. Data-structure fundamentals and
-frequency-ranked breadth for easier companies are in the [Tier-2/3 bank](linear-ds-tier2-3.md).
+frequency-ranked breadth for easier companies are in the [Tier-2/3 bank](../foundations/06-core-problems-tier2-3.md).
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 medium · 🔴 hard &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
 > **Universal LL tips:** a **dummy/sentinel head** kills most head edge-cases; draw the pointers before you code; always ask if the list is **singly or doubly** and whether you may mutate it.

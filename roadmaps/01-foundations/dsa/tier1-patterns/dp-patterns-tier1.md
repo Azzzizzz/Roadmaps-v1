@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Arrays](arrays-patterns-tier1.md) · [Strings](strings-patterns-tier1.md) · [Trees](trees-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays](arrays-patterns-tier1.md) · [Strings](strings-patterns-tier1.md) · [Trees](trees-patterns-tier1.md) |
 | **Status** | ✅ Complete — Dynamic Programming (8th in the Tier-1 pattern series) |
 | **Kind** | **Paradigm file** (pattern-organized, spans all input types) |
 | **Scope** | Dynamic programming, organized by DP **sub-pattern**, Tier-1 / MAANG |

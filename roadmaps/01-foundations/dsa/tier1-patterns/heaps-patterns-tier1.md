@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Graphs Patterns](graphs-patterns-tier1.md) · [Arrays Patterns](arrays-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Graphs Patterns](graphs-patterns-tier1.md) · [Arrays Patterns](arrays-patterns-tier1.md) |
 | **Status** | ✅ Complete — Heaps (7th in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Binary heaps / priority queues, organized by **pattern**, Tier-1 / MAANG |

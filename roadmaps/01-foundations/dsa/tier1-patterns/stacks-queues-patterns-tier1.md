@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Strings Patterns](strings-patterns-tier1.md) · [Linked List Patterns](linked-list-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Strings Patterns](strings-patterns-tier1.md) · [Linked List Patterns](linked-list-patterns-tier1.md) |
 | **Status** | ✅ Complete — Stacks & Queues (4th in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Stacks, queues & deques — structure-native + design problems, Tier-1 / MAANG |

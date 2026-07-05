@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Trees Patterns](trees-patterns-tier1.md) · [Arrays Patterns](arrays-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Trees Patterns](trees-patterns-tier1.md) · [Arrays Patterns](arrays-patterns-tier1.md) |
 | **Status** | ✅ Complete — Graphs (6th in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Directed & undirected graphs, grids and DAGs, organized by **pattern**, Tier-1 / MAANG |

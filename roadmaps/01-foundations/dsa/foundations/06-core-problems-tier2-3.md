@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) |
 | **Status** | ✅ Complete |
 | **Scope** | Arrays · Strings · Hashing (maps/sets) · Linked List · Stack/Queue |
 | **Targets** | Tier-2 / Tier-3 companies · startups · service-based & mid MNCs |
 | **Questions** | 111 &nbsp;→&nbsp; arrays × 30 · strings × 30 · hashing × 15 · linked list × 12 · stack × 12 · queue × 12 |
-| **Related** | [Interview Prep](../../00-meta/interview-preparation.md) |
+| **Related** | [Interview Prep](../../../00-meta/interview-preparation.md) |
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 easy-medium &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
 > **▶️ = practice order** — a gentle easy → hard ramp (all 🟢 before 🟡, higher-frequency first). Follow it **1 → N** if you don't want to start with complex ones.
@@ -195,4 +195,4 @@ Master these and you can attack ~90% of these questions:
 
 > **Two paths:** building fundamentals → follow **▶️ order** (easy first). Prepping for a
 > specific round → go **top-down** by frequency. Either way, next stop is the non-linear basics
-> (recursion, trees, basic graphs) in the main [DSA Roadmap](../dsa.md).
+> (recursion, trees, basic graphs) in the main [DSA Roadmap](../../dsa.md).

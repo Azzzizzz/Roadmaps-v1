@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Strings](strings-patterns-tier1.md) · [Dynamic Programming](dp-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Strings](strings-patterns-tier1.md) · [Dynamic Programming](dp-patterns-tier1.md) |
 | **Status** | ✅ Complete — Backtracking (9th & final in the Tier-1 pattern series) |
 | **Kind** | **Paradigm file** (pattern-organized, spans all input types) |
 | **Scope** | Backtracking, organized by **sub-pattern**, Tier-1 / MAANG |

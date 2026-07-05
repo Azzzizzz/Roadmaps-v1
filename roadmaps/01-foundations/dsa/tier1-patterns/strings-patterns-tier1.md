@@ -3,7 +3,7 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Tier-2/3 Bank](linear-ds-tier2-3.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Tier-2/3 Bank](../foundations/06-core-problems-tier2-3.md) |
 | **Status** | ✅ Complete — Strings (2nd in the Tier-1 pattern series) |
 | **Scope** | Strings — organized by **algorithmic pattern**, Tier-1 / MAANG difficulty |
 | **Targets** | Tier-1 product companies · MAANG / FAANG |
@@ -107,7 +107,7 @@ Internalize the *trigger*, not the solution.
 > Subsequences, Interleaving String, Regular Expression & Wildcard Matching, and more.
 >
 > **Why moved:** DP is a *paradigm*, not a string technique. Keeping every DP pattern in one file
-> (one home per problem, per [CLAUDE.md](../../../CLAUDE.md)) lets you study String DP alongside Grid DP,
+> (one home per problem, per [CLAUDE.md](../../../../CLAUDE.md)) lets you study String DP alongside Grid DP,
 > Knapsack, and LIS instead of in isolation.
 
 <a id="p5"></a>
@@ -155,7 +155,7 @@ Internalize the *trigger*, not the solution.
 > (subsets, permutations, N-Queens, partitioning) so you learn the paradigm as one thing.
 >
 > **Why moved:** backtracking is a *paradigm*, not a string technique (one home per problem, per
-> [CLAUDE.md](../../../CLAUDE.md)).
+> [CLAUDE.md](../../../../CLAUDE.md)).
 
 <a id="p8"></a>
 ## 8 · Parsing / Simulation (8)

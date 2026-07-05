@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../dsa.md) · [Backtracking](backtracking-patterns-tier1.md) · [Dynamic Programming](dp-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Backtracking](../tier1-patterns/backtracking-patterns-tier1.md) · [Dynamic Programming](../tier1-patterns/dp-patterns-tier1.md) |
 | **Status** | ✅ Complete — Recursion & Divide-and-Conquer (foundational on-ramp) |
 | **Kind** | **Paradigm file** (pattern-organized; the base layer under Backtracking / DP / tree & graph DFS) |
 | **Scope** | Recursion mechanics + divide-and-conquer, Tier-1 / MAANG |
 | **Coverage** | 4 patterns · 28 questions |
-| **Read before** | [Backtracking](backtracking-patterns-tier1.md) and [Dynamic Programming](dp-patterns-tier1.md) — this is their foundation |
+| **Read before** | [Backtracking](../tier1-patterns/backtracking-patterns-tier1.md) and [Dynamic Programming](../tier1-patterns/dp-patterns-tier1.md) — this is their foundation |
 
 ---
 
@@ -24,9 +24,9 @@ than re-list search or DP problems here, this bank covers the two things that li
 |---|---|---|
 | a **base case + shrinking problem** | plain recursion | *this bank* |
 | **split → solve halves → combine** | divide & conquer | *this bank* |
-| **exhaustive search + undo** (choose/explore/un-choose) | backtracking | [Backtracking](backtracking-patterns-tier1.md) |
-| **overlapping subproblems + memo** | dynamic programming | [DP](dp-patterns-tier1.md) |
-| **a tree / graph** | DFS | [Trees](trees-patterns-tier1.md) · [Graphs](graphs-patterns-tier1.md) |
+| **exhaustive search + undo** (choose/explore/un-choose) | backtracking | [Backtracking](../tier1-patterns/backtracking-patterns-tier1.md) |
+| **overlapping subproblems + memo** | dynamic programming | [DP](../tier1-patterns/dp-patterns-tier1.md) |
+| **a tree / graph** | DFS | [Trees](../tier1-patterns/trees-patterns-tier1.md) · [Graphs](../tier1-patterns/graphs-patterns-tier1.md) |
 
 **How to think recursively:** define the **base case** (when to stop) + the **recursive case** (how the
 problem shrinks), then take the *recursive leap of faith* — trust the smaller call works. For
@@ -71,7 +71,7 @@ cross-boundary case in max-subarray).
 
 > 🔍 **Recognize it when…** you split the input in half, solve each half, and **merge/combine** —
 > sorting and order-statistics. Counting problems often hide inside the merge step.
-> **See also:** Quickselect relates to [Heaps → Top-K](heaps-patterns-tier1.md#p1); Merge k Lists to [Linked List](linked-list-patterns-tier1.md#p4).
+> **See also:** Quickselect relates to [Heaps → Top-K](../tier1-patterns/heaps-patterns-tier1.md#p1); Merge k Lists to [Linked List](../tier1-patterns/linked-list-patterns-tier1.md#p4).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -104,7 +104,7 @@ cross-boundary case in max-subarray).
 
 > 🔍 **Recognize it when…** you recursively construct all solutions or a structure by splitting on a
 > pivot/operator, then combining the sub-results.
-> **See also:** tree constructions live in [Trees → Construct & Serialize](trees-patterns-tier1.md#p7).
+> **See also:** tree constructions live in [Trees → Construct & Serialize](../tier1-patterns/trees-patterns-tier1.md#p7).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -126,5 +126,5 @@ cross-boundary case in max-subarray).
 - [ ] I can articulate the recursion family: this + memo = **DP**; this + undo = **Backtracking**; this over a tree = **DFS**.
 - [ ] I've solved every 🟡 and attempted every 🔴 (count-smaller-after-self, median of two sorted, skyline).
 
-> **Foundational on-ramp** to [Backtracking](backtracking-patterns-tier1.md) and [Dynamic Programming](dp-patterns-tier1.md).
+> **Foundational on-ramp** to [Backtracking](../tier1-patterns/backtracking-patterns-tier1.md) and [Dynamic Programming](../tier1-patterns/dp-patterns-tier1.md).
 > **Full suite:** Arrays · Strings · Linked List · Stacks & Queues · Trees · Graphs · Heaps · Recursion & D&C · DP · Backtracking ✅
