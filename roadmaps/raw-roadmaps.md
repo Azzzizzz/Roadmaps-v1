@@ -39,18 +39,19 @@
 **AI / ML**
 
 19. [Machine Learning Foundations Roadmap](#machine-learning-foundations-roadmap)
-20. [AI Engineering Roadmap](#ai-engineering-roadmap)
-21. [LLM Engineering Roadmap](#llm-engineering-roadmap)
-22. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
-23. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
-24. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+20. [Generative AI: Diffusion, Vision & Multimodal Roadmap](#generative-ai-diffusion-vision--multimodal-roadmap)
+21. [AI Engineering Roadmap](#ai-engineering-roadmap)
+22. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+23. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+24. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+25. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
 
 **Career & Interview Skills**
 
-25. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
-26. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
-27. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
-28. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
+26. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+27. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+28. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+29. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
 
@@ -757,6 +758,42 @@
 | 28     | Ethics, Bias & Fairness in ML         | Bias Sources, Fairness Metrics, Responsible ML Practices                                            | Advanced     | ⭐⭐⭐☆☆      |
 | 29     | Production ML Case Studies            | Fraud Detection, Churn Prediction, Recommendation Engine, Demand Forecasting                        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | ML Foundations Interview Mastery      | Algorithm Selection Questions, Metric Trade-offs, Case Study Walkthroughs, Mock Interviews          | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Generative AI: Diffusion, Vision & Multimodal Roadmap
+
+| Module | High-Level Topic                              | Key Subtopics                                                                                  | Level        | Importance |
+| ------ | --------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Generative AI Fundamentals                    | Discriminative vs Generative Models, Generative Model Families, Applications Landscape         | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Probability Foundations for Generative Models | Latent Variables, Likelihood, Sampling, KL Divergence                                          | Fundamental  | ⭐⭐⭐⭐☆      |
+| 3      | Autoencoders                                  | Encoder-Decoder Architecture, Bottleneck Representations, Denoising Autoencoders               | Fundamental  | ⭐⭐⭐⭐☆      |
+| 4      | Variational Autoencoders (VAEs)               | Latent Space, Reparameterization Trick, ELBO, Generation vs Reconstruction                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 5      | Generative Adversarial Networks (GANs)        | Generator, Discriminator, Adversarial Training, Mode Collapse                                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 6      | GAN Variants & Training Stability             | DCGAN, StyleGAN, Conditional GANs, Training Tricks, Evaluation (FID, IS)                       | Advanced     | ⭐⭐⭐⭐☆      |
+| 7      | Diffusion Models Fundamentals                 | Forward/Reverse Diffusion, Denoising Process, Noise Schedules                                  | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Diffusion Model Architectures                 | U-Net Backbones, DDPM, DDIM, Score-Based Models, Latent Diffusion                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 9      | Text-to-Image Generation                      | Stable Diffusion, DALL-E, Midjourney (Overview), Prompt-to-Pixel Pipeline                      | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Conditioning & Guidance                       | Classifier Guidance, Classifier-Free Guidance, ControlNet, Cross-Attention Conditioning        | Advanced     | ⭐⭐⭐⭐☆      |
+| 11     | Image Editing & Inpainting                    | Inpainting, Outpainting, Image-to-Image, Style Transfer, Super Resolution                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 12     | Prompt Engineering for Image Generation       | Prompt Structure, Negative Prompts, Weighting, Style Keywords                                  | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | Fine-Tuning Image Models                      | LoRA for Diffusion, DreamBooth, Textual Inversion, Custom Style Training                       | Advanced     | ⭐⭐⭐⭐☆      |
+| 14     | Video Generation                              | Text-to-Video, Frame Consistency, Temporal Coherence, Motion Modeling                          | Advanced     | ⭐⭐⭐⭐☆      |
+| 15     | Audio & Speech Generation                     | Text-to-Speech, Voice Cloning, Music Generation Models, Audio Diffusion                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 16     | 3D & Scene Generation                         | Neural Radiance Fields (NeRF, Overview), Text-to-3D, Point Cloud Generation                    | Advanced     | ⭐⭐⭐☆☆      |
+| 17     | Multimodal Models                             | Vision-Language Models, CLIP, Joint Embedding Spaces, Cross-Modal Retrieval                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Vision-Language Generation                    | Image Captioning, Visual Question Answering, Multimodal Chat Models                            | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Model Architecture Choices                    | U-Net vs Transformer Backbones, Latent Space Compression, Model Scaling                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Inference Optimization for Generative Models  | Sampling Steps Reduction, Distillation, Caching, Quantized Inference                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Evaluation of Generative Models               | FID, Inception Score, CLIP Score, Human Evaluation, Perceptual Quality Metrics                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Generative AI Infrastructure                  | GPU Requirements, Batch Generation Pipelines, Model Serving for Diffusion                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Safety & Content Moderation                   | NSFW Filtering, Watermarking, Deepfake Detection, Misuse Prevention                            | Advanced     | ⭐⭐⭐⭐⭐      |
+| 24     | Copyright, Ethics & Governance                | Training Data Provenance, Style Mimicry Concerns, Licensing, Responsible Use Policies          | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Generative AI Product Integration             | Creative Tools, Design Assistants, Content Pipelines, Human-in-the-Loop Review                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 26     | Cost Optimization for Generative Workloads    | Step Reduction, Caching Generations, Batch Processing, Model Tiering                           | Advanced     | ⭐⭐⭐☆☆      |
+| 27     | Generative AI Frameworks & Tooling            | Diffusers, ComfyUI, Automatic1111, Model Hubs, Pipeline Orchestration                          | Advanced     | ⭐⭐⭐⭐☆      |
+| 28     | Emerging Techniques                           | Consistency Models, Flow Matching, Autoregressive Image Generation, World Models (Overview)    | Advanced     | ⭐⭐⭐☆☆      |
+| 29     | Production Generative AI Case Studies         | AI Design Tool, Marketing Content Generator, Avatar/Persona Generator, Video Ad Generator      | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | Generative AI Interview Mastery               | Architecture Questions, Diffusion vs GAN Trade-offs, Product Design Scenarios, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## AI Engineering Roadmap
