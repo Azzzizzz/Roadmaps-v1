@@ -10,43 +10,44 @@
 **Backend**
 
 5. [Backend Engineering Roadmap](#backend-engineering-roadmap)
-6. [Message Queues & Event-Driven Systems Roadmap](#message-queues--event-driven-systems-roadmap)
+6. [API Design & Engineering Roadmap](#api-design--engineering-roadmap)
+7. [Message Queues & Event-Driven Systems Roadmap](#message-queues--event-driven-systems-roadmap)
 
 **System Design**
 
-7. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
-8. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
+8. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
+9. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
 
 **Infrastructure**
 
-9. [Cloud Computing Roadmap](#cloud-computing-roadmap)
-10. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
-11. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
-12. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
+10. [Cloud Computing Roadmap](#cloud-computing-roadmap)
+11. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
+12. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
+13. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
 
 **Frontend**
 
-13. [Frontend Engineering Roadmap](#frontend-engineering-roadmap)
+14. [Frontend Engineering Roadmap](#frontend-engineering-roadmap)
 
 **Quality**
 
-14. [Security Engineering Roadmap](#security-engineering-roadmap)
-15. [Performance Engineering Roadmap](#performance-engineering-roadmap)
+15. [Security Engineering Roadmap](#security-engineering-roadmap)
+16. [Performance Engineering Roadmap](#performance-engineering-roadmap)
 
 **AI / ML**
 
-16. [AI Engineering Roadmap](#ai-engineering-roadmap)
-17. [LLM Engineering Roadmap](#llm-engineering-roadmap)
-18. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
-19. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
-20. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+17. [AI Engineering Roadmap](#ai-engineering-roadmap)
+18. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+19. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+20. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+21. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
 
 **Career & Interview Skills**
 
-21. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
-22. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
-23. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
-24. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
+22. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+23. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+24. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+25. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
 
@@ -236,6 +237,42 @@
 | 32     | Production Readiness            | Monitoring, Alerting, Backup, Disaster Recovery, Health Checks, SLO/SLI, Incident Handling                                    | Advanced     | ⭐⭐⭐⭐⭐      |
 | 33     | Production Backend Case Studies | Auth Service, User Service, Notification Service, Payment Service, Order Service, Chat Service, Media Service, Search Service | Advanced     | ⭐⭐⭐⭐⭐      |
 | 34     | Backend Interview Mastery       | API Design Interviews, Backend Scenarios, Debugging, Production Problems, Mock Interviews                                     | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## API Design & Engineering Roadmap
+
+| Module | High-Level Topic                   | Key Subtopics                                                                                                             | Level        | Importance |
+| ------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | API Fundamentals                   | What is an API, Client-Server Communication, API Types (REST, GraphQL, gRPC, SOAP), API Consumers, API Lifecycle          | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | HTTP for APIs                      | Methods, Status Codes, Headers, Idempotency, Content Negotiation, Request/Response Structure                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | REST Principles                    | Resources, Statelessness, Uniform Interface, HATEOAS, Richardson Maturity Model, Resource Modeling                        | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Resource & URL Design              | Naming Conventions, Nesting, Collections vs Singletons, Query Parameters, Filtering, Sorting                              | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Request/Response Design            | DTOs, Payload Structure, Partial Responses, Field Selection, Envelope Patterns                                            | Fundamental  | ⭐⭐⭐⭐☆      |
+| 6      | Pagination Strategies              | Offset Pagination, Cursor Pagination, Keyset Pagination, Page Tokens, Total Count Trade-offs                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Filtering, Sorting & Searching     | Query Parameter Design, Complex Filters, Full-Text Search Integration, Faceted Search                                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 8      | API Versioning                     | URI Versioning, Header Versioning, Content Negotiation Versioning, Deprecation Strategy, Breaking vs Non-Breaking Changes | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Idempotency & Safety               | Idempotency Keys, Safe Methods, Retry Semantics, Duplicate Request Handling                                               | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Error Handling & Status Design     | Error Response Formats, Problem Details (RFC 7807), Error Codes, Validation Errors, Client vs Server Errors               | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | Authentication for APIs            | API Keys, Basic Auth, Bearer Tokens, JWT, OAuth2 Flows, OpenID Connect                                                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Authorization & Access Control     | RBAC, ABAC, Scopes, Resource Ownership, Fine-Grained Permissions                                                          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | Rate Limiting & Throttling         | Fixed Window, Sliding Window, Token Bucket, Leaky Bucket, Per-Client Limits, 429 Responses                                | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | API Gateway Patterns               | Routing, Aggregation, Backend-for-Frontend, Request Transformation, Composition                                           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 15     | GraphQL Fundamentals               | Schema Definition, Queries, Mutations, Subscriptions, Resolvers, Type System                                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | GraphQL Advanced                   | N+1 Problem, DataLoader, Query Complexity Limits, Federation, Persisted Queries                                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 17     | gRPC & Protocol Buffers            | Protobuf Schema, Unary/Streaming RPCs, Service Definitions, Code Generation, gRPC-Web                                     | Advanced     | ⭐⭐⭐⭐☆      |
+| 18     | Webhooks & Event Callbacks         | Webhook Design, Delivery Guarantees, Retry & Backoff, Signature Verification, Idempotent Consumers                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | API Documentation                  | OpenAPI/Swagger, API Blueprint, Documentation-as-Code, Interactive Docs, SDK Generation                                   | Intermediate | ⭐⭐⭐⭐⭐      |
+| 20     | Contract-First Design              | Schema-Driven Development, Contract Testing, Consumer-Driven Contracts, Mock Servers                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | API Security                       | OWASP API Security Top 10, Injection, Broken Object-Level Authorization (BOLA), Mass Assignment, Input Validation         | Advanced     | ⭐⭐⭐⭐⭐      |
+| 22     | Caching for APIs                   | HTTP Caching Headers, ETag, Conditional Requests, Cache Invalidation, CDN-Fronted APIs                                    | Intermediate | ⭐⭐⭐⭐☆      |
+| 23     | API Performance                    | Response Compression, Batching, Payload Size Optimization, Connection Reuse, N+1 Avoidance                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Public & Partner APIs              | Developer Portals, API Keys & Quotas, SLAs, Monetization Models, Third-Party Onboarding                                   | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | API Observability                  | Request Logging, Tracing, Usage Analytics, Latency Monitoring, Error Rate Dashboards                                      | Advanced     | ⭐⭐⭐⭐☆      |
+| 26     | Backward Compatibility & Evolution | Additive Changes, Deprecation Policies, Sunset Headers, Client Migration Strategies                                       | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | Microservices API Patterns         | API Composition, BFF Pattern, Service-to-Service APIs, Internal vs External APIs                                          | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Production API Case Studies        | Payments API, Social Graph API, E-commerce Catalog API, Multi-Tenant SaaS API                                             | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | API Governance                     | Style Guides, Linting (Spectral), API Review Process, Design Standards Across Teams                                       | Advanced     | ⭐⭐⭐☆☆      |
+| 30     | API Design Interview Mastery       | API Design Questions, REST vs GraphQL vs gRPC Trade-offs, Versioning Scenarios, Mock Interviews                           | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Message Queues & Event-Driven Systems Roadmap
