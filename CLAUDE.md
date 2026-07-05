@@ -36,37 +36,38 @@ file's flair.
 - Pillar folders are **numbered by dependency order**: `NN-pillar-name/`.
 - Roadmap files are **kebab-case**, no number prefix: `dsa.md`, `distributed-systems.md`.
 - Frontend and AI/ML are **parallel tracks** — numbered for placement, but can start after Foundations.
-- **Companion question banks** live in a `<topic>-practice/` folder beside the roadmap
-  (e.g. `dsa-practice/linear-ds-tier2-3.md`). They are curated question lists with tags +
-  example `input → output` — **never solutions**. Name as `<scope>-<tier>.md`.
+- **Companion practice** for a roadmap lives in a `<topic>/` folder beside it (e.g. `dsa/`), with a
+  `README.md` guided path. Curated question lists with tags + example `input → output` — **never solutions**.
 
-## DSA practice banks (two styles)
+## DSA practice (`roadmaps/01-foundations/dsa/`)
 
-Both live in `roadmaps/01-foundations/dsa-practice/`:
+The DSA topic = the roadmap (`dsa.md`) + a **staged practice area** under `dsa/`, front-doored by
+[`dsa/README.md`](roadmaps/01-foundations/dsa/README.md). Two folders enforce the sequence:
 
-1. **Structure-first, frequency-ranked (Tier-2/3)** — `linear-ds-tier2-3.md`. Sections are data
-   structures; rows ranked by interview frequency with a ▶️ easy→hard practice-order column.
-   For **foundations / breadth** (startups, service-based, mid MNCs). *Keep as-is.*
-2. **Pattern-first (Tier-1 / MAANG)** — `<topic>-patterns-tier1.md`. Sections are algorithmic
-   patterns; rows ordered **easy→hard**, medium/hard skew. For **interview pattern-recognition**.
+### `dsa/foundations/` — Stage 0, do first, in order
+`01-programming-foundations` · `02-complexity-analysis` · `03-mathematics` · `04-bit-manipulation` ·
+`05-recursion-divide-conquer` · `06-core-problems-tier2-3`.
+- `05` is the **recursion + divide-and-conquer** on-ramp to Backtracking/DP.
+- `06` is the **structure-first, frequency-ranked Tier-2/3** breadth bank (sections = data structures;
+  rows ranked by frequency with a ▶️ easy→hard practice-order column). For startups / service-based / mid MNCs.
+
+### `dsa/tier1-patterns/` — Stage 1 (Tier-1 / MAANG), do after foundations
+Files named `NN-topic.md` (the folder already says "tier-1 patterns" — no redundant suffix), numbered
+in **learning sequence**: `01-arrays · 02-strings · 03-linked-list · 04-stacks-queues · 05-trees ·
+06-heaps · 07-graphs · 08-backtracking · 09-dynamic-programming`. **Pattern-first:** sections are
+algorithmic patterns, rows easy→hard, medium/hard skew.
 
 ### Tier-1 pattern-first rules
-- **Two file kinds:** *structure files* (arrays, strings, linked-list, stacks-queues, trees,
-  graphs, heaps) and *paradigm files* (dynamic-programming, backtracking).
-- **One home per problem. Classification — ask in order:**
-  1. Core skill is DP or backtracking → **paradigm file**.
-  2. Manipulates a specific structure (LL / tree / graph / heap) → **that structure's file**.
-  3. Else → **arrays or strings** by input, grouped by the technique-pattern.
+- **Two file kinds:** *structure files* (arrays…heaps) and *paradigm files* (dynamic-programming, backtracking).
+- **One home per problem. Classify — ask in order:** (1) core skill is DP/backtracking → paradigm file;
+  (2) manipulates a specific structure (LL/tree/graph/heap) → that structure's file; (3) else → arrays/strings by input.
 - **Classify by the skill tested, not the helper DS used** (monotonic-stack-on-array → arrays).
-- **Techniques stay as sections, not files:** binary search, two pointers, sliding window,
-  greedy, prefix sum, bit manipulation (input is always a concrete array/string).
-- **Anti-duplication:** one home file; elsewhere use a one-line "see also" link, never a copy.
+- **Techniques stay as sections, not files:** binary search, two pointers, sliding window, greedy, prefix sum, bit manipulation.
+- **Anti-duplication:** one home file; elsewhere a one-line "see also" link, never a copy. (String DP &
+  string backtracking live in the paradigm files; `02-strings.md` cross-links to them.)
 - **Every file opens with a "how to use / why pattern-first" block**, then a 🧭 Pattern Index
-  (🔍 recognize-cues + jump links); each section = recognize-cue + easy→hard table
-  (`# · Question · Diff · example in→out · Freq`).
-- **Build order (foundations-first):** linked-list → stacks-queues → trees → graphs → heaps → dp → backtracking.
-- When the DP & Backtracking paradigm files are built, the existing "DP on Strings" / "Backtracking"
-  sections in `02-strings.md` become **cross-links** to them (no duplication).
+  (🔍 recognize-cues + jump links); each section = recognize-cue + easy→hard table (`# · Question · Diff · example in→out · Freq`).
+- **After any move/rename, run a link-checker** over all `.md` before committing.
 
 ## Status markers (put in each file's header)
 
