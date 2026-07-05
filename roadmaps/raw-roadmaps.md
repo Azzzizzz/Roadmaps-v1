@@ -2,58 +2,132 @@
 
 **Foundations**
 
-1. [Networking Roadmap](#networking-roadmap)
+1. [Computer Architecture & Compilers Roadmap](#computer-architecture--compilers-roadmap)
 2. [Operating Systems Roadmap](#operating-systems-roadmap)
-3. [Database Engineering Roadmap](#database-engineering-roadmap)
-4. [Caching & Storage Systems Roadmap](#caching--storage-systems-roadmap)
+3. [Networking Roadmap](#networking-roadmap)
+4. [Database Engineering Roadmap](#database-engineering-roadmap)
+5. [Caching & Storage Systems Roadmap](#caching--storage-systems-roadmap)
 
 **Backend**
 
-5. [Backend Engineering Roadmap](#backend-engineering-roadmap)
-6. [API Design & Engineering Roadmap](#api-design--engineering-roadmap)
-7. [Message Queues & Event-Driven Systems Roadmap](#message-queues--event-driven-systems-roadmap)
+6. [Backend Engineering Roadmap](#backend-engineering-roadmap)
+7. [API Design & Engineering Roadmap](#api-design--engineering-roadmap)
+8. [Message Queues & Event-Driven Systems Roadmap](#message-queues--event-driven-systems-roadmap)
 
 **System Design**
 
-8. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
-9. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
-10. [Distributed Systems Roadmap](#distributed-systems-roadmap)
+9. [Low-Level Design (LLD) Roadmap](#low-level-design-lld-roadmap)
+10. [High-Level Design (HLD) / System Design Roadmap](#high-level-design-hld--system-design-roadmap)
+11. [Distributed Systems Roadmap](#distributed-systems-roadmap)
 
 **Infrastructure**
 
-11. [Cloud Computing Roadmap](#cloud-computing-roadmap)
-12. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
-13. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
-14. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
+12. [Cloud Computing Roadmap](#cloud-computing-roadmap)
+13. [Docker & Kubernetes Roadmap](#docker--kubernetes-roadmap)
+14. [CI/CD & DevOps Roadmap](#cicd--devops-roadmap)
+15. [Observability, Reliability & Site Reliability Engineering (SRE) Roadmap](#observability-reliability--site-reliability-engineering-sre-roadmap)
 
 **Frontend**
 
-15. [Frontend Engineering Roadmap](#frontend-engineering-roadmap)
+16. [Frontend Engineering Roadmap](#frontend-engineering-roadmap)
 
 **Quality**
 
-16. [Security Engineering Roadmap](#security-engineering-roadmap)
-17. [Performance Engineering Roadmap](#performance-engineering-roadmap)
-18. [Software Testing Roadmap](#software-testing-roadmap)
+17. [Security Engineering Roadmap](#security-engineering-roadmap)
+18. [Performance Engineering Roadmap](#performance-engineering-roadmap)
+19. [Software Testing Roadmap](#software-testing-roadmap)
 
 **AI / ML**
 
-19. [Machine Learning Foundations Roadmap](#machine-learning-foundations-roadmap)
-20. [Generative AI: Diffusion, Vision & Multimodal Roadmap](#generative-ai-diffusion-vision--multimodal-roadmap)
-21. [AI Engineering Roadmap](#ai-engineering-roadmap)
-22. [LLM Engineering Roadmap](#llm-engineering-roadmap)
-23. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
-24. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
-25. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+20. [Machine Learning Foundations Roadmap](#machine-learning-foundations-roadmap)
+21. [Generative AI: Diffusion, Vision & Multimodal Roadmap](#generative-ai-diffusion-vision--multimodal-roadmap)
+22. [AI Engineering Roadmap](#ai-engineering-roadmap)
+23. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+24. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+25. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+26. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
 
 **Career & Interview Skills**
 
-26. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
-27. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
-28. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
-29. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
+27. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+28. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+29. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+30. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
+
+## Computer Architecture & Compilers Roadmap
+
+| Module | High-Level Topic                                    | Key Subtopics                                                                                     | Level        | Importance |
+| ------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Computer Architecture Fundamentals                  | Von Neumann Architecture, Harvard Architecture, CPU Components, Instruction Cycle                 | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Number Representation                               | Binary, Two's Complement, Floating Point (IEEE 754), Overflow, Precision                          | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Instruction Set Architecture                        | RISC vs CISC, Instruction Formats, Addressing Modes, Registers                                    | Fundamental  | ⭐⭐⭐⭐☆      |
+| 4      | Assembly Language Basics                            | Registers, Mnemonics, Stack Frames, Function Calls, Reading Compiled Output                       | Intermediate | ⭐⭐⭐⭐☆      |
+| 5      | CPU Pipelining                                      | Pipeline Stages, Hazards (Data/Control/Structural), Branch Prediction, Out-of-Order Execution     | Intermediate | ⭐⭐⭐⭐☆      |
+| 6      | Memory Hierarchy                                    | Registers, Cache Levels (L1/L2/L3), Main Memory, Locality of Reference                            | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 7      | Cache Architecture                                  | Cache Lines, Associativity, Cache Misses, Write-Through vs Write-Back, False Sharing              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Virtual Memory & MMU                                | Address Translation, TLB, Page Tables, Segmentation vs Paging                                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 9      | Parallelism in Hardware                             | SIMD, Multi-Core Architecture, Hyper-Threading, Vector Processing                                 | Intermediate | ⭐⭐⭐⭐☆      |
+| 10     | Bus & I/O Systems                                   | System Bus, DMA, Interrupts, I/O Devices, Memory-Mapped I/O                                       | Intermediate | ⭐⭐⭐☆☆      |
+| 11     | Performance Measurement                             | Clock Speed, IPC, Throughput vs Latency, Benchmarking, Amdahl's Law                               | Intermediate | ⭐⭐⭐⭐☆      |
+| 12     | GPU Architecture Basics                             | SIMT Model, Cores vs CUDA Cores, Memory Bandwidth, When GPUs Beat CPUs                            | Advanced     | ⭐⭐⭐⭐☆      |
+| 13     | Compiler Fundamentals                               | What Compilers Do, Compilation Phases, Compiler vs Interpreter vs JIT                             | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 14     | Lexical Analysis                                    | Tokens, Lexemes, Regular Expressions, Lexer Implementation, DFA/NFA Basics                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | Parsing & Syntax Analysis                           | Grammars, Parse Trees, Top-Down vs Bottom-Up Parsing, Recursive Descent                           | Intermediate | ⭐⭐⭐⭐☆      |
+| 16     | Abstract Syntax Trees                               | AST Construction, Tree Traversal, Semantic Representation                                         | Intermediate | ⭐⭐⭐⭐☆      |
+| 17     | Semantic Analysis                                   | Type Checking, Scope Resolution, Symbol Tables, Static Analysis                                   | Intermediate | ⭐⭐⭐⭐☆      |
+| 18     | Intermediate Representations                        | Three-Address Code, SSA Form, Control Flow Graphs                                                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Code Optimization                                   | Constant Folding, Dead Code Elimination, Loop Optimization, Inlining                              | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Code Generation                                     | Target Code Generation, Register Allocation, Instruction Selection                                | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Interpreters & Virtual Machines                     | Bytecode Interpreters, Stack vs Register VMs, Tree-Walking Interpreters                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Just-In-Time Compilation                            | JIT Compilation Strategies, Hot Path Detection, Tiered Compilation, V8/JVM JIT Overview           | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Garbage Collection                                  | Mark-and-Sweep, Generational GC, Reference Counting, Stop-the-World Pauses                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 24     | Linking & Loading                                   | Static vs Dynamic Linking, Symbol Resolution, Relocation, Shared Libraries                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Memory Layout of Programs                           | Stack, Heap, Text/Data/BSS Segments, Program Loading                                              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 26     | Undefined Behavior & Language Semantics             | Compiler Assumptions, Optimization Pitfalls, Common UB Sources                                    | Advanced     | ⭐⭐⭐☆☆      |
+| 27     | Domain-Specific Compilers                           | Query Compilers, Regex Engines, GPU Shader Compilers (Overview)                                   | Advanced     | ⭐⭐⭐☆☆      |
+| 28     | Building a Toy Compiler/Interpreter                 | End-to-End Pipeline, Language Design Choices, Testing a Compiler                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Production Case Studies                             | JVM/CLR Internals, LLVM Pipeline, Python Bytecode, JIT Engines in Browsers                        | Advanced     | ⭐⭐⭐⭐☆      |
+| 30     | Computer Architecture & Compilers Interview Mastery | Cache/Memory Questions, Compiler Design Questions, Low-Level Debugging Scenarios, Mock Interviews | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Operating Systems Roadmap
+
+| Module | High-Level Topic                   | Key Subtopics                                                                                                                   | Level        | Importance |
+| ------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | Operating System Fundamentals      | What is an Operating System, OS Architecture, Kernel, User Space, System Calls, Boot Process, Types of OS                       | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Shell Scripting & CLI Proficiency  | Bash Basics, Shell Variables, Pipes & Redirection, grep/sed/awk, find, xargs, Process Management from CLI, Scripting Automation | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Processes                          | Process Lifecycle, Process Control Block (PCB), Process States, Context Switching, Process Creation, Process Termination        | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Threads                            | Threads vs Processes, User Threads, Kernel Threads, Multithreading Models, Thread Lifecycle                                     | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | CPU Scheduling                     | FCFS, SJF, Priority Scheduling, Round Robin, Multilevel Queue, Multilevel Feedback Queue, Scheduling Metrics                    | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 6      | Process Synchronization            | Critical Section, Race Conditions, Mutex, Semaphore, Spinlock, Monitors, Condition Variables                                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 7      | Deadlocks                          | Deadlock Conditions, Prevention, Avoidance, Detection, Recovery, Banker's Algorithm                                             | Intermediate | ⭐⭐⭐⭐⭐      |
+| 8      | Inter-Process Communication (IPC)  | Shared Memory, Pipes, Named Pipes, Message Queues, Signals, Sockets, Memory Mapping                                             | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Memory Management                  | Logical vs Physical Memory, Address Space, Paging, Segmentation, Virtual Memory, Swapping                                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Virtual Memory                     | Demand Paging, Page Tables, TLB, Copy-on-Write, Memory Allocation, Memory Protection                                            | Intermediate | ⭐⭐⭐⭐⭐      |
+| 11     | Page Replacement Algorithms        | FIFO, LRU, LFU, Optimal, Clock Algorithm, Thrashing                                                                             | Intermediate | ⭐⭐⭐⭐☆      |
+| 12     | File Systems                       | File System Architecture, Inodes, Directories, File Allocation Methods, Journaling, Mounting                                    | Intermediate | ⭐⭐⭐⭐⭐      |
+| 13     | Disk Management                    | HDD vs SSD, Disk Scheduling, RAID Levels, Storage Hierarchy, Disk Performance                                                   | Intermediate | ⭐⭐⭐⭐☆      |
+| 14     | I/O Systems                        | Interrupts, DMA, Device Drivers, Buffering, Caching, Spooling, Polling                                                          | Intermediate | ⭐⭐⭐⭐☆      |
+| 15     | System Calls                       | Process Management, File Operations, Memory Management, Networking System Calls, Signals                                        | Intermediate | ⭐⭐⭐⭐☆      |
+| 16     | Concurrency                        | Parallelism, Synchronization Strategies, Lock-Free Programming, Atomic Operations, Memory Barriers                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 17     | Multicore & Parallel Computing     | CPU Cores, Hyper-Threading, NUMA, CPU Affinity, Parallel Execution Models                                                       | Advanced     | ⭐⭐⭐⭐☆      |
+| 18     | Memory Optimization                | Heap vs Stack, Garbage Collection Concepts, Memory Leaks, Fragmentation, Resource Management                                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Linux Internals                    | Linux Kernel Architecture, Scheduler, cgroups, Namespaces, Proc Filesystem, Sysfs                                               | Advanced     | ⭐⭐⭐⭐☆      |
+| 20     | Security Fundamentals              | User Privileges, File Permissions, Access Control, Sandboxing, SELinux/AppArmor Basics                                          | Intermediate | ⭐⭐⭐⭐☆      |
+| 21     | Virtualization                     | Hypervisors, Virtual Machines, Hardware Virtualization, Full vs Para Virtualization                                             | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Containers                         | Linux Namespaces, cgroups, Container Isolation, Docker Runtime Basics, OCI Concepts                                             | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Performance & Monitoring           | CPU Utilization, Memory Usage, I/O Bottlenecks, Load Average, Profiling, Performance Tuning                                     | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | Reliability & Fault Tolerance      | Crash Recovery, Checkpointing, Watchdogs, Failover Concepts, System Reliability                                                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Distributed OS Concepts            | Distributed Systems Basics, Clock Synchronization, Distributed Scheduling, Resource Sharing                                     | Advanced     | ⭐⭐⭐☆☆      |
+| 26     | Operating System Design            | Monolithic Kernel, Microkernel, Hybrid Kernel, Exokernel, Modular Kernel Architecture                                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 27     | Real-Time Operating Systems (RTOS) | Hard vs Soft RTOS, Scheduling, Interrupt Handling, Embedded OS Concepts                                                         | Advanced     | ⭐⭐⭐☆☆      |
+| 28     | Production OS Concepts             | Resource Limits, Process Isolation, Service Management, Daemons, Logging, Crash Dumps                                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 29     | Operating System Case Studies      | Linux, Windows, macOS, Android, iOS, Containerized Environments                                                                 | Advanced     | ⭐⭐⭐⭐☆      |
+| 30     | OS & Backend Integration           | Process Management in Servers, Thread Pools, Async I/O, Event Loops, Network Stack Interaction                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 31     | Operating System Interview Mastery | Common OS Interview Questions, Scheduling Problems, Memory Scenarios, Concurrency Questions, Debugging, Mock Interviews         | Advanced     | ⭐⭐⭐⭐⭐      |
+
 
 ## Networking Roadmap
 
@@ -89,42 +163,6 @@
 | 28     | Networking Design Patterns          | Client-Server, Reverse Proxy, API Gateway, CDN Architecture, Edge Computing, Zero Trust Network            | Advanced     | ⭐⭐⭐⭐⭐      |
 | 29     | Production Networking Case Studies  | Web Applications, Microservices Networking, Chat Systems, Video Streaming, CDN, Global Applications        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Networking Interview Mastery        | Common Networking Questions, Protocol Selection, Trade-offs, Debugging Scenarios, Mock Interviews          | Advanced     | ⭐⭐⭐⭐⭐      |
-
-
-## Operating Systems Roadmap
-
-| Module | High-Level Topic                   | Key Subtopics                                                                                                            | Level        | Importance |
-| ------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------ | ---------- |
-| 1      | Operating System Fundamentals      | What is an Operating System, OS Architecture, Kernel, User Space, System Calls, Boot Process, Types of OS                | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 2      | Processes                          | Process Lifecycle, Process Control Block (PCB), Process States, Context Switching, Process Creation, Process Termination | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 3      | Threads                            | Threads vs Processes, User Threads, Kernel Threads, Multithreading Models, Thread Lifecycle                              | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 4      | CPU Scheduling                     | FCFS, SJF, Priority Scheduling, Round Robin, Multilevel Queue, Multilevel Feedback Queue, Scheduling Metrics             | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | Process Synchronization            | Critical Section, Race Conditions, Mutex, Semaphore, Spinlock, Monitors, Condition Variables                             | Intermediate | ⭐⭐⭐⭐⭐      |
-| 6      | Deadlocks                          | Deadlock Conditions, Prevention, Avoidance, Detection, Recovery, Banker's Algorithm                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 7      | Inter-Process Communication (IPC)  | Shared Memory, Pipes, Named Pipes, Message Queues, Signals, Sockets, Memory Mapping                                      | Intermediate | ⭐⭐⭐⭐⭐      |
-| 8      | Memory Management                  | Logical vs Physical Memory, Address Space, Paging, Segmentation, Virtual Memory, Swapping                                | Intermediate | ⭐⭐⭐⭐⭐      |
-| 9      | Virtual Memory                     | Demand Paging, Page Tables, TLB, Copy-on-Write, Memory Allocation, Memory Protection                                     | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | Page Replacement Algorithms        | FIFO, LRU, LFU, Optimal, Clock Algorithm, Thrashing                                                                      | Intermediate | ⭐⭐⭐⭐☆      |
-| 11     | File Systems                       | File System Architecture, Inodes, Directories, File Allocation Methods, Journaling, Mounting                             | Intermediate | ⭐⭐⭐⭐⭐      |
-| 12     | Disk Management                    | HDD vs SSD, Disk Scheduling, RAID Levels, Storage Hierarchy, Disk Performance                                            | Intermediate | ⭐⭐⭐⭐☆      |
-| 13     | I/O Systems                        | Interrupts, DMA, Device Drivers, Buffering, Caching, Spooling, Polling                                                   | Intermediate | ⭐⭐⭐⭐☆      |
-| 14     | System Calls                       | Process Management, File Operations, Memory Management, Networking System Calls, Signals                                 | Intermediate | ⭐⭐⭐⭐☆      |
-| 15     | Concurrency                        | Parallelism, Synchronization Strategies, Lock-Free Programming, Atomic Operations, Memory Barriers                       | Advanced     | ⭐⭐⭐⭐⭐      |
-| 16     | Multicore & Parallel Computing     | CPU Cores, Hyper-Threading, NUMA, CPU Affinity, Parallel Execution Models                                                | Advanced     | ⭐⭐⭐⭐☆      |
-| 17     | Memory Optimization                | Heap vs Stack, Garbage Collection Concepts, Memory Leaks, Fragmentation, Resource Management                             | Advanced     | ⭐⭐⭐⭐☆      |
-| 18     | Linux Internals                    | Linux Kernel Architecture, Scheduler, cgroups, Namespaces, Proc Filesystem, Sysfs                                        | Advanced     | ⭐⭐⭐⭐☆      |
-| 19     | Security Fundamentals              | User Privileges, File Permissions, Access Control, Sandboxing, SELinux/AppArmor Basics                                   | Intermediate | ⭐⭐⭐⭐☆      |
-| 20     | Virtualization                     | Hypervisors, Virtual Machines, Hardware Virtualization, Full vs Para Virtualization                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 21     | Containers                         | Linux Namespaces, cgroups, Container Isolation, Docker Runtime Basics, OCI Concepts                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 22     | Performance & Monitoring           | CPU Utilization, Memory Usage, I/O Bottlenecks, Load Average, Profiling, Performance Tuning                              | Advanced     | ⭐⭐⭐⭐☆      |
-| 23     | Reliability & Fault Tolerance      | Crash Recovery, Checkpointing, Watchdogs, Failover Concepts, System Reliability                                          | Advanced     | ⭐⭐⭐⭐☆      |
-| 24     | Distributed OS Concepts            | Distributed Systems Basics, Clock Synchronization, Distributed Scheduling, Resource Sharing                              | Advanced     | ⭐⭐⭐☆☆      |
-| 25     | Operating System Design            | Monolithic Kernel, Microkernel, Hybrid Kernel, Exokernel, Modular Kernel Architecture                                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 26     | Real-Time Operating Systems (RTOS) | Hard vs Soft RTOS, Scheduling, Interrupt Handling, Embedded OS Concepts                                                  | Advanced     | ⭐⭐⭐☆☆      |
-| 27     | Production OS Concepts             | Resource Limits, Process Isolation, Service Management, Daemons, Logging, Crash Dumps                                    | Advanced     | ⭐⭐⭐⭐☆      |
-| 28     | Operating System Case Studies      | Linux, Windows, macOS, Android, iOS, Containerized Environments                                                          | Advanced     | ⭐⭐⭐⭐☆      |
-| 29     | OS & Backend Integration           | Process Management in Servers, Thread Pools, Async I/O, Event Loops, Network Stack Interaction                           | Advanced     | ⭐⭐⭐⭐⭐      |
-| 30     | Operating System Interview Mastery | Common OS Interview Questions, Scheduling Problems, Memory Scenarios, Concurrency Questions, Debugging, Mock Interviews  | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## Database Engineering Roadmap
