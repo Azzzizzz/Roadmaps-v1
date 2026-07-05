@@ -42,10 +42,10 @@ Do these before the pattern banks. Numbers are the order.
 
 | # | File | What it builds | Status |
 |:--:|---|---|:--:|
-| 01 | [Programming Foundations](foundations/01-programming-foundations.md) | language basics, I/O, control flow, functions, OOP | 🚧 |
-| 02 | [Complexity Analysis](foundations/02-complexity-analysis.md) | Big-O, time/space, amortized, recurrences | 🚧 |
-| 03 | [Mathematics](foundations/03-mathematics.md) | number theory, modular arithmetic, combinatorics, probability | 🚧 |
-| 04 | [Bit Manipulation](foundations/04-bit-manipulation.md) | bitwise ops, masks, common tricks | 🚧 |
+| 01 | [Programming Foundations](foundations/01-programming-foundations.md) | language basics, I/O, control flow, functions, OOP | ✅ |
+| 02 | [Complexity Analysis](foundations/02-complexity-analysis.md) | Big-O, time/space, amortized, recurrences | ✅ |
+| 03 | [Mathematics](foundations/03-mathematics.md) | number theory, modular arithmetic, combinatorics, probability | ✅ |
+| 04 | [Bit Manipulation](foundations/04-bit-manipulation.md) | bitwise ops, masks, common tricks | ✅ |
 | 05 | [Recursion & Divide-and-Conquer](foundations/05-recursion-divide-conquer.md) | recursion mechanics + D&C · **28 Qs** | ✅ |
 | 06 | [Core Problems — Tier-2/3](foundations/06-core-problems-tier2-3.md) | breadth across arrays/strings/hashing/LL/stacks/queues, frequency-ranked, ▶️ easy→hard · **111 Qs** | ✅ |
 
