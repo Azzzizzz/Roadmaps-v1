@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Strings Patterns](strings-patterns-tier1.md) · [Linked List Patterns](linked-list-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](01-arrays.md) · [Strings Patterns](02-strings.md) · [Linked List Patterns](03-linked-list.md) |
 | **Status** | ✅ Complete — Stacks & Queues (4th in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Stacks, queues & deques — structure-native + design problems, Tier-1 / MAANG |
 | **Coverage** | 6 patterns · 37 questions |
-| **Related** | Next in series → `trees-patterns-tier1.md` |
+| **Related** | Next in series → `05-trees.md` |
 
 ---
 
@@ -22,10 +22,10 @@ cracks the problem**, not as a flat list.
 whose real subject is an array or string — and by our one-home rule those live in their own banks:
 
 - **Monotonic stack** on arrays (Next Greater Element, Daily Temperatures, Stock Span, Histogram) →
-  [Arrays bank → Monotonic Stack](arrays-patterns-tier1.md#p8).
+  [Arrays bank → Monotonic Stack](01-arrays.md#p8).
 - **Stack-based string parsing** (Valid Parentheses, Decode String, Basic Calculator I/II, Min Remove
-  to Make Valid) → [Strings bank → Stack-Based](strings-patterns-tier1.md#p6).
-- **List-backed caches** (LRU, LFU) → [Linked List bank → Design & Copy](linked-list-patterns-tier1.md#p6).
+  to Make Valid) → [Strings bank → Stack-Based](02-strings.md#p6).
+- **List-backed caches** (LRU, LFU) → [Linked List bank → Design & Copy](03-linked-list.md#p6).
 
 So this file covers what's genuinely *about the stack/queue itself*: **design/implementation**,
 **advanced monotonic** problems not already listed, **expression/simulation**, and **deque** techniques.
@@ -56,7 +56,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you validate, repair, or score nested brackets — each closing bracket
 > must resolve against the most recent unmatched opener.
-> **See also:** Valid Parentheses & Minimum Remove to Make Valid → [Strings bank](strings-patterns-tier1.md#p6).
+> **See also:** Valid Parentheses & Minimum Remove to Make Valid → [Strings bank](02-strings.md#p6).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -72,7 +72,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you keep a stack that stays increasing/decreasing to answer next/previous
 > greater-or-smaller, or when later elements "collide with" / evict earlier ones.
-> **See also:** Next Greater Element, Daily Temperatures, Stock Span, Largest Rectangle → [Arrays bank](arrays-patterns-tier1.md#p8).
+> **See also:** Next Greater Element, Daily Temperatures, Stock Span, Largest Rectangle → [Arrays bank](01-arrays.md#p8).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -89,7 +89,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you evaluate or parse an expression, or simulate nested / undoable
 > operations where the stack tracks "where you are".
-> **See also:** Decode String & Basic Calculator I/II → [Strings bank](strings-patterns-tier1.md#p6).
+> **See also:** Decode String & Basic Calculator I/II → [Strings bank](02-strings.md#p6).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -119,7 +119,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you implement a FIFO, circular buffer, deque, or streaming aggregate at a
 > required amortized complexity.
-> **See also:** LRU / LFU list-backed caches → [Linked List bank](linked-list-patterns-tier1.md#p6).
+> **See also:** LRU / LFU list-backed caches → [Linked List bank](03-linked-list.md#p6).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -136,7 +136,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you need a sliding-window max/min, or a fair round-robin / eviction that a
 > queue or double-ended queue models directly.
-> **See also:** Sliding Window Maximum & Shortest Subarray with Sum ≥ K → [Arrays bank](arrays-patterns-tier1.md#p2).
+> **See also:** Sliding Window Maximum & Shortest Subarray with Sum ≥ K → [Arrays bank](01-arrays.md#p2).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -159,4 +159,4 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 - [ ] I handle edge cases: empty structure, single element, full/wrap-around, interleaved push/pop.
 
 > **Series:** Arrays ✅ · Strings ✅ · Linked List ✅ · Stacks & Queues ✅ · next →
-> `trees-patterns-tier1.md`, then graphs → heaps → dp → backtracking.
+> `05-trees.md`, then graphs → heaps → dp → backtracking.

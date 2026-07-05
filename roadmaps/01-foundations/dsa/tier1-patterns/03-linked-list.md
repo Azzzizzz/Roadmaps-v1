@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Strings Patterns](strings-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](01-arrays.md) · [Strings Patterns](02-strings.md) |
 | **Status** | ✅ Complete — Linked List (3rd in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Singly / doubly linked lists, organized by **algorithmic pattern**, Tier-1 / MAANG |
 | **Coverage** | 6 patterns · 46 questions |
-| **Related** | Next in series → `stacks-queues-patterns-tier1.md` |
+| **Related** | Next in series → `04-stacks-queues.md` |
 
 ---
 
@@ -162,5 +162,5 @@ frequency-ranked breadth for easier companies are in the [Tier-2/3 bank](../foun
 - [ ] I've attempted every 🔴 (k-group reversal, merge-k, LFU) and can reconstruct the approach.
 - [ ] I handle edge cases: empty list, single node, two nodes, even vs odd length, cycles.
 
-> **Series:** Arrays ✅ · Strings ✅ · Linked List ✅ · next → `stacks-queues-patterns-tier1.md`,
+> **Series:** Arrays ✅ · Strings ✅ · Linked List ✅ · next → `04-stacks-queues.md`,
 > then trees → graphs → heaps → dp → backtracking.

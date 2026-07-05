@@ -8,7 +8,7 @@
 | **Scope** | Arrays — organized by **algorithmic pattern**, Tier-1 / MAANG difficulty |
 | **Targets** | Tier-1 product companies · MAANG / FAANG |
 | **Coverage** | 10 patterns · 90 questions |
-| **Related** | Next in series → `strings-patterns-tier1.md`, `trees-patterns-tier1.md`, … |
+| **Related** | Next in series → `02-strings.md`, `05-trees.md`, … |
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 medium · 🔴 hard &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
 > Rows are ordered **easy → hard within each pattern** (build the skill progressively). Examples show **intent** (`input → output`), *not* solutions.
@@ -230,5 +230,5 @@ so a new problem instantly signals which tool to reach for.
 - [ ] I've attempted every 🔴 and can reconstruct the approach from the pattern alone.
 - [ ] I can state time/space complexity and handle edge cases for each.
 
-> **Series:** this is the Arrays file. Next up (same format): `strings-patterns-tier1.md`,
-> `trees-patterns-tier1.md`, `graphs-patterns-tier1.md`, `dp-patterns-tier1.md`.
+> **Series:** this is the Arrays file. Next up (same format): `02-strings.md`,
+> `05-trees.md`, `07-graphs.md`, `09-dynamic-programming.md`.

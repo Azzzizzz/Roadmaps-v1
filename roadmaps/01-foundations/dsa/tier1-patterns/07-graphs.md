@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Trees Patterns](trees-patterns-tier1.md) · [Arrays Patterns](arrays-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Trees Patterns](05-trees.md) · [Arrays Patterns](01-arrays.md) |
 | **Status** | ✅ Complete — Graphs (6th in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Directed & undirected graphs, grids and DAGs, organized by **pattern**, Tier-1 / MAANG |
 | **Coverage** | 9 patterns · 70 questions |
-| **Related** | Next in series → `heaps-patterns-tier1.md` |
+| **Related** | Next in series → `06-heaps.md` |
 
 ---
 
@@ -33,7 +33,7 @@ The genuinely hard step is usually noticing the graph — once you do, the algor
 the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 medium · 🔴 hard &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
-> **Always** mark nodes *visited* to avoid infinite loops. **See also:** pure matrix manipulation (rotate/spiral/search) → [Arrays bank → Matrix](arrays-patterns-tier1.md#p9).
+> **Always** mark nodes *visited* to avoid infinite loops. **See also:** pure matrix manipulation (rotate/spiral/search) → [Arrays bank → Matrix](01-arrays.md#p9).
 
 ## 🧭 Pattern Index
 
@@ -214,4 +214,4 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 - [ ] I handle edge cases: disconnected graph, self-loops, cycles, single node, empty graph.
 
 > **Series:** Arrays ✅ · Strings ✅ · Linked List ✅ · Stacks & Queues ✅ · Trees ✅ · Graphs ✅ ·
-> next → `heaps-patterns-tier1.md`, then the paradigm files dp → backtracking.
+> next → `06-heaps.md`, then the paradigm files dp → backtracking.

@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Strings](strings-patterns-tier1.md) · [Dynamic Programming](dp-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Strings](02-strings.md) · [Dynamic Programming](09-dynamic-programming.md) |
 | **Status** | ✅ Complete — Backtracking (9th & final in the Tier-1 pattern series) |
 | **Kind** | **Paradigm file** (pattern-organized, spans all input types) |
 | **Scope** | Backtracking, organized by **sub-pattern**, Tier-1 / MAANG |
 | **Coverage** | 5 patterns · 45 questions |
-| **Canonical home for** | **String backtracking** — the [Strings bank](strings-patterns-tier1.md#p7) cross-links here |
+| **Canonical home for** | **String backtracking** — the [Strings bank](02-strings.md#p7) cross-links here |
 
 ---
 
@@ -28,7 +28,7 @@ Reach for backtracking when a problem says *"find all / generate all / does any 
 and brute force is exponential but **pruning** makes it tractable.
 
 **Backtracking vs DP:** backtracking *enumerates*; if subproblems overlap and you only need a
-count or an optimum, **memoize** and it becomes [DP](dp-patterns-tier1.md).
+count or an optimum, **memoize** and it becomes [DP](09-dynamic-programming.md).
 
 **How to work through it:** per pattern → read the **🔍 recognize it when…** cue, then solve top-down
 (easy → hard). Solve from the prompt; the example only confirms you understood the question. Goal:
@@ -89,7 +89,7 @@ count or an optimum, **memoize** and it becomes [DP](dp-patterns-tier1.md).
 
 > 🔍 **Recognize it when…** you place pieces on a board or walk a grid, trying options and backtracking
 > on a dead end — the classic constraint puzzles.
-> **See also:** Word Search & Word Search II also live in the [Strings bank](strings-patterns-tier1.md#p7).
+> **See also:** Word Search & Word Search II also live in the [Strings bank](02-strings.md#p7).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -108,7 +108,7 @@ count or an optimum, **memoize** and it becomes [DP](dp-patterns-tier1.md).
 
 > 🔍 **Recognize it when…** you split a sequence or set into valid groups — try each cut point or
 > bucket assignment and backtrack.
-> **See also:** Palindrome Partitioning, Restore IP Addresses, Word Break II also in the [Strings bank](strings-patterns-tier1.md#p7).
+> **See also:** Palindrome Partitioning, Restore IP Addresses, Word Break II also in the [Strings bank](02-strings.md#p7).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -127,7 +127,7 @@ count or an optimum, **memoize** and it becomes [DP](dp-patterns-tier1.md).
 
 > 🔍 **Recognize it when…** you build valid strings/sequences under constraints and prune aggressively —
 > count or list all.
-> **See also:** Generate Parentheses & Expression Add Operators also in the [Strings bank](strings-patterns-tier1.md#p7).
+> **See also:** Generate Parentheses & Expression Add Operators also in the [Strings bank](02-strings.md#p7).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|

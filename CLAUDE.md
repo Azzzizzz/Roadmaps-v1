@@ -66,7 +66,7 @@ Both live in `roadmaps/01-foundations/dsa-practice/`:
   (`# · Question · Diff · example in→out · Freq`).
 - **Build order (foundations-first):** linked-list → stacks-queues → trees → graphs → heaps → dp → backtracking.
 - When the DP & Backtracking paradigm files are built, the existing "DP on Strings" / "Backtracking"
-  sections in `strings-patterns-tier1.md` become **cross-links** to them (no duplication).
+  sections in `02-strings.md` become **cross-links** to them (no duplication).
 
 ## Status markers (put in each file's header)
 

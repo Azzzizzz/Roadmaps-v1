@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays](arrays-patterns-tier1.md) · [Strings](strings-patterns-tier1.md) · [Trees](trees-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays](01-arrays.md) · [Strings](02-strings.md) · [Trees](05-trees.md) |
 | **Status** | ✅ Complete — Dynamic Programming (8th in the Tier-1 pattern series) |
 | **Kind** | **Paradigm file** (pattern-organized, spans all input types) |
 | **Scope** | Dynamic programming, organized by DP **sub-pattern**, Tier-1 / MAANG |
 | **Coverage** | 10 patterns · 90 questions |
-| **Canonical home for** | **String DP** — the [Strings bank](strings-patterns-tier1.md#p4) cross-links here |
+| **Canonical home for** | **String DP** — the [Strings bank](02-strings.md#p4) cross-links here |
 
 ---
 
@@ -151,7 +151,7 @@ subproblems**. Start with **recursion + memoization**, then convert to tabulatio
 
 > 🔍 **Recognize it when…** you transform or match *two* strings, count subsequences, or find an optimal
 > subsequence/partition — 2-D dp over indices `(i, j)`.
-> **This is the canonical home** — the [Strings bank](strings-patterns-tier1.md#p4) points here.
+> **This is the canonical home** — the [Strings bank](02-strings.md#p4) points here.
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -244,4 +244,4 @@ subproblems**. Start with **recursion + memoization**, then convert to tabulatio
 - [ ] I recognize DP triggers instantly: *count the ways · min/max cost · is it possible* + overlapping subproblems.
 
 > **Series:** Arrays ✅ · Strings ✅ · Linked List ✅ · Stacks & Queues ✅ · Trees ✅ · Graphs ✅ ·
-> Heaps ✅ · Dynamic Programming ✅ · **last up →** `backtracking-patterns-tier1.md`.
+> Heaps ✅ · Dynamic Programming ✅ · **last up →** `08-backtracking.md`.

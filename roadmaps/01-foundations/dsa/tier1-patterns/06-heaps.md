@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Graphs Patterns](graphs-patterns-tier1.md) · [Arrays Patterns](arrays-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Graphs Patterns](07-graphs.md) · [Arrays Patterns](01-arrays.md) |
 | **Status** | ✅ Complete — Heaps (7th in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Binary heaps / priority queues, organized by **pattern**, Tier-1 / MAANG |
 | **Coverage** | 5 patterns · 35 questions |
-| **Related** | Next in series → the paradigm files `dp-patterns-tier1.md`, `backtracking-patterns-tier1.md` |
+| **Related** | Next in series → the paradigm files `09-dynamic-programming.md`, `08-backtracking.md` |
 
 ---
 
@@ -51,7 +51,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you need the K largest, smallest, or most-frequent items. Keep a heap of
 > size K — a **min-heap** for the K *largest* (the smallest keeps falling out).
-> **See also:** Sort Characters By Frequency also lives in [Strings bank](strings-patterns-tier1.md#p3).
+> **See also:** Sort Characters By Frequency also lives in [Strings bank](02-strings.md#p3).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -84,7 +84,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you merge or traverse K sorted sequences at once — push each sequence's
 > head into a min-heap, pop the smallest, push its successor.
-> **See also:** Merge k Sorted Lists also lives in [Linked List bank](linked-list-patterns-tier1.md#p4).
+> **See also:** Merge k Sorted Lists also lives in [Linked List bank](03-linked-list.md#p4).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -101,7 +101,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 
 > 🔍 **Recognize it when…** you repeatedly pick the current best/most-urgent option under cooldowns,
 > deadlines, or capacity — a heap gives O(log n) "next best".
-> **See also:** Meeting Rooms II also relates to [Arrays bank → Merge Intervals](arrays-patterns-tier1.md#p7).
+> **See also:** Meeting Rooms II also relates to [Arrays bank → Merge Intervals](01-arrays.md#p7).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -140,4 +140,4 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 - [ ] I handle edge cases: fewer than K elements, ties, empty heap, duplicate keys.
 
 > **Series:** Arrays ✅ · Strings ✅ · Linked List ✅ · Stacks & Queues ✅ · Trees ✅ · Graphs ✅ ·
-> Heaps ✅ · next → the **paradigm files**: `dp-patterns-tier1.md`, then `backtracking-patterns-tier1.md`.
+> Heaps ✅ · next → the **paradigm files**: `09-dynamic-programming.md`, then `08-backtracking.md`.

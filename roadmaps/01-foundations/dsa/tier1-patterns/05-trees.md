@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Linked List Patterns](linked-list-patterns-tier1.md) · [Stacks & Queues](stacks-queues-patterns-tier1.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Linked List Patterns](03-linked-list.md) · [Stacks & Queues](04-stacks-queues.md) |
 | **Status** | ✅ Complete — Trees (5th in the Tier-1 pattern series) |
 | **Kind** | Structure file (pattern-organized) |
 | **Scope** | Binary trees, BSTs & N-ary trees, organized by **algorithmic pattern**, Tier-1 / MAANG |
 | **Coverage** | 10 patterns · 80 questions |
-| **Related** | Next in series → `graphs-patterns-tier1.md` |
+| **Related** | Next in series → `07-graphs.md` |
 
 ---
 
@@ -157,7 +157,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 ## 7 · Construct & Serialize (8)
 
 > 🔍 **Recognize it when…** you rebuild a tree from traversal outputs, or (de)serialize a tree to/from
-> a string. **See also:** Convert Sorted List to BST → [Linked List bank](linked-list-patterns-tier1.md#p6).
+> a string. **See also:** Convert Sorted List to BST → [Linked List bank](03-linked-list.md#p6).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -191,7 +191,7 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 ## 9 · Structural Modification (8)
 
 > 🔍 **Recognize it when…** you change the tree's shape or content — invert, merge, flatten, prune, or
-> compare structures. **See also:** Flatten Binary Tree to Linked List also relates to [Linked List bank](linked-list-patterns-tier1.md#p6).
+> compare structures. **See also:** Flatten Binary Tree to Linked List also relates to [Linked List bank](03-linked-list.md#p6).
 
 | # | Question | Diff | Example `input → output` | Freq |
 |:--|:--|:--:|:--|:--:|
@@ -230,4 +230,4 @@ the question. Goal: **name the pattern in under 60 seconds** on a new problem.
 - [ ] I handle edge cases: empty tree, single node, skewed tree, duplicate values.
 
 > **Series:** Arrays ✅ · Strings ✅ · Linked List ✅ · Stacks & Queues ✅ · Trees ✅ · next →
-> `graphs-patterns-tier1.md`, then heaps → dp → backtracking.
+> `07-graphs.md`, then heaps → dp → backtracking.

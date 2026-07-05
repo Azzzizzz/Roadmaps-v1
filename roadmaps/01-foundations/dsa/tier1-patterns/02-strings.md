@@ -3,12 +3,12 @@
 |  |  |
 |---|---|
 | **Pillar** | `01 · Foundations` |
-| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](arrays-patterns-tier1.md) · [Tier-2/3 Bank](../foundations/06-core-problems-tier2-3.md) |
+| **Companion to** | [DSA Roadmap](../../dsa.md) · [Arrays Patterns](01-arrays.md) · [Tier-2/3 Bank](../foundations/06-core-problems-tier2-3.md) |
 | **Status** | ✅ Complete — Strings (2nd in the Tier-1 pattern series) |
 | **Scope** | Strings — organized by **algorithmic pattern**, Tier-1 / MAANG difficulty |
 | **Targets** | Tier-1 product companies · MAANG / FAANG |
-| **Coverage** | 8 in-file patterns · 72 questions (String DP → [DP bank](dp-patterns-tier1.md#p6) · Backtracking → [BT bank](backtracking-patterns-tier1.md)) |
-| **Related** | Next in series → `trees-patterns-tier1.md`, `graphs-patterns-tier1.md`, … |
+| **Coverage** | 8 in-file patterns · 72 questions (String DP → [DP bank](09-dynamic-programming.md#p6) · Backtracking → [BT bank](08-backtracking.md)) |
+| **Related** | Next in series → `05-trees.md`, `07-graphs.md`, … |
 
 > **Legend** — Difficulty: 🟢 easy · 🟡 medium · 🔴 hard &nbsp;•&nbsp; Frequency: ⭐⭐⭐ asked constantly · ⭐⭐ common · ⭐ occasional
 > Rows are ordered **easy → hard within each pattern**. Examples show **intent** (`input → output`), *not* solutions.
@@ -30,10 +30,10 @@ Internalize the *trigger*, not the solution.
 | 1 | [Sliding Window](#p1) | 12 | longest/shortest substring with a constraint · anagrams/permutations · at-most-K distinct |
 | 2 | [Two Pointers](#p2) | 10 | palindrome checks · reverse in place · compare/merge from both ends |
 | 3 | [Hashing / Frequency Map](#p3) | 10 | anagrams · char counts · group by signature · char-to-char mapping |
-| 4 | [DP on Strings → DP bank](dp-patterns-tier1.md#p6) | — | *moved* — DP is a paradigm; String DP lives in the DP bank |
+| 4 | [DP on Strings → DP bank](09-dynamic-programming.md#p6) | — | *moved* — DP is a paradigm; String DP lives in the DP bank |
 | 5 | [Palindrome Techniques](#p5) | 10 | longest/count palindromic substrings · partition into palindromes · make a palindrome |
 | 6 | [Stack-Based](#p6) | 8 | nested/matching brackets · decode · remove adjacent · evaluate expressions |
-| 7 | [Backtracking → BT bank](backtracking-patterns-tier1.md) | — | *moved* — backtracking is a paradigm; lives in the Backtracking bank |
+| 7 | [Backtracking → BT bank](08-backtracking.md) | — | *moved* — backtracking is a paradigm; lives in the Backtracking bank |
 | 8 | [Parsing / Simulation](#p8) | 8 | convert a formatted string · roman/atoi · add/multiply as strings |
 | 9 | [Trie / Prefix](#p9) | 8 | many prefix queries · dictionary of words · autocomplete · word search on a grid |
 | 10 | [String Matching](#p10) | 6 | find a pattern in text · repeated patterns · prefix-function (KMP) / rolling hash |
@@ -102,7 +102,7 @@ Internalize the *trigger*, not the solution.
 <a id="p4"></a>
 ## 4 · Dynamic Programming on Strings → moved to the DP bank
 
-> 🧭 **String DP now lives in its canonical home:** [Dynamic Programming bank → String DP](dp-patterns-tier1.md#p6).
+> 🧭 **String DP now lives in its canonical home:** [Dynamic Programming bank → String DP](09-dynamic-programming.md#p6).
 > That's where the full easy→hard ramp is — Longest Common Subsequence, Edit Distance, Distinct
 > Subsequences, Interleaving String, Regular Expression & Wildcard Matching, and more.
 >
@@ -149,7 +149,7 @@ Internalize the *trigger*, not the solution.
 <a id="p7"></a>
 ## 7 · Backtracking → moved to the Backtracking bank
 
-> 🧭 **String backtracking now lives in its canonical home:** [Backtracking bank](backtracking-patterns-tier1.md).
+> 🧭 **String backtracking now lives in its canonical home:** [Backtracking bank](08-backtracking.md).
 > Generate Parentheses, Letter Combinations, Restore IP Addresses, String Permutations, Word Search,
 > Word Break II, Expression Add Operators — all there, grouped with their non-string siblings
 > (subsets, permutations, N-Queens, partitioning) so you learn the paradigm as one thing.
@@ -215,5 +215,5 @@ Internalize the *trigger*, not the solution.
 - [ ] I've attempted every 🔴 and can reconstruct the approach from the pattern alone.
 - [ ] I can state time/space complexity and handle edge cases (empty string, single char, all-same).
 
-> **Series:** Arrays ✅ · Strings ✅ · next → `trees-patterns-tier1.md`, `graphs-patterns-tier1.md`,
-> `dp-patterns-tier1.md`.
+> **Series:** Arrays ✅ · Strings ✅ · next → `05-trees.md`, `07-graphs.md`,
+> `09-dynamic-programming.md`.
