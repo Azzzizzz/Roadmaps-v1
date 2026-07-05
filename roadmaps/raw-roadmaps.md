@@ -964,7 +964,7 @@
 | 16     | Agent Frameworks                   | LangGraph, OpenAI Agents SDK, AutoGen, CrewAI, Semantic Kernel, Google ADK, Mastra, Agno                               | Advanced     | ⭐⭐⭐⭐⭐      |
 | 17     | Workflow Orchestration             | DAGs, State Machines, Human-in-the-Loop, Conditional Flows, Retries, Scheduling                                        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 18     | Multi-Agent Systems                | Agent Collaboration, Delegation, Coordination, Negotiation, Communication Protocols, Shared Memory                     | Advanced     | ⭐⭐⭐⭐⭐      |
-| 19     | Agentic RAG                        | Retrieval Tools, Dynamic Retrieval, Knowledge Bases, Memory + RAG Integration, Context-Aware Retrieval                 | Advanced     | ⭐⭐⭐⭐⭐      |
+| 19     | Agentic RAG                        | Memory + RAG integration in agent architectures; retrieval technique depth — see RAG (Retrieval-Augmented Generation) Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
 | 20     | Human-in-the-Loop                  | User Approval, Feedback Loops, Interrupts, Manual Overrides, Review Workflows                                          | Advanced     | ⭐⭐⭐⭐☆      |
 | 21     | Agent Security                     | Prompt Injection, Tool Injection, Permission Models, Sandboxing, Secret Management, Secure Tool Execution              | Advanced     | ⭐⭐⭐⭐⭐      |
 | 22     | Agent Observability                | Execution Traces, Tool Call Logs, Memory Inspection, Latency, Token Usage, Cost Monitoring                             | Advanced     | ⭐⭐⭐⭐☆      |
