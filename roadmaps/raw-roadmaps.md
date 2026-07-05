@@ -38,18 +38,19 @@
 
 **AI / ML**
 
-19. [AI Engineering Roadmap](#ai-engineering-roadmap)
-20. [LLM Engineering Roadmap](#llm-engineering-roadmap)
-21. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
-22. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
-23. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
+19. [Machine Learning Foundations Roadmap](#machine-learning-foundations-roadmap)
+20. [AI Engineering Roadmap](#ai-engineering-roadmap)
+21. [LLM Engineering Roadmap](#llm-engineering-roadmap)
+22. [RAG (Retrieval-Augmented Generation) Roadmap](#rag-retrieval-augmented-generation-roadmap)
+23. [AI Agents & MCP Roadmap](#ai-agents--mcp-roadmap)
+24. [AI Frameworks & Orchestration Roadmap](#ai-frameworks--orchestration-roadmap)
 
 **Career & Interview Skills**
 
-24. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
-25. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
-26. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
-27. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
+25. [Resume, LinkedIn & Portfolio Roadmap](#resume-linkedin--portfolio-roadmap)
+26. [Communication & Storytelling Roadmap](#communication--storytelling-roadmap)
+27. [Behavioral & Leadership Interviews Roadmap](#behavioral--leadership-interviews-roadmap)
+28. [Salary Negotiation & Career Strategy Roadmap](#salary-negotiation--career-strategy-roadmap)
 
 ---
 
@@ -720,6 +721,42 @@
 | 28     | Testing AI/ML-Powered Systems          | Non-Determinism, Golden Datasets, Evaluation Metrics, Regression Detection in Model Outputs           | Advanced     | ⭐⭐⭐⭐☆      |
 | 29     | Production Testing Case Studies        | Payment Flow Testing, High-Traffic API Testing, Multi-Tenant Testing Strategies                       | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Testing Interview Mastery              | Test Strategy Questions, Debugging Flaky Tests, Test Design Scenarios, Mock Interviews                | Advanced     | ⭐⭐⭐⭐⭐      |
+
+
+## Machine Learning Foundations Roadmap
+
+| Module | High-Level Topic                      | Key Subtopics                                                                                       | Level        | Importance |
+| ------ | ------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------ | ---------- |
+| 1      | ML Fundamentals                       | What is Machine Learning, AI vs ML vs DL, Types of Learning, ML Workflow, Use Cases                 | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 2      | Mathematics for ML                    | Linear Algebra, Probability & Statistics, Calculus for Optimization, Vectors & Matrices             | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 3      | Data Preprocessing                    | Cleaning, Handling Missing Data, Outliers, Encoding Categorical Data, Normalization/Standardization | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 4      | Exploratory Data Analysis             | Descriptive Statistics, Data Visualization, Correlation Analysis, Distribution Analysis             | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | Feature Engineering                   | Feature Selection, Feature Extraction, Feature Scaling, Encoding, Interaction Features              | Intermediate | ⭐⭐⭐⭐⭐      |
+| 6      | Supervised Learning: Regression       | Linear Regression, Polynomial Regression, Regularization (Ridge/Lasso), Assumptions                 | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 7      | Supervised Learning: Classification   | Logistic Regression, Decision Boundaries, Multi-Class Classification                                | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 8      | Tree-Based Models                     | Decision Trees, Random Forests, Gradient Boosting (XGBoost, LightGBM), Feature Importance           | Intermediate | ⭐⭐⭐⭐⭐      |
+| 9      | Support Vector Machines               | Margins, Kernels, Soft Margin, Use Cases & Limitations                                              | Intermediate | ⭐⭐⭐☆☆      |
+| 10     | Instance-Based & Probabilistic Models | k-Nearest Neighbors, Naive Bayes, Assumptions & Trade-offs                                          | Intermediate | ⭐⭐⭐☆☆      |
+| 11     | Unsupervised Learning: Clustering     | K-Means, Hierarchical Clustering, DBSCAN, Cluster Evaluation                                        | Intermediate | ⭐⭐⭐⭐⭐      |
+| 12     | Dimensionality Reduction              | PCA, t-SNE, UMAP, Curse of Dimensionality                                                           | Intermediate | ⭐⭐⭐⭐☆      |
+| 13     | Model Evaluation Metrics              | Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix, Regression Metrics (RMSE, MAE)          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 14     | Cross-Validation & Model Selection    | k-Fold CV, Stratified CV, Train/Val/Test Splits, Data Leakage                                       | Intermediate | ⭐⭐⭐⭐⭐      |
+| 15     | Bias-Variance Tradeoff                | Overfitting, Underfitting, Regularization, Learning Curves                                          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 16     | Hyperparameter Tuning                 | Grid Search, Random Search, Bayesian Optimization, Automated Tuning Tools                           | Advanced     | ⭐⭐⭐⭐☆      |
+| 17     | Ensemble Methods                      | Bagging, Boosting, Stacking, Voting Classifiers                                                     | Intermediate | ⭐⭐⭐⭐☆      |
+| 18     | Neural Network Foundations            | Perceptron, Multi-Layer Perceptrons, Activation Functions, Backpropagation                          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 19     | Deep Learning Basics                  | CNNs (Overview), RNNs (Overview), Transformers (Overview), When to Use Deep Learning                | Intermediate | ⭐⭐⭐⭐☆      |
+| 20     | Imbalanced Data & Class Imbalance     | Resampling, SMOTE, Class Weights, Threshold Tuning                                                  | Advanced     | ⭐⭐⭐⭐☆      |
+| 21     | Time Series Fundamentals              | Trend, Seasonality, ARIMA, Train/Test Splits for Time Series, Forecasting Basics                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 22     | Recommendation Systems Basics         | Collaborative Filtering, Content-Based Filtering, Matrix Factorization                              | Advanced     | ⭐⭐⭐⭐☆      |
+| 23     | Model Interpretability                | Feature Importance, SHAP, LIME, Explainable AI Basics                                               | Advanced     | ⭐⭐⭐⭐☆      |
+| 24     | ML Experiment Tracking                | Experiment Versioning, Reproducibility, Tracking Tools, Model Registries                            | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Model Deployment Basics               | Batch vs Real-Time Inference, Model Serialization, Serving Frameworks (Overview)                    | Advanced     | ⭐⭐⭐⭐☆      |
+| 26     | MLOps Fundamentals                    | ML Pipelines, CI/CD for ML, Model Monitoring, Data & Model Versioning                               | Advanced     | ⭐⭐⭐⭐⭐      |
+| 27     | ML System Design Basics               | Problem Framing, Data Collection Strategy, Offline vs Online Evaluation, Feedback Loops             | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Ethics, Bias & Fairness in ML         | Bias Sources, Fairness Metrics, Responsible ML Practices                                            | Advanced     | ⭐⭐⭐☆☆      |
+| 29     | Production ML Case Studies            | Fraud Detection, Churn Prediction, Recommendation Engine, Demand Forecasting                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 30     | ML Foundations Interview Mastery      | Algorithm Selection Questions, Metric Trade-offs, Case Study Walkthroughs, Mock Interviews          | Advanced     | ⭐⭐⭐⭐⭐      |
 
 
 ## AI Engineering Roadmap
