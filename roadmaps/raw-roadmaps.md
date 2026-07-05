@@ -1046,7 +1046,7 @@
 | 2      | Technical Communication               | Explaining Technical Concepts, Audience Awareness, Simplifying Complex Topics, Technical Vocabulary   | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 3      | Storytelling Fundamentals             | Story Structure, Context, Problem, Solution, Outcome, Impact, Lessons Learned                         | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 4      | Structured Communication              | Pyramid Principle, BLUF (Bottom Line Up Front), MECE, Logical Flow, Structured Thinking               | Fundamental  | ⭐⭐⭐⭐⭐      |
-| 5      | STAR & Technical Storytelling         | STAR Method, CAR, PAR, Engineering Storytelling, Metrics-Driven Stories                               | Fundamental  | ⭐⭐⭐⭐⭐      |
+| 5      | STAR & Technical Storytelling         | Engineering storytelling, metrics-driven stories; STAR/CAR/PAR framework depth — see Behavioral & Leadership Interviews Roadmap | Fundamental  | ⭐⭐⭐⭐⭐      |
 | 6      | Project Walkthroughs                  | Project Overview, Architecture, Challenges, Trade-offs, Decisions, Results, Learnings                 | Intermediate | ⭐⭐⭐⭐⭐      |
 | 7      | Explaining System Design              | Requirement Clarification, Component Explanation, Architecture Flow, Trade-offs, Scaling Decisions    | Intermediate | ⭐⭐⭐⭐⭐      |
 | 8      | Whiteboarding Skills                  | Drawing Architecture, Visual Communication, Incremental Design, Diagram Best Practices                | Intermediate | ⭐⭐⭐⭐⭐      |
@@ -1066,7 +1066,7 @@
 | 22     | Persuasion & Influence                | Convincing Stakeholders, Selling Ideas, Negotiation, Consensus Building, Managing Resistance          | Advanced     | ⭐⭐⭐⭐⭐      |
 | 23     | Cross-Cultural Communication          | Global Teams, Remote Communication, Time Zones, Cultural Awareness, Inclusive Communication           | Advanced     | ⭐⭐⭐⭐☆      |
 | 24     | Communication in Production           | Incident Communication, Status Updates, Root Cause Analysis, Postmortems, Customer Communication      | Advanced     | ⭐⭐⭐⭐☆      |
-| 25     | Personal Branding                     | Professional Presence, Confidence, Public Speaking, Networking, Online Presence                       | Advanced     | ⭐⭐⭐⭐☆      |
+| 25     | Personal Branding                     | Confidence & presence in communication; full personal-brand depth — see Resume, LinkedIn & Portfolio Roadmap | Advanced     | ⭐⭐⭐⭐☆      |
 | 26     | Storytelling for Career Growth        | Resume Stories, Promotion Stories, Leadership Stories, Performance Reviews, Interview Stories         | Advanced     | ⭐⭐⭐⭐⭐      |
 | 27     | Real-World Communication Case Studies | Architecture Review, Executive Presentation, Client Discussion, Incident Bridge, Design Proposal      | Advanced     | ⭐⭐⭐⭐⭐      |
 | 28     | Common Communication Mistakes         | Over-Explaining, Under-Explaining, Poor Structure, Lack of Metrics, Jargon Overuse, Weak Conclusions  | Advanced     | ⭐⭐⭐⭐⭐      |
@@ -1087,7 +1087,7 @@
 | 7      | Decision Making                   | Trade-offs, Prioritization, Risk Assessment, Technical Decisions, Business Decisions                                       | Intermediate | ⭐⭐⭐⭐⭐      |
 | 8      | Problem Solving                   | Root Cause Analysis, Debugging Production Issues, Critical Thinking, Incident Handling                                     | Intermediate | ⭐⭐⭐⭐⭐      |
 | 9      | Conflict Resolution               | Team Conflicts, Technical Disagreements, Stakeholder Conflicts, Negotiation, Difficult Conversations                       | Intermediate | ⭐⭐⭐⭐⭐      |
-| 10     | Communication with Stakeholders   | Engineers, Product Managers, Designers, QA, Executives, Customers, Cross-Functional Collaboration                          | Intermediate | ⭐⭐⭐⭐⭐      |
+| 10     | Communication with Stakeholders   | Stakeholder communication in a behavioral-interview context; full depth — see Communication & Storytelling Roadmap         | Intermediate | ⭐⭐⭐⭐⭐      |
 | 11     | Team Collaboration                | Cross-Team Collaboration, Pair Programming, Knowledge Sharing, Feedback, Trust Building                                    | Intermediate | ⭐⭐⭐⭐☆      |
 | 12     | Mentorship                        | Coaching, Knowledge Transfer, Code Reviews, Technical Guidance, Growing Junior Engineers                                   | Intermediate | ⭐⭐⭐⭐⭐      |
 | 13     | Project Management                | Planning, Estimation, Sprint Execution, Risk Management, Scope Management, Delivery                                        | Intermediate | ⭐⭐⭐⭐☆      |
@@ -1132,7 +1132,7 @@
 | 16     | Counter Offers                      | Current Employer Counter Offers, Risks, Decision Framework, Retention Bonuses                                      | Advanced     | ⭐⭐⭐⭐☆      |
 | 17     | Promotions & Internal Growth        | Promotion Cycles, Performance Reviews, Promotion Packets, Internal Negotiation                                     | Advanced     | ⭐⭐⭐⭐⭐      |
 | 18     | Performance Management              | Goal Setting, KPIs, OKRs, Impact Measurement, Career Development Plans                                             | Advanced     | ⭐⭐⭐⭐☆      |
-| 19     | Personal Branding for Career Growth | Visibility, Thought Leadership, Open Source, Technical Blogging, Speaking, Networking                              | Advanced     | ⭐⭐⭐⭐☆      |
+| 19     | Personal Branding for Career Growth | Career-growth framing of personal brand; full depth — see Resume, LinkedIn & Portfolio Roadmap                     | Advanced     | ⭐⭐⭐⭐☆      |
 | 20     | Job Switching Strategy              | When to Switch, Timing, Red Flags, Career Progression, Avoiding Job Hopping                                        | Advanced     | ⭐⭐⭐⭐⭐      |
 | 21     | Remote & Global Careers             | Remote Jobs, International Compensation, Contract vs Full-Time, Time Zones, Global Hiring                          | Advanced     | ⭐⭐⭐⭐☆      |
 | 22     | Freelancing & Consulting            | Independent Consulting, Contracting, Rate Calculation, Client Acquisition, Pricing Models                          | Advanced     | ⭐⭐⭐☆☆      |
