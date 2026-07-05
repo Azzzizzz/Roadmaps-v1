@@ -239,7 +239,7 @@
 | 28     | CI/CD for Backend               | Build Pipelines, Automated Testing, Dockerization, Deployment Strategies, Rollbacks                                           | Advanced     | ⭐⭐⭐⭐☆      |
 | 29     | Containerization & Deployment   | Docker, Kubernetes Basics, Reverse Proxy, Nginx, Service Deployment                                                           | Advanced     | ⭐⭐⭐⭐☆      |
 | 30     | Cloud Backend Services          | Compute, Managed Databases, Object Storage, Serverless, Queues, IAM                                                           | Advanced     | ⭐⭐⭐⭐☆      |
-| 31     | Backend Architecture            | Layered Architecture, Clean Architecture, Hexagonal Architecture, DDD Basics, Repository Pattern                              | Advanced     | ⭐⭐⭐⭐⭐      |
+| 31     | Backend Architecture            | Repository Pattern; architecture styles (Layered, Clean, Hexagonal, DDD) — see Low-Level Design (LLD) Roadmap                 | Advanced     | ⭐⭐⭐⭐⭐      |
 | 32     | Production Readiness            | Monitoring, Alerting, Backup, Disaster Recovery, Health Checks, SLO/SLI, Incident Handling                                    | Advanced     | ⭐⭐⭐⭐⭐      |
 | 33     | Production Backend Case Studies | Auth Service, User Service, Notification Service, Payment Service, Order Service, Chat Service, Media Service, Search Service | Advanced     | ⭐⭐⭐⭐⭐      |
 | 34     | Backend Interview Mastery       | API Design Interviews, Backend Scenarios, Debugging, Production Problems, Mock Interviews                                     | Advanced     | ⭐⭐⭐⭐⭐      |
@@ -391,7 +391,7 @@
 | 26     | Containers & Orchestration       | Docker, Images, Containers, Kubernetes, Pods, Services, Deployments, Ingress, Service Mesh Basics                                                                      | Advanced     | ⭐⭐⭐⭐☆      |
 | 27     | DevOps & Deployment Strategies   | CI/CD, Blue-Green Deployment, Canary Deployment, Rolling Updates, Rollbacks, Infrastructure as Code                                                                    | Advanced     | ⭐⭐⭐⭐☆      |
 | 28     | Performance Engineering          | Bottleneck Analysis, Profiling, Connection Pooling, Compression, Query Optimization, Load Testing, Stress Testing                                                      | Advanced     | ⭐⭐⭐⭐☆      |
-| 29     | Architecture Patterns            | Layered Architecture, Clean Architecture, Hexagonal Architecture, Onion Architecture, Event-Driven Architecture, CQRS, Event Sourcing                                  | Advanced     | ⭐⭐⭐⭐⭐      |
+| 29     | Architecture Patterns            | Architecture style trade-offs at scale; full depth — see Low-Level Design (LLD) Roadmap (Layered/Clean/Hexagonal/Onion) and Message Queues & Event-Driven Systems Roadmap (EDA, CQRS, Event Sourcing) | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Design Trade-offs                | SQL vs NoSQL, Sync vs Async, Cache vs DB, Consistency vs Availability, Monolith vs Microservices, Cost vs Performance                                                  | Advanced     | ⭐⭐⭐⭐⭐      |
 | 31     | Multi-Tenant Systems             | Tenant Isolation, Shared Database, Separate Database, Shared Schema, Data Isolation Strategies                                                                         | Advanced     | ⭐⭐⭐⭐☆      |
 | 32     | Realtime Systems                 | Chat Systems, Notifications, Presence, WebSockets, SSE, Long Polling, Push Notifications                                                                               | Advanced     | ⭐⭐⭐⭐☆      |
@@ -423,7 +423,7 @@
 | 15     | Distributed Hashing                   | Consistent Hashing, Rendezvous Hashing, Virtual Nodes, Rebalancing Strategies                                   | Intermediate | ⭐⭐⭐⭐⭐      |
 | 16     | Sharding & Partitioning               | Range Partitioning, Hash Partitioning, Partition Rebalancing, Hot Partitions                                    | Intermediate | ⭐⭐⭐⭐⭐      |
 | 17     | Distributed Transactions              | Two-Phase Commit, Three-Phase Commit, Distributed Deadlocks, XA Transactions                                    | Advanced     | ⭐⭐⭐⭐⭐      |
-| 18     | Saga Pattern & Compensation           | Choreography Saga, Orchestration Saga, Compensating Transactions, Long-Running Workflows                        | Advanced     | ⭐⭐⭐⭐⭐      |
+| 18     | Saga Pattern & Compensation           | Long-Running Workflows overview; full depth — see Message Queues & Event-Driven Systems Roadmap (Saga Pattern)                  | Advanced     | ⭐⭐⭐⭐⭐      |
 | 19     | Distributed Caching                   | Cache Coherence, Invalidation Across Nodes, Distributed Cache Topologies                                        | Intermediate | ⭐⭐⭐⭐☆      |
 | 20     | Load Balancing in Distributed Systems | Client-Side vs Server-Side, Consistent Hashing for LB, Health-Aware Routing                                     | Intermediate | ⭐⭐⭐⭐☆      |
 | 21     | Distributed Logging & Tracing         | Correlation IDs, Distributed Tracing, Clock Skew in Logs, Causal Tracing                                        | Advanced     | ⭐⭐⭐⭐☆      |
@@ -433,7 +433,7 @@
 | 25     | Fault Tolerance & Self-Healing        | Redundancy, Replication for Recovery, Failure Detection, Automatic Failover                                     | Advanced     | ⭐⭐⭐⭐⭐      |
 | 26     | Distributed System Testing            | Chaos Engineering, Fault Injection, Jepsen-Style Testing, Simulation Testing                                    | Advanced     | ⭐⭐⭐⭐☆      |
 | 27     | Geo-Distributed Systems               | Multi-Region Replication, Data Locality, Latency-Aware Routing, Conflict-Free Geo-Replication                   | Advanced     | ⭐⭐⭐⭐☆      |
-| 28     | Architecture Patterns                 | Event Sourcing, CQRS, Lambda/Kappa Architecture, Actor Model                                                    | Advanced     | ⭐⭐⭐⭐⭐      |
+| 28     | Architecture Patterns                 | Lambda/Kappa Architecture, Actor Model; CQRS & Event Sourcing — see Message Queues & Event-Driven Systems Roadmap | Advanced     | ⭐⭐⭐⭐⭐      |
 | 29     | Production Case Studies               | Distributed Databases, Distributed Caches, Distributed Queues, Global-Scale Consensus Systems                   | Advanced     | ⭐⭐⭐⭐⭐      |
 | 30     | Distributed Systems Interview Mastery | Consensus Questions, CAP Trade-off Scenarios, Design Discussions, Mock Interviews                               | Advanced     | ⭐⭐⭐⭐⭐      |
 
